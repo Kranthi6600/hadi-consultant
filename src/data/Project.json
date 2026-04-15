@@ -1,0 +1,135 @@
+[
+    {
+        "id": 1,
+        "slug": "business-solution",
+        "image": "06.jpg",
+        "bannerImg": "06.jpg",
+        "category": "Business Solution",
+        "title": "Digital Startup Agency",
+        "author": "David Smith",
+        "publishedDate": "15 Jan, 2023",
+        "descripTion": "Collaboratively pontificate bleeding edge resources with inexpensive methodologies globally initiate multidisciplinary compatible architectures pidiously repurpose leading edge growth strategies with just in time web readiness communicate timely meta services."
+    },
+    {
+        "id": 2,
+        "slug": "business-growth-check",
+        "image": "02.jpg",
+        "bannerImg": "02.jpg",
+        "category": "Marketing",
+        "title": "Business Growth Check",
+        "author": "David Smith",
+        "publishedDate": "15 Jan, 2023",
+        "descripTion": "Collaboratively pontificate bleeding edge resources with inexpensive methodologies globally initiate multidisciplinary compatible architectures pidiously repurpose leading edge growth strategies with just in time web readiness communicate timely meta services."
+    },
+    {
+        "id": 3,
+        "slug": "digital-business-pat",
+        "image": "03.jpg",
+        "bannerImg": "03.jpg",
+        "category": "Business Growth",
+        "title": "Digital Business Path",
+        "author": "David Smith",
+        "publishedDate": "15 Jan, 2023",
+        "descripTion": "Collaboratively pontificate bleeding edge resources with inexpensive methodologies globally initiate multidisciplinary compatible architectures pidiously repurpose leading edge growth strategies with just in time web readiness communicate timely meta services."
+    },
+    {
+        "id": 4,
+        "slug": "business-growth-model",
+        "image": "04.jpg",
+        "bannerImg": "04.jpg",
+        "category": "Marketing",
+        "title": "Business Growth Model",
+        "author": "David Smith",
+        "publishedDate": "15 Jan, 2023",
+        "descripTion": "Collaboratively pontificate bleeding edge resources with inexpensive methodologies globally initiate multidisciplinary compatible architectures pidiously repurpose leading edge growth strategies with just in time web readiness communicate timely meta services."
+    },
+    {
+        "id": 5,
+        "slug": "strategy-growth-check",
+        "image": "05.jpg",
+        "bannerImg": "05.jpg",
+        "category": "Business Growth",
+        "title": "Strategy Growth Check",
+        "author": "David Smith",
+        "publishedDate": "15 Jan, 2023",
+        "descripTion": "Collaboratively pontificate bleeding edge resources with inexpensive methodologies globally initiate multidisciplinary compatible architectures pidiously repurpose leading edge growth strategies with just in time web readiness communicate timely meta services."
+    },
+    {
+        "id": 6,
+        "slug": "marketing-solution",
+        "image": "06.jpg",
+        "bannerImg": "06.jpg",
+        "category": "Business",
+        "title": "Marketing Solution",
+        "author": "David Smith",
+        "publishedDate": "15 Jan, 2023",
+        "descripTion": "Collaboratively pontificate bleeding edge resources with inexpensive methodologies globally initiate multidisciplinary compatible architectures pidiously repurpose leading edge growth strategies with just in time web readiness communicate timely meta services."
+    },   
+    {
+        "id": 7,
+        "slug": "busines-growth-check",
+        "image": "01.jpg",
+        "bannerImg": "01.jpg",
+        "category": "Business",
+        "title": "Business Growth Check",
+        "author": "David Smith",
+        "publishedDate": "15 Jan, 2023",
+        "descripTion": "Collaboratively pontificate bleeding edge resources with inexpensive methodologies globally initiate multidisciplinary compatible architectures pidiously repurpose leading edge growth strategies with just in time web readiness communicate timely meta services."
+    },   
+    {
+        "id": 8,
+        "slug": "Business-solution",
+        "image": "02.jpg",
+        "bannerImg": "02.jpg",
+        "category": "Business",
+        "title": "Business Solution",
+        "author": "David Smith",
+        "publishedDate": "15 Jan, 2023",
+        "descripTion": "Collaboratively pontificate bleeding edge resources with inexpensive methodologies globally initiate multidisciplinary compatible architectures pidiously repurpose leading edge growth strategies with just in time web readiness communicate timely meta services."
+    },    
+    {
+        "id": 9,
+        "slug": "Invent-Workd",
+        "image": "03.jpg",
+        "bannerImg": "03.jpg",
+        "category": "Business",
+        "title": "Invent Workd",
+        "author": "David Smith",
+        "publishedDate": "15 Jan, 2023",
+        "descripTion": "Collaboratively pontificate bleeding edge resources with inexpensive methodologies globally initiate multidisciplinary compatible architectures pidiously repurpose leading edge growth strategies with just in time web readiness communicate timely meta services."
+    },    
+    {
+        "id": 10,
+        "slug": "top-rated-solution",
+        "image": "04.jpg",
+        "bannerImg": "04.jpg",
+        "category": "Business",
+        "title": "Top Rated Solution",
+        "author": "David Smith",
+        "publishedDate": "15 Jan, 2023",
+        "descripTion": "Collaboratively pontificate bleeding edge resources with inexpensive methodologies globally initiate multidisciplinary compatible architectures pidiously repurpose leading edge growth strategies with just in time web readiness communicate timely meta services."
+    },   
+    {
+        "id": 11,
+        "slug": "more-work-solution",
+        "image": "05.jpg",
+        "bannerImg": "05.jpg",
+        "category": "Business",
+        "title": "More-Work Solution",
+        "author": "David Smith",
+        "publishedDate": "15 Jan, 2023",
+        "descripTion": "Collaboratively pontificate bleeding edge resources with inexpensive methodologies globally initiate multidisciplinary compatible architectures pidiously repurpose leading edge growth strategies with just in time web readiness communicate timely meta services."
+    },
+    {
+        "id": 12,
+        "slug": "Modern-Solution-technology",
+        "image": "06.jpg",
+        "bannerImg": "06.jpg",
+        "category": "Business",
+        "title": "Modern Solution Technology",
+        "author": "David Smith",
+        "publishedDate": "15 Jan, 2023",
+        "descripTion": "Collaboratively pontificate bleeding edge resources with inexpensive methodologies globally initiate multidisciplinary compatible architectures pidiously repurpose leading edge growth strategies with just in time web readiness communicate timely meta services."
+    }
+
+]
