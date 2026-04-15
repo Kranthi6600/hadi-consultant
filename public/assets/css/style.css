@@ -19013,7 +19013,7 @@ body.thirteen-body .title-area span {
 
 .about-one-thumbnail {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   position: relative;
 }
 .about-one-thumbnail .small-img {
