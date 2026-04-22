@@ -4,7 +4,7 @@ import  Link  from 'next/link';
 function BlogFive() {
     return (
         <div>
-            {/* rts-service area start */}
+            {}
             <div className="rts-blog-area4 blog-area5 rts-section-gap pb--120 pb_sm--60" id='blog-section'>
                 <div className="container">
                     <div className="row">
@@ -119,10 +119,8 @@ function BlogFive() {
                     </div>
                 </div>
             </div>
-            {/* rts-service area end */}
-
+            {}
         </div>
     )
 }
-
 export default BlogFive

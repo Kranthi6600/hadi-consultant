@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'next/link';
-
 const BlogTwoMain = (props) => {
     const { blogID, blogImage, blogTitle, blogPublishedDate } = props;
     return (
@@ -21,8 +20,6 @@ const BlogTwoMain = (props) => {
                 </Link>
             </div>
         </>
-
     )
 }
-
 export default BlogTwoMain

@@ -24,10 +24,7 @@ const BlogGridMain = (props) => {
                     </Link>
                 </div>
             </div>
-            
-        </>
-
+</>
     )
 }
-
 export default BlogGridMain

@@ -2,11 +2,8 @@ import "../../public/assets/css/plugins/swiper.min.css";
 import "../../public/assets/css/plugins/fontawesome-5.css";
 import "../../public/assets/css/plugins/animate.min.css";
 import "../../public/assets/css/plugins/unicons.css";
-
 import "../../public/assets/css/vendor/bootstrap.min.css";
 import "../../public/assets/css/style.css";
-
-
 export const metadata = {
   title: "Hadi Consultant Business",
   description: "Hadi Consultant Business",
@@ -14,16 +11,11 @@ export const metadata = {
     icon: "/assets/images/cropped-cropped-HADI_CONSULTANTS_logo-removebg-preview-140x74.ico",
   },
 };
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className='index-one'>
-
         {children}
-
-
-
       </body>
     </html>
   );

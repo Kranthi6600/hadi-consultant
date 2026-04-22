@@ -8,7 +8,7 @@ function BlogFour() {
     return (
         <ErrorBoundary>
         <div>
-            {/* rts-service area start */}
+            {}
             <div className="rts-blog-area4 rts-section-gap pb--140" id='blog-section'>
                 <div className="container">
                     <div className="row">
@@ -36,18 +36,15 @@ function BlogFour() {
                                             />
                                         }
                                     </div>
-
                                 </div>
                             )
                         }).slice(23, 26)}
                     </div>
                 </div>
             </div>
-            {/* rts-service area end */}
-
+            {}
         </div>
         </ErrorBoundary>
     )
 }
-
 export default BlogFour

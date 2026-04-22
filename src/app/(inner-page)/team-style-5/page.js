@@ -11,14 +11,10 @@ export default function Home() {
         { label: 'Team Five' }
     ];
     return (
-
         <div className="">
             <HeaderOne />
-
             <Breadcrumb title="Team Five" breadcrumbs={breadcrumbs} />
-
-
-            {/* rts team five area Star*/}
+            {}
             <div className="rts-team-area rts-section-gap style-5">
                 <div className="container">
                     <div className="row g-5 mt--20 mt_md--30 mt_sm--0">
@@ -27,7 +23,7 @@ export default function Home() {
                                 <Link href={'/team-details'} className="thumbnail">
                                     <img src="assets/images/team/tm/06.jpg" alt="" />
                                 </Link>
-                                {/* Acquaintance area */}
+                                {}
                                 <div className="team-content">
                                     <div className="header">
                                         <h5 className="title">Kevin Martin</h5>
@@ -45,7 +41,7 @@ export default function Home() {
                                         </Link>
                                     </div>
                                 </div>
-                                {/* Acquaintance area */}
+                                {}
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 col-12">
@@ -53,7 +49,7 @@ export default function Home() {
                                 <Link href={'/team-details'} className="thumbnail">
                                     <img src="assets/images/team/tm/07.jpg" alt="" />
                                 </Link>
-                                {/* Acquaintance area */}
+                                {}
                                 <div className="team-content">
                                     <div className="header">
                                         <h5 className="title">Kevin Martin</h5>
@@ -71,7 +67,7 @@ export default function Home() {
                                         </Link>
                                     </div>
                                 </div>
-                                {/* Acquaintance area */}
+                                {}
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 col-12">
@@ -79,7 +75,7 @@ export default function Home() {
                                 <Link href={'/team-details'} className="thumbnail">
                                     <img src="assets/images/team/tm/08.jpg" alt="" />
                                 </Link>
-                                {/* Acquaintance area */}
+                                {}
                                 <div className="team-content">
                                     <div className="header">
                                         <h5 className="title">Kevin Martin</h5>
@@ -97,7 +93,7 @@ export default function Home() {
                                         </Link>
                                     </div>
                                 </div>
-                                {/* Acquaintance area */}
+                                {}
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 col-12">
@@ -105,7 +101,7 @@ export default function Home() {
                                 <Link href={'/team-details'} className="thumbnail">
                                     <img src="assets/images/team/tm/09.jpg" alt="" />
                                 </Link>
-                                {/* Acquaintance area */}
+                                {}
                                 <div className="team-content">
                                     <div className="header">
                                         <h5 className="title">Kevin Martin</h5>
@@ -123,7 +119,7 @@ export default function Home() {
                                         </Link>
                                     </div>
                                 </div>
-                                {/* Acquaintance area */}
+                                {}
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 col-12">
@@ -131,7 +127,7 @@ export default function Home() {
                                 <Link href={'/team-details'} className="thumbnail">
                                     <img src="assets/images/team/tm/10.jpg" alt="" />
                                 </Link>
-                                {/* Acquaintance area */}
+                                {}
                                 <div className="team-content">
                                     <div className="header">
                                         <h5 className="title">Kevin Martin</h5>
@@ -149,7 +145,7 @@ export default function Home() {
                                         </Link>
                                     </div>
                                 </div>
-                                {/* Acquaintance area */}
+                                {}
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-6 col-12">
@@ -157,7 +153,7 @@ export default function Home() {
                                 <Link href={'/team-details'} className="thumbnail">
                                     <img src="assets/images/team/tm/11.jpg" alt="" />
                                 </Link>
-                                {/* Acquaintance area */}
+                                {}
                                 <div className="team-content">
                                     <div className="header">
                                         <h5 className="title">Kevin Martin</h5>
@@ -175,19 +171,15 @@ export default function Home() {
                                         </Link>
                                     </div>
                                 </div>
-                                {/* Acquaintance area */}
+                                {}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* rts team two area End */}
-           
-
-
-            <FooterOne />
+            {}
+<FooterOne />
             <BackToTop />
         </div>
-
     );
 }

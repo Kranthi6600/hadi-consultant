@@ -3,18 +3,16 @@ import HeaderOne from "@/components/header/HeaderOne";
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import FooterOne from "@/components/footer/FooterOne";
-
 export default function Home() {
     const breadcrumbs = [
         { label: 'Home', link: '/' },
         { label: 'Our Service' }
     ];
     return (
-
         <div className="">
             <HeaderOne />
             <Breadcrumb title="Our Service" breadcrumbs={breadcrumbs} />
-         {/* latest service area */}
+         {}
          <div className="rts-service-area rts-section-gap bg-service-h2 ptb--120 mt--0">
                 <div className="container">
                     <div className="row">
@@ -25,7 +23,7 @@ export default function Home() {
                     </div>
                     <div className="row g-5 mt--10">
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                            {/* single service start */}
+                            {}
                             <div className="rts-single-service-h2 inner">
                                 <Link href={'/service-details'} className="thumbnail">
                                     <img src="assets/images/service/10.jpg" alt="Service_image" />
@@ -43,10 +41,10 @@ export default function Home() {
                                     </Link>
                                 </div>
                             </div>
-                            {/* single service End */}
+                            {}
                         </div>
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                            {/* single service start */}
+                            {}
                             <div className="rts-single-service-h2 inner">
                                 <Link href={'/service-details'} className="thumbnail">
                                     <img src="assets/images/service/11.jpg" alt="Service_image" />
@@ -64,10 +62,10 @@ export default function Home() {
                                     </Link>
                                 </div>
                             </div>
-                            {/* single service End */}
+                            {}
                         </div>
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                            {/* single service start */}
+                            {}
                             <div className="rts-single-service-h2 inner">
                                 <Link href={'/service-details'} className="thumbnail">
                                     <img src="assets/images/service/12.jpg" alt="Service_image" />
@@ -85,10 +83,10 @@ export default function Home() {
                                     </Link>
                                 </div>
                             </div>
-                            {/* single service End */}
+                            {}
                         </div>
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                            {/* single service start */}
+                            {}
                             <div className="rts-single-service-h2 inner">
                                 <Link href={'/service-details'} className="thumbnail">
                                     <img src="assets/images/service/13.jpg" alt="Service_image" />
@@ -106,16 +104,14 @@ export default function Home() {
                                     </Link>
                                 </div>
                             </div>
-                            {/* single service End */}
+                            {}
                         </div>
                     </div>
                 </div>
             </div>
-            {/* latest service area End */}
-
+            {}
             <FooterOne />
             <BackToTop />
         </div>
-
     );
 }

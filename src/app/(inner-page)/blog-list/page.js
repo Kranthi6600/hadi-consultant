@@ -6,26 +6,19 @@ import FooterOne from "@/components/footer/FooterOne";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogGridMain from "./BlogGridMain";
 import post from "@/data/Posts.json";
-
-
 export default function Home() {
     const breadcrumbs = [
         { label: 'Home', link: '/' },
         { label: 'Blog List' }
     ];
     return (
-
         <div className="">
             <HeaderOne />
-
             <Breadcrumb title="Blog List" breadcrumbs={breadcrumbs} />
-
-
-
             <div className="rts-blog-list-area rts-section-gap">
                 <div className="container">
                     <div className="row g-5">
-                        {/* rts blog post area */}
+                        {}
                         <div className="col-xl-8 col-md-12 col-sm-12 col-12">
                             {post.map((data, index) => {
                                 return (
@@ -44,8 +37,7 @@ export default function Home() {
                                     </div>
                                 )
                             }).slice(0, 4)}
-
-                            {/* pagination area */}
+                            {}
                             <div className="row">
                                 <div className="col-12">
                                     <div className="text-center">
@@ -61,12 +53,12 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            {/* pagination area End */}
+                            {}
                         </div>
-                        {/* rts-blog post end area */}
-                        {/*rts blog wized area */}
+                        {}
+                        {}
                         <div className="col-xl-4 col-md-12 col-sm-12 col-12 mt_lg--60">
-                            {/* single wized start */}
+                            {}
                             <div className="rts-single-wized search">
                                 <div className="wized-header">
                                     <h5 className="title">Search Hear</h5>
@@ -84,14 +76,14 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            {/* single wized End */}
-                            {/* single wized start */}
+                            {}
+                            {}
                             <div className="rts-single-wized Categories">
                                 <div className="wized-header">
                                     <h5 className="title">Categories</h5>
                                 </div>
                                 <div className="wized-body">
-                                    {/* single categoris */}
+                                    {}
                                     <ul className="single-categories">
                                         <li>
                                             <Link href="#">
@@ -99,8 +91,8 @@ export default function Home() {
                                             </Link>
                                         </li>
                                     </ul>
-                                    {/* single categoris End */}
-                                    {/* single categoris */}
+                                    {}
+                                    {}
                                     <ul className="single-categories">
                                         <li>
                                             <Link href="#">
@@ -109,8 +101,8 @@ export default function Home() {
                                             </Link>
                                         </li>
                                     </ul>
-                                    {/* single categoris End */}
-                                    {/* single categoris */}
+                                    {}
+                                    {}
                                     <ul className="single-categories">
                                         <li>
                                             <Link href="#">
@@ -118,8 +110,8 @@ export default function Home() {
                                             </Link>
                                         </li>
                                     </ul>
-                                    {/* single categoris End */}
-                                    {/* single categoris */}
+                                    {}
+                                    {}
                                     <ul className="single-categories">
                                         <li>
                                             <Link href="#">
@@ -127,8 +119,8 @@ export default function Home() {
                                             </Link>
                                         </li>
                                     </ul>
-                                    {/* single categoris End */}
-                                    {/* single categoris */}
+                                    {}
+                                    {}
                                     <ul className="single-categories">
                                         <li>
                                             <Link href="#">
@@ -137,17 +129,17 @@ export default function Home() {
                                             </Link>
                                         </li>
                                     </ul>
-                                    {/* single categoris End */}
+                                    {}
                                 </div>
                             </div>
-                            {/* single wized End */}
-                            {/* single wized start */}
+                            {}
+                            {}
                             <div className="rts-single-wized Recent-post">
                                 <div className="wized-header">
                                     <h5 className="title">Recent Posts</h5>
                                 </div>
                                 <div className="wized-body">
-                                    {/* recent-post */}
+                                    {}
                                     <div className="recent-post-single">
                                         <div className="thumbnail">
                                             <Link href="#">
@@ -169,8 +161,8 @@ export default function Home() {
                                             </Link>
                                         </div>
                                     </div>
-                                    {/* recent-post End */}
-                                    {/* recent-post */}
+                                    {}
+                                    {}
                                     <div className="recent-post-single">
                                         <div className="thumbnail">
                                             <Link href="#">
@@ -192,8 +184,8 @@ export default function Home() {
                                             </Link>
                                         </div>
                                     </div>
-                                    {/* recent-post End */}
-                                    {/* recent-post */}
+                                    {}
+                                    {}
                                     <div className="recent-post-single">
                                         <div className="thumbnail">
                                             <Link href="#">
@@ -215,8 +207,8 @@ export default function Home() {
                                             </Link>
                                         </div>
                                     </div>
-                                    {/* recent-post End */}
-                                    {/* recent-post */}
+                                    {}
+                                    {}
                                     <div className="recent-post-single">
                                         <div className="thumbnail">
                                             <Link href="#">
@@ -238,11 +230,11 @@ export default function Home() {
                                             </Link>
                                         </div>
                                     </div>
-                                    {/* recent-post End */}
+                                    {}
                                 </div>
                             </div>
-                            {/* single wized End */}
-                            {/* single wized start */}
+                            {}
+                            {}
                             <div className="rts-single-wized Recent-post">
                                 <div className="wized-header">
                                     <h5 className="title">Recent Posts</h5>
@@ -292,8 +284,8 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            {/* single wized End */}
-                            {/* single wized start */}
+                            {}
+                            {}
                             <div className="rts-single-wized">
                                 <div className="wized-header">
                                     <h5 className="title">Popular Tags</h5>
@@ -312,8 +304,8 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            {/* single wized End */}
-                            {/* single wized start */}
+                            {}
+                            {}
                             <div className="rts-single-wized contact">
                                 <div className="wized-header">
                                     <Link href="#">
@@ -322,22 +314,18 @@ export default function Home() {
                                 </div>
                                 <div className="wized-body">
                                     <h5 className="title">Need Help? We Are Here To Help You</h5>
-                                    <Link className="rts-btn btn-primary" href="contactus.html">
+                                    <Link className="rts-btn btn-primary" href="/contact">
                                         Contact Us
                                     </Link>
                                 </div>
                             </div>
-                            {/* single wized End */}
+                            {}
                         </div>
-                        {/* rts- blog wized end area */}
+                        {}
                     </div>
                 </div>
             </div>
-
-
-
             <FooterOne />
         </div>
-
     );
 }

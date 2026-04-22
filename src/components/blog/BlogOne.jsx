@@ -14,15 +14,14 @@ function BlogOne() {
     return (
         <ErrorBoundary>
             <div>
-
-                {/* blog area start */}
+                {}
                 <div className="rts-blog-area rts-section-gap bg-secondary" id='blog-section'>
                     <div className="container">
                         <div className="row">
                             <div className="col-12">
                                 <div className="title-area text-center">
                                     <span>Blog Posts</span>
-                                    <h2 className="title">News &amp; Updates</h2>
+                                    <h2 className="title">Latest Updates</h2>
                                 </div>
                             </div>
                         </div>
@@ -55,9 +54,7 @@ function BlogOne() {
                                             slidesPerView: 3,
                                         },
                                     }}
-
                                 >
-
                                     {post.map((data, index) => {
                                         return (
                                             <SwiperSlide key={index}>
@@ -81,11 +78,9 @@ function BlogOne() {
                         </div>
                     </div>
                 </div>
-                {/* blog area end */}
-
+                {}
             </div>
         </ErrorBoundary>
     )
 }
-
 export default BlogOne

@@ -3,23 +3,21 @@ import HeaderOne from "@/components/header/HeaderOne";
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import FooterOne from "@/components/footer/FooterOne";
-
 export default function Home() {
     const breadcrumbs = [
         { label: 'Home', link: '/' },
         { label: 'Our Service' }
     ];
     return (
-
         <div className="">
             <HeaderOne />
             <Breadcrumb title="Our Service" breadcrumbs={breadcrumbs} />
-            {/* start service details area */}
+            {}
             <div className="rts-service-details-area rts-section-gap">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-8 col-md-12 col-sm-12 col-12">
-                            {/* service details left area start */}
+                            {}
                             <div className="service-detials-step-1">
                                 <div className="thumbnail">
                                     <img src="assets/images/service/01.jpg" alt="business-area" />
@@ -42,7 +40,7 @@ export default function Home() {
                                 </p>
                                 <div className="row g-5 mt--30 mb--40">
                                     <div className="col-lg-6">
-                                        {/* single service details card */}
+                                        {}
                                         <div className="service-details-card">
                                             <div className="thumbnail">
                                                 <img
@@ -59,10 +57,10 @@ export default function Home() {
                                                 </p>
                                             </div>
                                         </div>
-                                        {/* single service details card End */}
+                                        {}
                                     </div>
                                     <div className="col-lg-6">
-                                        {/* single service details card */}
+                                        {}
                                         <div className="service-details-card">
                                             <div className="thumbnail">
                                                 <img
@@ -79,10 +77,10 @@ export default function Home() {
                                                 </p>
                                             </div>
                                         </div>
-                                        {/* single service details card End */}
+                                        {}
                                     </div>
                                     <div className="col-lg-6">
-                                        {/* single service details card */}
+                                        {}
                                         <div className="service-details-card">
                                             <div className="thumbnail">
                                                 <img
@@ -99,10 +97,10 @@ export default function Home() {
                                                 </p>
                                             </div>
                                         </div>
-                                        {/* single service details card End */}
+                                        {}
                                     </div>
                                     <div className="col-lg-6">
-                                        {/* single service details card */}
+                                        {}
                                         <div className="service-details-card">
                                             <div className="thumbnail">
                                                 <img
@@ -119,7 +117,7 @@ export default function Home() {
                                                 </p>
                                             </div>
                                         </div>
-                                        {/* single service details card End */}
+                                        {}
                                     </div>
                                 </div>
                                 <p className="disc">
@@ -146,7 +144,7 @@ export default function Home() {
                                     applications. Conveniently predominate misslat revolutionary
                                     quality vectors through future-proof manufactured products.
                                 </p>
-                                {/* stem-area start */}
+                                {}
                                 <div className="row  mb--40 g-5 mb_md--20 mb_sm--20">
                                     <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                                         <div className="single-service-step text-center">
@@ -183,9 +181,9 @@ export default function Home() {
                                     generate B2C tailers for business data restore fully researched
                                     relationships through
                                 </p>
-                                {/* stem-area End */}
+                                {}
                             </div>
-                            {/* service details left area end */}
+                            {}
                             <div className="service-detials-step-3 mt--70 mt_md--50">
                                 <div className="row g-5 align-items-center">
                                     <div className="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
@@ -216,15 +214,15 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        {/*rts blog wizered area */}
+                        {}
                         <div className="col-xl-4 col-md-12 col-sm-12 col-12 mt_lg--60 pl--50 pl_md--0 pl-lg-controler pl_sm--0">
-                            {/* single wizered start */}
+                            {}
                             <div className="rts-single-wized Categories service">
                                 <div className="wized-header">
                                     <h5 className="title">Categories</h5>
                                 </div>
                                 <div className="wized-body">
-                                    {/* single categoris */}
+                                    {}
                                     <ul className="single-categories">
                                         <li>
                                             <Link href={'#'}>
@@ -232,8 +230,8 @@ export default function Home() {
                                             </Link>
                                         </li>
                                     </ul>
-                                    {/* single categoris End */}
-                                    {/* single categoris */}
+                                    {}
+                                    {}
                                     <ul className="single-categories">
                                         <li>
                                             <Link href={'#'}>
@@ -241,8 +239,8 @@ export default function Home() {
                                             </Link>
                                         </li>
                                     </ul>
-                                    {/* single categoris End */}
-                                    {/* single categoris */}
+                                    {}
+                                    {}
                                     <ul className="single-categories">
                                         <li>
                                             <Link href={'#'}>
@@ -250,8 +248,8 @@ export default function Home() {
                                             </Link>
                                         </li>
                                     </ul>
-                                    {/* single categoris End */}
-                                    {/* single categoris */}
+                                    {}
+                                    {}
                                     <ul className="single-categories">
                                         <li>
                                             <Link href={'#'}>
@@ -259,8 +257,8 @@ export default function Home() {
                                             </Link>
                                         </li>
                                     </ul>
-                                    {/* single categoris End */}
-                                    {/* single categoris */}
+                                    {}
+                                    {}
                                     <ul className="single-categories">
                                         <li>
                                             <Link href={'#'}>
@@ -268,17 +266,17 @@ export default function Home() {
                                             </Link>
                                         </li>
                                     </ul>
-                                    {/* single categoris End */}
+                                    {}
                                 </div>
                             </div>
-                            {/* single wizered End */}
-                            {/* single wizered start */}
+                            {}
+                            {}
                             <div className="rts-single-wized download service">
                                 <div className="wized-header">
                                     <h5 className="title">Download</h5>
                                 </div>
                                 <div className="wized-body">
-                                    {/* single downlaod area start */}
+                                    {}
                                     <div className="single-download-area">
                                         <img
                                             src="assets/images/service/icon/07.svg"
@@ -292,8 +290,8 @@ export default function Home() {
                                             <i className="fal fa-arrow-right" />
                                         </Link>
                                     </div>
-                                    {/* single downlaod area End */}
-                                    {/* single downlaod area start */}
+                                    {}
+                                    {}
                                     <div className="single-download-area">
                                         <img
                                             src="assets/images/service/icon/08.svg"
@@ -307,11 +305,11 @@ export default function Home() {
                                             <i className="fal fa-arrow-right" />
                                         </Link>
                                     </div>
-                                    {/* single downlaod area End */}
+                                    {}
                                 </div>
                             </div>
-                            {/* single wizered End */}
-                            {/* single wizered start */}
+                            {}
+                            {}
                             <div className="rts-single-wized contact service">
                                 <div className="wized-header">
                                     <Link href={'#'}>
@@ -325,17 +323,15 @@ export default function Home() {
                                     </Link>
                                 </div>
                             </div>
-                            {/* single wizered End */}
+                            {}
                         </div>
-                        {/* rts- blog wizered end area */}
+                        {}
                     </div>
                 </div>
             </div>
-            {/* End service details area */}
-
+            {}
             <FooterOne />
             <BackToTop />
         </div>
-
     );
 }

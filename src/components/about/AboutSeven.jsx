@@ -1,9 +1,8 @@
 import React from 'react'
-
 function AboutSeven() {
     return (
         <div>
-            {/* about company area start */}
+            {}
             <div className="rts-about-ten-area rts-section-gapBottom mt-decrease" id="about">
                 <div className="container">
                     <div className="row">
@@ -26,9 +25,8 @@ function AboutSeven() {
                     </div>
                 </div>
             </div>
-            {/* about company area end */}
+            {}
         </div>
     )
 }
-
 export default AboutSeven

@@ -2,11 +2,10 @@
 import React from 'react'
 import post from '../../data/Posts.json';
 import BlogTwoMain from './BlogTwoMain';
-
 function BlogTwo() {
     return (
         <div>
-            {/* start blog area */}
+            {}
             <div className="rts-blog-area rts-section-gapTop" id='blog-section'>
                 <div className="container">
                     <div className="row">
@@ -32,16 +31,14 @@ function BlogTwo() {
                                             />
                                         }
                                     </div>
-
                                 </div>
                             )
                         }).slice(21, 23)}
                     </div>
                 </div>
             </div>
-            {/* start blog area End */}
+            {}
         </div>
     )
 }
-
 export default BlogTwo

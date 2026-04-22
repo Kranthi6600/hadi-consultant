@@ -4,19 +4,17 @@ import Link from 'next/link';
 function MapOne() {
     return (
         <div>
-            {/* map area start */}
-            <div className="rts-map-area bg-light-white" id='address'>
+            <div className="rts-map-area bg-light-white" id='address' style={{ padding: '80px 0' }}>
                 <div className="container-fluid">
                     <div className="row align-items-center">
                         <div className="col-lg-6">
-                            {/* map area left */}
                             <div className="mapdetails-inner-one">
                                 <div className="left-area single-wized">
                                     <h5 className="title">Get in touch</h5>
                                     <div className="details">
                                         <p>Work and general inquiries</p>
                                         <Link className="number" href={'#'}>
-                                            +3509.120-8605
+                                            (416) 998-7909
                                         </Link>
                                         <p className="time-header">Assistance hours:</p>
                                         <p className="time">
@@ -29,15 +27,14 @@ function MapOne() {
                                     <div className="details">
                                         <p>Service Office</p>
                                         <Link href={'#'}>
-                                            786 Dortans Ave, Otam Sites, <br />
-                                            CA 36108, United States
+                                            1290 Eglinton Ave E #8, Mississauga, <br />
+                                            ON L4W 1K8 Canada
                                         </Link>
-                                        <p className="headoffice">Head Office</p>
-                                        <p className="office">142 Drive Lane. USA</p>
+                                        <p className="headoffice">Email</p>
+                                        <p className="office">fmcacpa@gmail.com</p>
                                     </div>
                                 </div>
                             </div>
-                            {/* map area right */}
                         </div>
                         <div className="col-lg-6">
                             <iframe
@@ -53,9 +50,7 @@ function MapOne() {
                     </div>
                 </div>
             </div>
-            {/* map area end */}
         </div>
     )
 }
-
 export default MapOne

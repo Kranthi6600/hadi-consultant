@@ -6,13 +6,11 @@ import { Navigation, Scrollbar, A11y, EffectFade, Autoplay } from 'swiper/module
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
-
 import Link from 'next/link';
-
 function TeamTwo() {
     return (
         <div>
-            {/* rts team two area */}
+            {}
             <div className="rts-team-area rts-section-gap team-two">
                 <div className="container">
                     <div className="row">
@@ -26,7 +24,6 @@ function TeamTwo() {
                     <div className="row g-5 mt--20 mt_md--30 mt_sm--0">
                         <div className="swiper">
                             <Swiper
-                                // install Swiper modules
                                 modules={[Navigation, EffectFade, Scrollbar, A11y, Autoplay]}
                                 className="swiper mySwiperh3_team pb--110 pl--20 pr--20"
                                 speed={200}
@@ -48,12 +45,12 @@ function TeamTwo() {
                                 }}
                             >
                                 <SwiperSlide>
-                                    {/* single team inner */}
+                                    {}
                                     <div className="team-inner-two">
                                         <Link href={'/team-details'} className="thumbnail">
                                             <img src="assets/images/team/tm/lg-01.jpg" alt="" />
                                         </Link>
-                                        {/* Acquaintance area */}
+                                        {}
                                         <div className="acquaintance-area">
                                             <div className="header">
                                                 <h5 className="title">Kevin Martin</h5>
@@ -71,17 +68,17 @@ function TeamTwo() {
                                                 </Link>
                                             </div>
                                         </div>
-                                        {/* Acquaintance area */}
+                                        {}
                                     </div>
-                                    {/* single team inner End */}
+                                    {}
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    {/* single team inner */}
+                                    {}
                                     <div className="team-inner-two">
                                         <Link href={'/team-details'} className="thumbnail">
                                             <img src="assets/images/team/tm/lg-02.jpg" alt="" />
                                         </Link>
-                                        {/* Acquaintance area */}
+                                        {}
                                         <div className="acquaintance-area">
                                             <div className="header">
                                                 <h5 className="title">Kevin Martin</h5>
@@ -99,17 +96,17 @@ function TeamTwo() {
                                                 </Link>
                                             </div>
                                         </div>
-                                        {/* Acquaintance area */}
+                                        {}
                                     </div>
-                                    {/* single team inner End */}
+                                    {}
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    {/* single team inner */}
+                                    {}
                                     <div className="team-inner-two">
                                         <Link href={'/team-details'} className="thumbnail">
                                             <img src="assets/images/team/tm/lg-03.jpg" alt="" />
                                         </Link>
-                                        {/* Acquaintance area */}
+                                        {}
                                         <div className="acquaintance-area">
                                             <div className="header">
                                                 <h5 className="title">Kevin Martin</h5>
@@ -127,17 +124,17 @@ function TeamTwo() {
                                                 </Link>
                                             </div>
                                         </div>
-                                        {/* Acquaintance area */}
+                                        {}
                                     </div>
-                                    {/* single team inner End */}
+                                    {}
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    {/* single team inner */}
+                                    {}
                                     <div className="team-inner-two">
                                         <Link href={'/team-details'} className="thumbnail">
                                             <img src="assets/images/team/tm/lg-01.jpg" alt="" />
                                         </Link>
-                                        {/* Acquaintance area */}
+                                        {}
                                         <div className="acquaintance-area">
                                             <div className="header">
                                                 <h5 className="title">Kevin Martin</h5>
@@ -155,17 +152,17 @@ function TeamTwo() {
                                                 </Link>
                                             </div>
                                         </div>
-                                        {/* Acquaintance area */}
+                                        {}
                                     </div>
-                                    {/* single team inner End */}
+                                    {}
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    {/* single team inner */}
+                                    {}
                                     <div className="team-inner-two">
                                         <Link href={'/team-details'} className="thumbnail">
                                             <img src="assets/images/team/tm/lg-02.jpg" alt="" />
                                         </Link>
-                                        {/* Acquaintance area */}
+                                        {}
                                         <div className="acquaintance-area">
                                             <div className="header">
                                                 <h5 className="title">Kevin Martin</h5>
@@ -183,17 +180,17 @@ function TeamTwo() {
                                                 </Link>
                                             </div>
                                         </div>
-                                        {/* Acquaintance area */}
+                                        {}
                                     </div>
-                                    {/* single team inner End */}
+                                    {}
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    {/* single team inner */}
+                                    {}
                                     <div className="team-inner-two">
                                         <Link href={'/team-details'} className="thumbnail">
                                             <img src="assets/images/team/tm/lg-03.jpg" alt="" />
                                         </Link>
-                                        {/* Acquaintance area */}
+                                        {}
                                         <div className="acquaintance-area">
                                             <div className="header">
                                                 <h5 className="title">Kevin Martin</h5>
@@ -211,19 +208,17 @@ function TeamTwo() {
                                                 </Link>
                                             </div>
                                         </div>
-                                        {/* Acquaintance area */}
+                                        {}
                                     </div>
-                                    {/* single team inner End */}
+                                    {}
                                 </SwiperSlide>
-
                             </Swiper>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* rts team two area End */}
+            {}
         </div>
     )
 }
-
 export default TeamTwo

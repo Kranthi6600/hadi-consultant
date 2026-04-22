@@ -11,18 +11,14 @@ export default function Home() {
         { label: 'Project Details' }
     ];
     return (
-
         <div className="">
             <HeaderOne />
-
             <Breadcrumb title="Project Details" breadcrumbs={breadcrumbs} />
-
-
-            {/* team area start*/}
+            {}
             <div className="rts-team-area rts-section-gap bg-team-color">
                 <div className="container">
                     <div className="row g-5">
-                        {/* team single start */}
+                        {}
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                             <div className="team-single-one-start">
                                 <div className="team-image-area">
@@ -51,8 +47,8 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        {/* team single end */}
-                        {/* team single start */}
+                        {}
+                        {}
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                             <div className="team-single-one-start">
                                 <div className="team-image-area">
@@ -81,8 +77,8 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        {/* team single end */}
-                        {/* team single start */}
+                        {}
+                        {}
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                             <div className="team-single-one-start">
                                 <div className="team-image-area">
@@ -111,8 +107,8 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        {/* team single end */}
-                        {/* team single start */}
+                        {}
+                        {}
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                             <div className="team-single-one-start">
                                 <div className="team-image-area">
@@ -141,8 +137,8 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        {/* team single end */}
-                        {/* team single start */}
+                        {}
+                        {}
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                             <div className="team-single-one-start">
                                 <div className="team-image-area">
@@ -171,8 +167,8 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        {/* team single end */}
-                        {/* team single start */}
+                        {}
+                        {}
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                             <div className="team-single-one-start">
                                 <div className="team-image-area">
@@ -201,8 +197,8 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        {/* team single end */}
-                        {/* team single start */}
+                        {}
+                        {}
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                             <div className="team-single-one-start">
                                 <div className="team-image-area">
@@ -231,8 +227,8 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        {/* team single end */}
-                        {/* team single start */}
+                        {}
+                        {}
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                             <div className="team-single-one-start">
                                 <div className="team-image-area">
@@ -261,16 +257,13 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        {/* team single end */}
+                        {}
                     </div>
                 </div>
             </div>
-            {/* team area End */}
-
-
+            {}
             <FooterOne />
             <BackToTop />
         </div>
-
     );
 }

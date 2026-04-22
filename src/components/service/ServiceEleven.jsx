@@ -1,26 +1,24 @@
 "use client"
 import React from 'react'
 import Link from 'next/link';
-
-
 function ServiceEleven() {
     return (
         <div>
-            {/* rts service post area  Start*/}
+            {}
             <div className="rts-service-area rts-section-gap">
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
                             <div className="rts-title-area service text-center">
-                                <p className="pre-title">Our Services</p>
-                                <h2 className="title">High Quality Services</h2>
+                                <p className="pre-title">Services</p>
+                                <h2 className="title">What I do</h2>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="container-fluid service-main plr--120-service mt--50 plr_md--0 pl_sm--0 pr_sm--0">
                     <div className="background-service row">
-                        {/* start single Service */}
+                        {}
                         <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div className="service-one-inner one">
                                 <div className="thumbnail">
@@ -31,24 +29,17 @@ function ServiceEleven() {
                                 </div>
                                 <div className="service-details">
                                     <Link href={'/service-details'}>
-                                        <h5 className="title">Business Planning</h5>
+                                        <h5 className="title">01. FINANCIAL STATEMENTS PREPARATION</h5>
                                     </Link>
                                     <p className="disc">
-                                        Sagitis himos pulvinar morb socis laoreet posuere enim non
-                                        auctor etiam pretium libero
+                                        Professional preparation of financial statements for individuals and corporate accounts, 
+                                        ensuring accuracy and compliance with accounting standards.
                                     </p>
-                                    <Link
-                                        className="rts-read-more btn-primary"
-                                        href={'/service-details'}
-                                    >
-                                        <i className="far fa-arrow-right" />
-                                        Read More
-                                    </Link>
                                 </div>
                             </div>
                         </div>
-                        {/* end single Services */}
-                        {/* start single Service */}
+                        {}
+                        {}
                         <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div className="service-one-inner two">
                                 <div className="thumbnail">
@@ -59,24 +50,17 @@ function ServiceEleven() {
                                 </div>
                                 <div className="service-details">
                                     <Link href={'/service-details'}>
-                                        <h5 className="title">Develop Process</h5>
+                                        <h5 className="title">02. TAX FILING FOR INDIVIDUALS</h5>
                                     </Link>
                                     <p className="disc">
-                                        Sagitis himos pulvinar morb socis laoreet posuere enim non
-                                        auctor etiam pretium libero
+                                        Expert tax filing services for individuals, maximizing deductions and ensuring 
+                                        timely submission to tax authorities.
                                     </p>
-                                    <Link
-                                        className="rts-read-more btn-primary"
-                                        href={'/service-details'}
-                                    >
-                                        <i className="far fa-arrow-right" />
-                                        Read More
-                                    </Link>
                                 </div>
                             </div>
                         </div>
-                        {/* end single Services */}
-                        {/* start single Service */}
+                        {}
+                        {}
                         <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div className="service-one-inner three">
                                 <div className="thumbnail">
@@ -87,24 +71,17 @@ function ServiceEleven() {
                                 </div>
                                 <div className="service-details">
                                     <Link href={'/service-details'}>
-                                        <h5 className="title">Strategy &amp; Planning</h5>
+                                        <h5 className="title">03. FINANCIAL ADVISORY</h5>
                                     </Link>
                                     <p className="disc">
-                                        Sagitis himos pulvinar morb socis laoreet posuere enim non
-                                        auctor etiam pretium libero
+                                        Comprehensive financial advisory services to help you make informed decisions 
+                                        about your financial future and business growth.
                                     </p>
-                                    <Link
-                                        className="rts-read-more btn-primary"
-                                        href={'/service-details'}
-                                    >
-                                        <i className="far fa-arrow-right" />
-                                        Read More
-                                    </Link>
                                 </div>
                             </div>
                         </div>
-                        {/* end single Services */}
-                        {/* start single Service */}
+                        {}
+                        {}
                         <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div className="service-one-inner four">
                                 <div className="thumbnail">
@@ -115,24 +92,17 @@ function ServiceEleven() {
                                 </div>
                                 <div className="service-details">
                                     <Link href={'/service-details'}>
-                                        <h5 className="title">Business Support</h5>
+                                        <h5 className="title">04. TAXES FOR CORPORATE</h5>
                                     </Link>
                                     <p className="disc">
-                                        Sagitis himos pulvinar morb socis laoreet posuere enim non
-                                        auctor etiam pretium libero
+                                        Specialized corporate tax services including tax planning, compliance, and 
+                                        strategic tax management for businesses of all sizes.
                                     </p>
-                                    <Link
-                                        className="rts-read-more btn-primary"
-                                        href={'/service-details'}
-                                    >
-                                        <i className="far fa-arrow-right" />
-                                        Read More
-                                    </Link>
                                 </div>
                             </div>
                         </div>
-                        {/* end single Services */}
-                        {/* start single Service */}
+                        {}
+                        {}
                         <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div className="service-one-inner five">
                                 <div className="thumbnail">
@@ -143,24 +113,17 @@ function ServiceEleven() {
                                 </div>
                                 <div className="service-details">
                                     <Link href={'/service-details'}>
-                                        <h5 className="title">Audit &amp; Evaluation</h5>
+                                        <h5 className="title">05. T4 FILING</h5>
                                     </Link>
                                     <p className="disc">
-                                        Sagitis himos pulvinar morb socis laoreet posuere enim non
-                                        auctor etiam pretium libero
+                                        Professional T4 filing services for businesses, ensuring accurate and timely 
+                                        preparation of employee T4 slips for tax reporting.
                                     </p>
-                                    <Link
-                                        className="rts-read-more btn-primary"
-                                        href={'/service-details'}
-                                    >
-                                        <i className="far fa-arrow-right" />
-                                        Read More
-                                    </Link>
                                 </div>
                             </div>
                         </div>
-                        {/* end single Services */}
-                        {/* start single Service */}
+                        {}
+                        {}
                         <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div className="service-one-inner six">
                                 <div className="thumbnail">
@@ -171,35 +134,154 @@ function ServiceEleven() {
                                 </div>
                                 <div className="service-details">
                                     <Link href={'/service-details'}>
-                                        <h5 className="title">Consultancy &amp; Advice</h5>
+                                        <h5 className="title">06. FAMILY BENEFITS</h5>
                                     </Link>
                                     <p className="disc">
-                                        Sagitis himos pulvinar morb socis laoreet posuere enim non
-                                        auctor etiam pretium libero
+                                        Guidance on various family benefits and tax credits available to Canadian families, 
+                                        helping you maximize your entitled benefits.
                                     </p>
-                                    <Link
-                                        className="rts-read-more btn-primary"
-                                        href={'/service-details'}
-                                    >
-                                        <i className="far fa-arrow-right" />
-                                        Read More
-                                    </Link>
                                 </div>
                             </div>
                         </div>
-                        {/* end single Services */}
+                        {}
+                        {}
+                        <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div className="service-one-inner one">
+                                <div className="thumbnail">
+                                    <img
+                                        src="assets/images/service/icon/01.svg"
+                                        alt="hadi_consultant_service"
+                                    />
+                                </div>
+                                <div className="service-details">
+                                    <Link href={'/service-details'}>
+                                        <h5 className="title">07. CHILD BENEFITS</h5>
+                                    </Link>
+                                    <p className="disc">
+                                        Expert guidance on Child Benefits and tax credits available to Canadian families 
+                                        with children, helping you maximize your entitled benefits.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        {}
+                        {}
+                        <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div className="service-one-inner two">
+                                <div className="thumbnail">
+                                    <img
+                                        src="assets/images/service/icon/02.svg"
+                                        alt="hadi_consultant_service"
+                                    />
+                                </div>
+                                <div className="service-details">
+                                    <Link href={'/service-details'}>
+                                        <h5 className="title">08. CANADA WORKERS BENEFITS</h5>
+                                    </Link>
+                                    <p className="disc">
+                                        Assistance with Canada Workers Benefits and other employment-related tax credits 
+                                        for eligible workers across various income levels.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        {}
+                        {}
+                        <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div className="service-one-inner three">
+                                <div className="thumbnail">
+                                    <img
+                                        src="assets/images/service/icon/03.svg"
+                                        alt="hadi_consultant_service"
+                                    />
+                                </div>
+                                <div className="service-details">
+                                    <Link href={'/service-details'}>
+                                        <h5 className="title">09. ESTATE & TRUST TAX SERVICES</h5>
+                                    </Link>
+                                    <p className="disc">
+                                        Specialized tax planning and filing services for estates and trusts, ensuring 
+                                        compliance and optimal tax efficiency for inheritance matters.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        {}
+                        {}
+                        <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div className="service-one-inner four">
+                                <div className="thumbnail">
+                                    <img
+                                        src="assets/images/service/icon/04.svg"
+                                        alt="hadi_consultant_service"
+                                    />
+                                </div>
+                                <div className="service-details">
+                                    <Link href={'/service-details'}>
+                                        <h5 className="title">10. REGISTER A BUSINESS</h5>
+                                    </Link>
+                                    <p className="disc">
+                                        Complete business registration services including sole proprietorship, partnership, 
+                                        and corporation setup with proper tax structure planning.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        {}
+                        {}
+                        <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div className="service-one-inner five">
+                                <div className="thumbnail">
+                                    <img
+                                        src="assets/images/service/icon/05.svg"
+                                        alt="hadi_consultant_service"
+                                    />
+                                </div>
+                                <div className="service-details">
+                                    <Link href={'/service-details'}>
+                                        <h5 className="title">11. CORPORATE TAX FILING</h5>
+                                    </Link>
+                                    <p className="disc">
+                                        Comprehensive corporate tax filing services including T2 returns, GST/HST filing, 
+                                        and corporate tax planning for businesses of all sizes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        {}
+                        {}
+                        <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div className="service-one-inner six">
+                                <div className="thumbnail">
+                                    <img
+                                        src="assets/images/service/icon/06.svg"
+                                        alt="hadi_consultant_service"
+                                    />
+                                </div>
+                                <div className="service-details">
+                                    <Link href={'/service-details'}>
+                                        <h5 className="title">12. INDIVIDUAL TAX FILING</h5>
+                                    </Link>
+                                    <p className="disc">
+                                        Complete individual tax filing services including T1 returns, RRSP contributions, 
+                                        and personal tax planning for maximum deductions and credits.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        {}
                     </div>
                     <div className="row">
                         <div className="cta-one-bg col-12">
                             <div className="cta-one-inner">
                                 <div className="cta-left">
                                     <h3 className="title">
-                                        Let’s discuss about how we can help make your business better
+                                        Get A Free Quote - Expert Tax Services
                                     </h3>
                                 </div>
                                 <div className="cta-right">
-                                    <Link className="rts-btn btn-white" href={'appoinment'}>
-                                        Lets Work Together
+                                    <Link className="rts-btn btn-white" href={'/contact'}>
+                                        Contact Us
                                     </Link>
                                 </div>
                             </div>
@@ -207,10 +289,8 @@ function ServiceEleven() {
                     </div>
                 </div>
             </div>
-            {/* rts service post area ENd */}
-
+            {}
         </div>
     )
 }
-
 export default ServiceEleven

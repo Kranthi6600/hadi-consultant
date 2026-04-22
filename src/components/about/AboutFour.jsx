@@ -2,7 +2,7 @@ import React from 'react'
 function AboutFour() {
     return (
         <div>
-            {/* rts about area start */}
+            {}
             <div className="rts-about-area rts-section-gap about-home-seven" id="about">
                 <div className="container">
                     <div className="row">
@@ -34,7 +34,7 @@ function AboutFour() {
                                     lobortis ultricies aptent integer bibendum parturient molestie
                                     risus
                                 </p>
-                                {/* ingle about start */}
+                                {}
                                 <div className="about-single-home-7">
                                     <div className="icon">
                                         <img src="assets/images/about/main/icon/01.svg" alt="" />
@@ -47,8 +47,8 @@ function AboutFour() {
                                         </p>
                                     </div>
                                 </div>
-                                {/* ingle about end */}
-                                {/* ingle about start */}
+                                {}
+                                {}
                                 <div className="about-single-home-7">
                                     <div className="icon">
                                         <img src="assets/images/about/main/icon/02.svg" alt="" />
@@ -61,8 +61,8 @@ function AboutFour() {
                                         </p>
                                     </div>
                                 </div>
-                                {/* ingle about end */}
-                                {/* ingle about start */}
+                                {}
+                                {}
                                 <div className="about-single-home-7">
                                     <div className="icon">
                                         <img src="assets/images/about/main/icon/03.svg" alt="" />
@@ -75,15 +75,14 @@ function AboutFour() {
                                         </p>
                                     </div>
                                 </div>
-                                {/* ingle about end */}
+                                {}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* rts about area end */}
+            {}
         </div>
     )
 }
-
 export default AboutFour

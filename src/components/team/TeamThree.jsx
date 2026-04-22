@@ -8,12 +8,10 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import Link from 'next/link';
-
-
 function TeamThree() {
     return (
         <div>
-            {/* start team section */}
+            {}
             <div className="rts-team-area rts-team-area4 rts-section-gap bg-team">
                 <div className="container">
                     <div className="row">
@@ -193,10 +191,8 @@ function TeamThree() {
                     </div>
                 </div>
             </div>
-            {/* end team section */}
-
+            {}
         </div>
     )
 }
-
 export default TeamThree

@@ -1,13 +1,10 @@
 "use client"
 import React from 'react'
 import  Link  from 'next/link';
-
 const BlogTwoMain = (props) => {
     const { blogID, blogImage, blogTitle, blogPublishedDate } = props;
     return (
         <>
-
-
             <div className="thumbnail">
                 <Link href={`/blog-list/${blogID}`}>
                     <img src={`assets/images/blog/${blogImage}`} alt="blog-area" />
@@ -32,8 +29,6 @@ const BlogTwoMain = (props) => {
                 </Link>
             </div>
         </>
-
     )
 }
-
 export default BlogTwoMain

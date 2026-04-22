@@ -4,7 +4,6 @@ import Link from 'next/link';
 import HeaderOne from "@/components/header/HeaderOne";
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
-import TeamTwo from "@/components/team/TeamTwo";
 import FooterOne from "@/components/footer/FooterOne";
 import Accordion from 'react-bootstrap/Accordion';
 export default function Home() {
@@ -13,41 +12,35 @@ export default function Home() {
             { label: 'About Us' }
         ];
         const [isVideoOpen, setIsVideoOpen] = useState(false);
-    
-        // Function to open the video overlay
+// Function to open the video overlay
         const openVideo = (e) => {
             e.preventDefault();
             setIsVideoOpen(true);
         };
-    
-        // Function to close the video overlay
+// Function to close the video overlay
         const closeVideo = (e) => {
             e.preventDefault();
             setIsVideoOpen(false);
         };
-    
-        // Effect to handle the escape key for closing the video overlay
+// Effect to handle the escape key for closing the video overlay
         useEffect(() => {
             const handleKeyUp = (e) => {
                 if (e.keyCode === 27) {
                     setIsVideoOpen(false);
                 }
             };
-    
-            // Add event listener for keyup
+// Add event listener for keyup
             document.addEventListener('keyup', handleKeyUp);
-    
-            // Cleanup function to remove event listener on component unmount
+// Cleanup function to remove event listener on component unmount
             return () => {
                 document.removeEventListener('keyup', handleKeyUp);
             };
         }, []);
     return (
-
         <div className="">
             <HeaderOne />
             <Breadcrumb title="About Us" breadcrumbs={breadcrumbs} />
-            {/* rts about us section start */}
+            {}
             <div className="rts-about-area rts-section-gap">
                 <div className="container">
                     <div className="row g-5 align-items-center">
@@ -67,19 +60,16 @@ export default function Home() {
                                     <div className="goal-button-wrapper">
                                         <Link href={'#'} className="vedio-icone">
                                             <span id="play-video" className="video-play-button" onClick={openVideo}>
-                                                {/* <img
-                                                    src="assets/images/about/shape/play-btn.png"
-                                                    alt="Play btn"
-                                                /> */}
+                                                {}
                                                 <span />
                                             </span>
                                             {isVideoOpen && (
                                                 <div id="video-overlay" className="video-overlay open">
-                                                    {/* Close button for the video overlay */}
+                                                    {}
                                                     <Link className="video-overlay-close" href={'#'} onClick={closeVideo}>
                                                         ×
                                                     </Link>
-                                                    {/* Video iframe */}
+                                                    {}
                                                     <iframe
                                                         width="560"
                                                         height="315"
@@ -99,18 +89,15 @@ export default function Home() {
                         <div className="col-lg-6">
                             <div className="about-progress-inner">
                                 <div className="title-area">
-                                    <span>JUST A CONSULTANCY</span>
+                                    <span>HADI CONSULTANTS</span>
                                     <h2 className="title">
-                                        Get Consulting For Better Business Growth
+                                        We Are Experienced Business Solution
                                     </h2>
                                 </div>
-                                {/* inner start */}
+                                {}
                                 <div className="inner">
                                     <p className="disc">
-                                        Dapibus curae risus rutrum curabitur nunc sociis nullam nisl,
-                                        aliquet quis iaculis scelerisque primis massa imperdiet, dis
-                                        senectus blandit aptent nulla cubilia sodales convallis tortor
-                                        pellentesque nulla.
+                                        Hadi Consultants provides expert financial and tax consulting services tailored to meet your unique business needs. Our team of certified professionals brings decades of experience in tax planning, financial strategy, and business development to help you achieve your goals.
                                     </p>
                                     <div className="rts-progress-one-wrapper">
                                         <div className="single-progress">
@@ -136,16 +123,14 @@ export default function Home() {
                                         Make an Appointment
                                     </Link>
                                 </div>
-                                {/* end */}
+                                {}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* rts about us section end */}
-
-
-            {/* rts services area start */}
+            {}
+            {}
             <div className="rts-service-area rts-section-gapBottom">
                 <div className="container-fluid service-main about-service-width-controler">
                     <div className="background-service service-three row">
@@ -154,7 +139,7 @@ export default function Home() {
                                 <p className="pre-title">Our Services</p>
                                 <h2 className="title">What We Provide</h2>
                             </div>
-                            {/* start single Service */}
+                            {}
                             <div className="col-xl-4 col-md-6 col-sm-12 col-12 pt--15 mb--80 mb_md--40 mb_sm--30">
                                 <div className="service-one-inner-four">
                                     <div className="big-thumbnail-area">
@@ -169,22 +154,16 @@ export default function Home() {
                                                 src="assets/images/service/icon/13.svg"
                                                 alt="Business-icon"
                                             />
-                                            <h5 className="title">Business Consultancy</h5>
+                                            <h5 className="title">Tax Planning & Compliance</h5>
                                             <p className="disc">
-                                                Aenean augue venenatis est porttitor fames aptent lobortis
-                                                nam potenti
+                                                Our tax planning services help individuals and businesses minimize tax liabilities while ensuring full compliance with Canadian tax laws. We handle everything from personal tax returns to complex corporate tax strategies.
                                             </p>
                                         </div>
                                         <Link href="service-details.html" className="over_link" />
                                     </div>
-                                    <Link href="service-details.html" className="rts-btn btn-primary">
-                                        {" "}
-                                        Read More
-                                        <i className="fal fa-arrow-right" />
-                                    </Link>
                                 </div>
                             </div>
-                            {/* start single Service */}
+                            {}
                             <div className="col-xl-4 col-md-6 col-sm-12 col-12 pt--15 mb--80 mb_md--40 mb_sm--30">
                                 <div className="service-one-inner-four">
                                     <div className="big-thumbnail-area">
@@ -199,22 +178,16 @@ export default function Home() {
                                                 src="assets/images/service/icon/14.svg"
                                                 alt="Business-icon"
                                             />
-                                            <h5 className="title">Business Appoinment</h5>
+                                            <h5 className="title">Financial Advisory</h5>
                                             <p className="disc">
-                                                Aenean augue venenatis est porttitor fames aptent lobortis
-                                                nam potenti
+                                                Get personalized financial advice from our experienced consultants. We help with investment planning, retirement strategies, business valuations, and comprehensive financial analysis to secure your financial future.
                                             </p>
                                         </div>
                                         <Link href="service-details.html" className="over_link" />
                                     </div>
-                                    <Link href="service-details.html" className="rts-btn btn-primary">
-                                        {" "}
-                                        Read More
-                                        <i className="fal fa-arrow-right" />
-                                    </Link>
                                 </div>
                             </div>
-                            {/* start single Service */}
+                            {}
                             <div className="col-xl-4 col-md-6 col-sm-12 col-12 pt--15 mb--80">
                                 <div className="service-one-inner-four">
                                     <div className="big-thumbnail-area">
@@ -229,19 +202,13 @@ export default function Home() {
                                                 src="assets/images/service/icon/15.svg"
                                                 alt="Business-icon"
                                             />
-                                            <h5 className="title">Consultancy Foundation</h5>
+                                            <h5 className="title">Bookkeeping & Accounting</h5>
                                             <p className="disc">
-                                                Aenean augue venenatis est porttitor fames aptent lobortis
-                                                nam potenti
+                                                Maintain accurate financial records with our professional bookkeeping services. We handle financial statements, payroll management, and comprehensive accounting solutions for businesses of all sizes.
                                             </p>
                                         </div>
                                         <Link href="service-details.html" className="over_link" />
                                     </div>
-                                    <Link href="service-details.html" className="rts-btn btn-primary">
-                                        {" "}
-                                        Read More
-                                        <i className="fal fa-arrow-right" />
-                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -264,12 +231,8 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            {/* rts services area End */}
-
-            <TeamTwo />
-
-
-            {/* rts faq section area */}
+            {}
+            {}
             <div className="rts-faq-section rts-section-gap rts-faq-bg bg_image">
                 <div className="container">
                     <div className="row align-items-center">
@@ -284,70 +247,32 @@ export default function Home() {
                                         </span>
                                     </h2>
                                 </div>
-                                {/* faq accordion area */}
+                                {}
                                 <div className="faq-accordion-area">
-                                    <div className="accordion" id="accordionExample">
-                                        <div className="accordion-item">
-                                            <h2 className="accordion-header" id="headingThree">
-                                                <button
-                                                    className="accordion-button collapsed"
-                                                    type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#collapseThree"
-                                                    aria-expanded="false"
-                                                    aria-controls="collapseThree"
-                                                >
-
-                                                </button>
-                                            </h2>
-                                            <div
-                                                id="collapseThree"
-                                                className="accordion-collapse collapse"
-                                                aria-labelledby="headingThree"
-                                                data-bs-parent="#accordionExample"
-                                            >
-                                                <div className="accordion-body">
-                                                    Neque partrient nascetur facilisis suscipit ridiculus agna
-                                                    lobortis imperdiet vivamus est aliquam euismod nector quam
-                                                    convallis ornare justo service lifereu visionary sources
-                                                    unleash online businesss solutions
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <Accordion defaultActiveKey="0">
                                         <Accordion.Item eventKey="0">
                                             <Accordion.Header><span>01. </span> What should i included my personal
                                                 details?</Accordion.Header>
                                             <Accordion.Body>
-                                                Neque partrient nascetur facilisis suscipit ridiculus agna
-                                                lobortis imperdiet vivamus est aliquam euismod nector quam
-                                                convallis ornare justo service lifereu visionary sources
-                                                unleash online businesss solutions
+                                                We provide comprehensive personal details including your financial information, tax records, and business documentation to ensure complete transparency and accuracy in all our consulting services.
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="1">
                                             <Accordion.Header><span>02. </span> Where i can find my business growth
                                                 result?</Accordion.Header>
                                             <Accordion.Body>
-                                                Neque partrient nascetur facilisis suscipit ridiculus agna
-                                                lobortis imperdiet vivamus est aliquam euismod nector quam
-                                                convallis ornare justo service lifereu visionary sources
-                                                unleash online businesss solutions
+                                                Your business growth results can be tracked through our detailed monthly reports, quarterly performance reviews, and annual financial statements that we provide to all our clients.
                                             </Accordion.Body>
                                         </Accordion.Item>
-                                        <Accordion.Item eventKey="1">
+                                        <Accordion.Item eventKey="2">
                                             <Accordion.Header><span>03. </span> Did you get any business consultant?</Accordion.Header>
                                             <Accordion.Body>
-                                                Neque partrient nascetur facilisis suscipit ridiculus agna
-                                                lobortis imperdiet vivamus est aliquam euismod nector quam
-                                                convallis ornare justo service lifereu visionary sources
-                                                unleash online businesss solutions
+                                                Yes, we have experienced business consultants who specialize in tax planning, financial strategy, and business development to help you achieve your goals.
                                             </Accordion.Body>
                                         </Accordion.Item>
                                     </Accordion>
                                 </div>
-                                {/* faq accordion area end */}
+                                {}
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -358,10 +283,8 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            {/* rts faq section area End */}
-
-
-            {/* customers feed back area start */}
+            {}
+            {}
             <div className="rts-customer-feedback-area rts-section-gap bg-customer-feedback">
                 <div className="container">
                     <div className="row">
@@ -379,16 +302,11 @@ export default function Home() {
                                     </div>
                                     <div className="name-desig">
                                         <h5 className="title">David Smith</h5>
-                                        <span className="designation">Business Expert</span>
                                     </div>
                                 </div>
                                 <div className="test-body">
                                     <p className="disc">
-                                        “Parallel task user friendly convergence through supply are
-                                        chains type siflify reliable meta provide service visionary
-                                        sources unleash tactical thinking via granular intellectual
-                                        capital architect dynamic information value online business
-                                        solution services”
+                                        "Hadi Consultants transformed our business finances. Their tax planning expertise saved us thousands and their financial advisory services helped us make better investment decisions. Highly recommended!"
                                     </p>
                                 </div>
                             </div>
@@ -400,17 +318,13 @@ export default function Home() {
                                         <img src="assets/images/testimonials/03.png" alt="" />
                                     </div>
                                     <div className="name-desig">
-                                        <h5 className="title">David Smith</h5>
-                                        <span className="designation">Business Expert</span>
+                                        <h5 className="title">Sarah Johnson</h5>
+                                        <span className="designation"></span>
                                     </div>
                                 </div>
                                 <div className="test-body">
                                     <p className="disc">
-                                        “Parallel task user friendly convergence through supply are
-                                        chains type siflify reliable meta provide service visionary
-                                        sources unleash tactical thinking via granular intellectual
-                                        capital architect dynamic information value online business
-                                        solution services”
+                                        "Professional, reliable, and knowledgeable team. They handled our corporate tax filing perfectly and provided valuable insights for business growth. The best financial consultants in Mississauga!"
                                     </p>
                                 </div>
                             </div>
@@ -418,10 +332,9 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            {/* customers feed back area end */}
+            {}
             <FooterOne />
             <BackToTop />
         </div>
-
     );
 }

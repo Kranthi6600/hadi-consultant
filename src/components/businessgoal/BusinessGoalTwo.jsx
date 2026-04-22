@@ -1,15 +1,14 @@
 "use client"
 import React from 'react'
-
 function BusinessGoalTwo() {
     return (
         <div>
-            {/* leading business solution area */}
+            {}
             <div className="rts-business-solution rts-section-gap" id="about">
                 <div className="container">
                     <div className="row g-5">
                         <div className="col-lg-6">
-                            {/* business solution left */}
+                            {}
                             <div className="rts-business-solution-left">
                                 <div className="thumbnail">
                                     <img src="assets/images/business-goal/01.png" alt="business Goal" />
@@ -19,7 +18,7 @@ function BusinessGoalTwo() {
                                     <span>Success Rate</span>
                                 </div>
                             </div>
-                            {/* business solution left End */}
+                            {}
                         </div>
                         <div className="col-lg-6">
                             <div className="rts-business-solution-right">
@@ -39,7 +38,7 @@ function BusinessGoalTwo() {
                                         molestie d cursus ante mattis habitasse. Egestas sagittis
                                         curabitur quam business solution
                                     </p>
-                                    {/* single business solution */}
+                                    {}
                                     <div className="single-business-solution-2">
                                         <div className="icon">
                                             <img src="assets/images/business-goal/icon/01.png" alt="business Goal" />
@@ -52,8 +51,8 @@ function BusinessGoalTwo() {
                                             </p>
                                         </div>
                                     </div>
-                                    {/* single business solution end */}
-                                    {/* single business solution */}
+                                    {}
+                                    {}
                                     <div className="single-business-solution-2">
                                         <div className="icon">
                                             <img src="assets/images/business-goal/icon/02.png" alt="business Goal" />
@@ -66,16 +65,15 @@ function BusinessGoalTwo() {
                                             </p>
                                         </div>
                                     </div>
-                                    {/* single business solution end */}
+                                    {}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* leading business solution area End */}
+            {}
         </div>
     )
 }
-
 export default BusinessGoalTwo

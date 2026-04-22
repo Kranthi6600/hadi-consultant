@@ -4,11 +4,11 @@ import Link from 'next/link';
 function ServiceTen() {
     return (
         <div>
-            {/* our service area start */}
+            {}
             <div className="rts-service-area rts-section-gapTop pb--200 service-two-bg bg_image">
                 <div className="container">
                     <div className="row g-5 service padding-controler">
-                        {/* single service area */}
+                        {}
                         <div className="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
                             <div className="service-two-inner">
                                 <Link href={'/service-details'} className="thumbnail">
@@ -32,8 +32,8 @@ function ServiceTen() {
                                 </div>
                             </div>
                         </div>
-                        {/* single service area end*/}
-                        {/* single service area */}
+                        {}
+                        {}
                         <div className="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
                             <div className="service-two-inner">
                                 <Link href={'/service-details'} className="thumbnail two">
@@ -57,8 +57,8 @@ function ServiceTen() {
                                 </div>
                             </div>
                         </div>
-                        {/* single service area end*/}
-                        {/* single service area */}
+                        {}
+                        {}
                         <div className="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
                             <div className="service-two-inner">
                                 <Link href={'/service-details'} className="thumbnail three">
@@ -82,8 +82,8 @@ function ServiceTen() {
                                 </div>
                             </div>
                         </div>
-                        {/* single service area end*/}
-                        {/* single service area */}
+                        {}
+                        {}
                         <div className="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--100">
                             <div className="service-two-inner">
                                 <Link href={'/service-details'} className="thumbnail">
@@ -107,8 +107,8 @@ function ServiceTen() {
                                 </div>
                             </div>
                         </div>
-                        {/* single service area end*/}
-                        {/* single service area */}
+                        {}
+                        {}
                         <div className="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--60">
                             <div className="service-two-inner">
                                 <Link href={'/service-details'} className="thumbnail two">
@@ -132,8 +132,8 @@ function ServiceTen() {
                                 </div>
                             </div>
                         </div>
-                        {/* single service area end*/}
-                        {/* single service area */}
+                        {}
+                        {}
                         <div className="col-xl-4 col-md-6 col-sm-12 col-12 pb--140 pb_md--60 pb_sm--60">
                             <div className="service-two-inner">
                                 <Link href={'/service-details'} className="thumbnail three">
@@ -157,13 +157,12 @@ function ServiceTen() {
                                 </div>
                             </div>
                         </div>
-                        {/* single service area end*/}
+                        {}
                     </div>
                 </div>
             </div>
-            {/* our service area end */}
+            {}
         </div>
     )
 }
-
 export default ServiceTen

@@ -524,7 +524,7 @@ export default function Home() {
                                 </div>
                                 <div className="wized-body">
                                     <h5 className="title">Need Help? We Are Here To Help You</h5>
-                                    <a className="rts-btn btn-primary" href="contactus.html">
+                                    <a className="rts-btn btn-primary" href="/contact">
                                         Contact Us
                                     </a>
                                 </div>

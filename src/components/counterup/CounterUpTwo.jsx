@@ -2,18 +2,14 @@
 import React from 'react'
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
-
-
 function CounterUpTwo() {
-
     const { ref, inView } = useInView({
         triggerOnce: true, // Trigger the animation only once when in view
         threshold: 0.5, // 50% of the element needs to be visible for it to trigger
     });
-
     return (
         <div>
-            {/* rts counter up section area */}
+            {}
             <div className="pb--120 pb_md--80 pb_sm--60 rts-counter-up-area rts-section-gapTop">
                 <div className="container">
                     <div className="row g-5">
@@ -74,9 +70,8 @@ function CounterUpTwo() {
                     </div>
                 </div>
             </div>
-            {/* rts counter up section area */}
+            {}
         </div>
     )
 }
-
 export default CounterUpTwo

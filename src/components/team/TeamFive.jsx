@@ -1,9 +1,8 @@
 import React from 'react'
-
 function TeamFive() {
     return (
         <div>
-            {/* team area start */}
+            {}
             <div className="rts-team-area-style-six rts-section-gap">
                 <div className="team-bg-image-style-six">
                     <img src="assets/images/team/bg-02.png" alt="bg" />
@@ -29,9 +28,9 @@ function TeamFive() {
                         </div>
                     </div>
                     <div className="row mt--30 g-5">
-                        {/* single team area start */}
+                        {}
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                            {/* single team start */}
+                            {}
                             <div className="single-team-style-six">
                                 <div className="inner">
                                     <div className="thumbnail">
@@ -71,12 +70,12 @@ function TeamFive() {
                                     </div>
                                 </div>
                             </div>
-                            {/* single team end */}
+                            {}
                         </div>
-                        {/* single team end */}
-                        {/* single team area start */}
+                        {}
+                        {}
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                            {/* single team start */}
+                            {}
                             <div className="single-team-style-six">
                                 <div className="inner">
                                     <div className="thumbnail">
@@ -116,12 +115,12 @@ function TeamFive() {
                                     </div>
                                 </div>
                             </div>
-                            {/* single team end */}
+                            {}
                         </div>
-                        {/* single team end */}
-                        {/* single team area start */}
+                        {}
+                        {}
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                            {/* single team start */}
+                            {}
                             <div className="single-team-style-six">
                                 <div className="inner">
                                     <div className="thumbnail">
@@ -161,12 +160,12 @@ function TeamFive() {
                                     </div>
                                 </div>
                             </div>
-                            {/* single team end */}
+                            {}
                         </div>
-                        {/* single team end */}
-                        {/* single team area start */}
+                        {}
+                        {}
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                            {/* single team start */}
+                            {}
                             <div className="single-team-style-six">
                                 <div className="inner">
                                     <div className="thumbnail">
@@ -206,15 +205,14 @@ function TeamFive() {
                                     </div>
                                 </div>
                             </div>
-                            {/* single team end */}
+                            {}
                         </div>
-                        {/* single team end */}
+                        {}
                     </div>
                 </div>
             </div>
-            {/* team area end */}
+            {}
         </div>
     )
 }
-
 export default TeamFive

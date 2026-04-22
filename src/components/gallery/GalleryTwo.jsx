@@ -8,12 +8,10 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import Link from 'next/link';
-
-
 function GalleryOne() {
     return (
         <div>
-            {/* start gallery section */}
+            {}
             <div className="rts-gallery-area rts-section-gap bg_image">
                 <div className="container">
                     <div className="row">
@@ -38,7 +36,6 @@ function GalleryOne() {
                                         nextEl: '.swiper-button-next',
                                         prevEl: '.swiper-button-prev',
                                     }}
-
                                 >
                                     <SwiperSlide>
                                         <   div className="row g-5 w-g-100">
@@ -152,8 +149,6 @@ function GalleryOne() {
                                         </div>
                                     </SwiperSlide>
                                 </Swiper>
-
-
                                 <div className="swiper-button-next" />
                                 <div className="swiper-button-prev" />
                                 <div className="swiper-pagination" />
@@ -162,10 +157,8 @@ function GalleryOne() {
                     </div>
                 </div>
             </div>
-            {/* start gallery section */}
-
+            {}
         </div>
     )
 }
-
 export default GalleryOne

@@ -1,5 +1,4 @@
 import React from 'react';
-
 const Breadcrumb = ({ title, breadcrumbs }) => {
     return (
         <div className="rts-breadcrumb-area breadcrumb-bg bg_image">
@@ -27,5 +26,4 @@ const Breadcrumb = ({ title, breadcrumbs }) => {
         </div>
     );
 };
-
 export default Breadcrumb;

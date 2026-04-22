@@ -1,9 +1,8 @@
 import React from 'react'
-
 function AboutSix() {
     return (
         <div>
-            {/* more about us section start */}
+            {}
             <div className="more-about-us-section rts-section-gap" id='about'>
                 <div className="container">
                     <div className="row align-items-center g-5">
@@ -34,7 +33,7 @@ function AboutSix() {
                                         tincidunt leo mollis luctus varius gravida eleifend cursus
                                         litora consequat...
                                     </p>
-                                    {/* single feature area start */}
+                                    {}
                                     <div className="single-feature-area-nine">
                                         <div className="icon-area">
                                             <svg
@@ -82,8 +81,8 @@ function AboutSix() {
                                             </p>
                                         </div>
                                     </div>
-                                    {/* single feature area end */}
-                                    {/* single feature area start */}
+                                    {}
+                                    {}
                                     <div className="single-feature-area-nine">
                                         <div className="icon-area">
                                             <svg
@@ -107,16 +106,15 @@ function AboutSix() {
                                             </p>
                                         </div>
                                     </div>
-                                    {/* single feature area end */}
+                                    {}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* more about us section end */}
+            {}
         </div>
     )
 }
-
 export default AboutSix

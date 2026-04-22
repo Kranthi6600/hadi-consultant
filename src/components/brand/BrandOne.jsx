@@ -1,10 +1,9 @@
 "use client"
 import React from 'react'
-
 function BrandOne() {
     return (
         <div>
-            {/* start trusted client section */}
+            {}
             <div className="rts-trusted-client rts-section-gapBottom">
                 <div className="container">
                     <div className="row">
@@ -38,10 +37,8 @@ function BrandOne() {
                     </div>
                 </div>
             </div>
-            {/* end trusted client section */}
-
+            {}
         </div>
     )
 }
-
 export default BrandOne

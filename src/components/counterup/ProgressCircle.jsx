@@ -1,10 +1,9 @@
 "use client"
 import React from 'react'
-
 function ProgressCircle() {
     return (
         <div>
-            {/* rts progress areaa */}
+            {}
             <div className="progress-area-h7 rts-section-gapTop">
                 <div className="container">
                     <div className="row">
@@ -60,10 +59,8 @@ function ProgressCircle() {
                     </div>
                 </div>
             </div>
-            {/* rts progress areaa ENd */}
-
+            {}
         </div>
     )
 }
-
 export default ProgressCircle

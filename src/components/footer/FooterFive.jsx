@@ -4,25 +4,25 @@ import Link from 'next/link';
 function FooterFive() {
     return (
         <div>
-            {/* rts footer area start */}
+            {}
             <div className="rts-footer-area footer-one footer-five rts-section-gapTop bg-footer-one" id='f-contact'>
                 <div className="container bg-shape-f1">
-                    {/* footer call to action area */}
+                    {}
                     <div className="row">
                         <div className="col-12">
                             <div className="rts-cta-wrapper">
                                 <div className="background-cta">
                                     <div className="row">
-                                        {/* cta-left */}
+                                        {}
                                         <div className="col-lg-6">
                                             <div className="cta-left-wrapepr">
                                                 <p className="cta-disc">Latest Business Ideas</p>
                                                 <h3 className="title">Sign Up Newsletter</h3>
                                             </div>
                                         </div>
-                                        {/* cta left end */}
+                                        {}
                                         <div className="col-lg-6">
-                                            {/* cta right */}
+                                            {}
                                             <form className="cta-input-arae">
                                                 <input
                                                     type="email"
@@ -34,15 +34,15 @@ function FooterFive() {
                                                     Subscribe Now
                                                 </button>
                                             </form>
-                                            {/* cta right End */}
+                                            {}
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    {/* footer call to action area End */}
-                    {/* rts footer area */}
+                    {}
+                    {}
                     <div className="row pt--120 pt_sm--80 pb--80 pb_sm--40">
                         <div className="col-xl-4 col-md-6 col-sm-12 col-12">
                             <div className="footer-one-single-wized">
@@ -56,50 +56,50 @@ function FooterFive() {
                                 <div className="quick-link-inner">
                                     <ul className="links">
                                         <li>
-                                            <Link href={'#'}>
+                                            <Link href={'/contact'}>
                                                 <i className="far fa-arrow-right" /> Forum Support
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href={'#'}>
+                                            <Link href={'/contact'}>
                                                 <i className="far fa-arrow-right" /> Help &amp; FAQ
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href={'#'}>
+                                            <Link href={'/contact'}>
                                                 <i className="far fa-arrow-right" /> Contact Us
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href={'#'}>
+                                            <Link href={'/contact'}>
                                                 <i className="far fa-arrow-right" /> Pricing &amp; Plans
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href={'#'}>
+                                            <Link href={'/contact'}>
                                                 <i className="far fa-arrow-right" /> Cookie Policy
                                             </Link>
                                         </li>
                                     </ul>
                                     <ul className="links margin-left-70">
                                         <li>
-                                            <Link href={'#'}>
+                                            <Link href={'/contact'}>
                                                 <i className="far fa-arrow-right" /> About Us
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href={'#'}>
+                                            <Link href={'/contact'}>
                                                 <i className="far fa-arrow-right" /> My Account
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href={'#'}>
+                                            <Link href={'/contact'}>
                                                 <i className="far fa-arrow-right" />
                                                 Our Company
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href={'#'}>
+                                            <Link href={'/contact'}>
                                                 <i className="far fa-arrow-right" />
                                                 Service
                                             </Link>
@@ -108,7 +108,7 @@ function FooterFive() {
                                 </div>
                             </div>
                         </div>
-                        {/* footer mid area */}
+                        {}
                         <div className="col-xl-4 col-md-6 col-sm-12 col-12">
                             <div className="footer-one-single-wized mid-bg">
                                 <div className="wized-title">
@@ -137,8 +137,8 @@ function FooterFive() {
                                 </div>
                             </div>
                         </div>
-                        {/* footer mid area end */}
-                        {/* footer end area post */}
+                        {}
+                        {}
                         <div className="col-xl-4 col-md-6 col-sm-12 col-12">
                             <div className="footer-one-single-wized margin-left-65">
                                 <div className="wized-title">
@@ -149,7 +149,7 @@ function FooterFive() {
                                     />
                                 </div>
                                 <div className="post-wrapper">
-                                    {/* single post */}
+                                    {}
                                     <div className="single-footer-post mb--30">
                                         <div className="left-thumbnail">
                                             <img
@@ -173,8 +173,8 @@ function FooterFive() {
                                             </Link>
                                         </div>
                                     </div>
-                                    {/* single post End */}
-                                    {/* single post */}
+                                    {}
+                                    {}
                                     <div className="single-footer-post">
                                         <div className="left-thumbnail">
                                             <img
@@ -198,15 +198,15 @@ function FooterFive() {
                                             </Link>
                                         </div>
                                     </div>
-                                    {/* single post End */}
+                                    {}
                                 </div>
                             </div>
                         </div>
-                        {/* footer end area post end*/}
+                        {}
                     </div>
-                    {/* rts footer area End */}
+                    {}
                 </div>
-                {/* copyright area start */}
+                {}
                 <div className="rts-copyright-area">
                     <div className="container">
                         <div className="row">
@@ -218,11 +218,10 @@ function FooterFive() {
                         </div>
                     </div>
                 </div>
-                {/* copyright area end */}
+                {}
             </div>
-            {/* rts footer area end */}
+            {}
         </div>
     )
 }
-
 export default FooterFive

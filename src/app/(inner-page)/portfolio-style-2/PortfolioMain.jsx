@@ -9,7 +9,6 @@ const BlogGridMain = (props) => {
                     <div className="cases-wrapper2">
                         <div className="item-image">
                             <img src={`assets/images/product/${blogImage}`} alt="Image" />
-
                         </div>
                         <div className="item-content">
                             <h6>{blogCategory ? blogCategory : "1"}</h6>
@@ -29,8 +28,6 @@ const BlogGridMain = (props) => {
                     </div>
                 </div>
         </>
-
     )
 }
-
 export default BlogGridMain

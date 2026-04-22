@@ -4,7 +4,7 @@ import Link from 'next/link';
 function FooterThree() {
     return (
         <div>
-            {/* rts footer three area start */}
+            {}
             <div className="rts-footer-area footer-three rts-section-gapTop footer-bg-2">
                 <div className="container pb--100 pb_sm--40">
                     <div className="row g-5">
@@ -46,10 +46,10 @@ function FooterThree() {
                                 </ul>
                             </div>
                         </div>
-                        {/* footer three mid area */}
+                        {}
                         <div className="col-xl-6 col-lg-6">
                             <div className="row">
-                                {/* footer mid area left */}
+                                {}
                                 <div className="col-lg-6">
                                     <div className="footer-three-single-wized mid-left">
                                         <h5 className="title">Office Information</h5>
@@ -95,8 +95,8 @@ function FooterThree() {
                                         </div>
                                     </div>
                                 </div>
-                                {/* footer mid area left end */}
-                                {/* footer mid area right */}
+                                {}
+                                {}
                                 <div className="col-lg-6">
                                     <div className="footer-three-single-wized mid-right">
                                         <h5 className="title">Get Updates</h5>
@@ -125,10 +125,10 @@ function FooterThree() {
                                         </div>
                                     </div>
                                 </div>
-                                {/* footer mid area right end */}
+                                {}
                             </div>
                         </div>
-                        {/* footer three mid area ENd */}
+                        {}
                         <div className="col-xl-3 col-lg-6">
                             <div className="footer-three-single-wized right">
                                 <h5 className="title">Instagram Posts</h5>
@@ -188,9 +188,8 @@ function FooterThree() {
                     </div>
                 </div>
             </div>
-            {/* rts footer three area end */}
+            {}
         </div>
     )
 }
-
 export default FooterThree

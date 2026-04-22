@@ -1,11 +1,10 @@
 "use client"
 import React from 'react'
 import Link from 'next/link';
-
 function ServiceSeven() {
     return (
         <div>
-            {/* Working Process section start */}
+            {}
             <div className="rts-working-process-section eight rts-section-gap" id='service'>
                 <div className="container">
                     <div className="row">
@@ -97,9 +96,8 @@ function ServiceSeven() {
                     </div>
                 </div>
             </div>
-            {/* Working Process section end */}
+            {}
         </div>
     )
 }
-
 export default ServiceSeven

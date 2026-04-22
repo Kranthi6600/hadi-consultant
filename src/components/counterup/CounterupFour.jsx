@@ -1,10 +1,9 @@
 import React from 'react'
-
 function CounterupFour() {
     return (
         <div>
             <>
-                {/* rts cta area start */}
+                {}
                 <div className="rts-callto-acation-area rts-callto-acation-area4 bg-call-to-action-two">
                     <div className="container">
                         <div className="row">
@@ -16,7 +15,7 @@ function CounterupFour() {
                                             make your insurance better
                                         </h3>
                                     </div>
-                                    <a className="rts-btn btn-primary-5 six" href="contactus.html">
+                                    <a className="rts-btn btn-primary-5 six" href="/contact">
                                         Lets Work Together
                                     </a>
                                 </div>
@@ -24,11 +23,9 @@ function CounterupFour() {
                         </div>
                     </div>
                 </div>
-                {/* rts cta area start end */}
+                {}
             </>
-
         </div>
     )
 }
-
 export default CounterupFour

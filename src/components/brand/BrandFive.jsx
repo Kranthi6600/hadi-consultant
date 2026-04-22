@@ -1,9 +1,8 @@
 import React from 'react'
-
 function BrandFive() {
     return (
         <div>
-            {/* start trusted client section */}
+            {}
             <div className="rts-trusted-client rts-trusted-client2 rts-section-gapBottom">
                 <div className="container">
                     <div className="row">
@@ -37,10 +36,8 @@ function BrandFive() {
                     </div>
                 </div>
             </div>
-            {/* end trusted client section */}
-
+            {}
         </div>
     )
 }
-
 export default BrandFive

@@ -1,10 +1,9 @@
 "use client"
 import React from 'react'
-
 function Feature() {
     return (
         <div>
-            {/* rts features area start */}
+            {}
             <div className="rts-feature-area rts-section-gap">
                 <div className="container-fluid padding-controler plr--120">
                     <div className="row bg-white-feature  pt--120 pb--120">
@@ -15,43 +14,39 @@ function Feature() {
                         </div>
                         <div className="col-xl-6 col-lg-12">
                             <div className="rts-title-area feature text-start pl--30 pl_sm--0">
-                                <p className="pre-title">Boost Your Business Today</p>
+                                <p className="pre-title">Why Choose Hadi Consultant</p>
                                 <h2 className="title feature-title">
-                                    Most Reliable Efficient <br />
-                                    Consulting Agency
+                                    Expert Tax & Financial <br />
+                                    Consulting Services
                                 </h2>
                                 <p>
-                                    Porttitor ornare fermentum aliquam pharetra ut facilisis gravida
-                                    risus suscipit feugiat fusce conubia ridiculus tristique solving
-                                    parturient natoque vulputate risu hasellus quam tincidunt posuere
-                                    aliquam accumsan
+                                    With over 15 years of experience in Canadian tax law and financial consulting, Hadi Consultant provides comprehensive solutions for personal and business tax planning, compliance, and strategic advisory services. Our expert team ensures maximum tax benefits and regulatory compliance.
                                 </p>
                             </div>
                             <div className="feature-one-wrapper pl--30 mt--40 pl_sm--0">
-                                <div className="single-feature-one">
+                                <div className="single-feature-one" style={{ cursor: 'default', marginBottom: '15px' }}>
                                     <i className="fal fa-check" />
-                                    <p>Fast Growing Sells</p>
+                                    <p>Tax Optimization Expertise</p>
                                 </div>
-                                <div className="single-feature-one">
+                                <div className="single-feature-one" style={{ cursor: 'default', marginBottom: '15px' }}>
                                     <i className="fal fa-check" />
-                                    <p>24/7 Quality Services</p>
+                                    <p>Personalized Tax Planning</p>
                                 </div>
-                                <div className="single-feature-one">
+                                <div className="single-feature-one" style={{ cursor: 'default', marginBottom: '15px' }}>
                                     <i className="fal fa-check" />
-                                    <p>Expert Members</p>
+                                    <p>Certified Tax Professionals</p>
                                 </div>
-                                <div className="single-feature-one">
+                                <div className="single-feature-one" style={{ cursor: 'default', marginBottom: '15px' }}>
                                     <i className="fal fa-check" />
-                                    <p>Best Quality Services</p>
+                                    <p>Business Growth Solutions</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* rts features area end */}
+            {}
         </div>
     )
 }
-
 export default Feature

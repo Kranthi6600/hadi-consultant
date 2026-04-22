@@ -8,13 +8,10 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import  Link  from 'next/link';
-
-
-
 function TestimonialSix() {
     return (
         <div>
-            {/* client rationg area start */}
+            {}
             <div className="rts-client-rating rts-section-gapBottom">
                 <div className="container">
                     <div className="row">
@@ -33,7 +30,6 @@ function TestimonialSix() {
                                         nextEl: '.swiper-button-next',
                                         prevEl: '.swiper-button-prev',
                                     }}
-
                                 >
                                     <SwiperSlide>
                                         <div className="single-testimonials-styele-clients-7 text-center">
@@ -145,7 +141,6 @@ function TestimonialSix() {
                                             </div>
                                         </div>
                                     </SwiperSlide>
-
                                 </Swiper>
                             </div>
                             <div className="swiper-button-next" />
@@ -154,9 +149,8 @@ function TestimonialSix() {
                     </div>
                 </div>
             </div>
-            {/* client rationg area end */}
+            {}
         </div>
     )
 }
-
 export default TestimonialSix

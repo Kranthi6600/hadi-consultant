@@ -6,11 +6,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 function HeaderOne() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
     };
-
     const [isSticky, setIsSticky] = useState(false);
     useEffect(() => {
         const handleScroll = () => {
@@ -20,33 +18,25 @@ function HeaderOne() {
                 setIsSticky(false);
             }
         };
-
         window.addEventListener('scroll', handleScroll);
-
         // Clean up the event listener on component unmount
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-
-
     const [isSearchVisible, setSearchVisible] = useState(false);
-
     const handleSearchClick = () => {
         setSearchVisible(true);
     };
-
     const handleCloseClick = () => {
         setSearchVisible(false);
     };
-
     const handleBackgroundClick = () => {
         setSearchVisible(false);
     };
     return (
-
         <div>
-            {/* start header area */}
+            {}
             <header className={`header--sticky header-one  ${isSticky ? 'sticky' : ''}`}>
                 <div className="header-main-one bg-white">
                     <div className="container">
@@ -68,7 +58,7 @@ function HeaderOne() {
                                             <i className="far fa-search" />
                                         </button>
                                         <Link
-                                            href={'#'}
+                                            href={'/contact'}
                                             className="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn"
                                         >
                                             Get Quote
@@ -95,8 +85,7 @@ function HeaderOne() {
                     </div>
                 </div>
             </header>
-
-            {/* End header area */}
+            {}
             <div className={`search-input-area ${isSearchVisible ? 'show' : ''}`}>
                 <div className="container">
                     <div className="search-input-inner">
@@ -117,14 +106,9 @@ function HeaderOne() {
                     <i className="far fa-times" />
                 </div>
             </div>
-
             <div id="anywhere-home" className={isSearchVisible ? 'bgshow' : ''} onClick={handleBackgroundClick}></div>
-
-
-
             <SideMenu isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
         </div>
     )
 }
-
 export default HeaderOne

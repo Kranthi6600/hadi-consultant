@@ -4,7 +4,7 @@ import  Link  from 'next/link';
 function BusinessGoalFour() {
     return (
         <div>
-            {/* rts service area start */}
+            {}
             <div className="rts-service-area home-seven rts-section-gap" id='service'>
                 <div className="shape-business-service">
                     <img src="assets/images/service/icon/shape-1.png" alt="shape" />
@@ -77,9 +77,8 @@ function BusinessGoalFour() {
                     </div>
                 </div>
             </div>
-            {/* rts service area end */}
+            {}
         </div>
     )
 }
-
 export default BusinessGoalFour

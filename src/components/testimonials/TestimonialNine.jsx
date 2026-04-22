@@ -4,8 +4,7 @@ import Link from 'next/link';
 function TestimonialNine() {
     return (
         <div>
-
-            {/* rts testimonials area start */}
+            {}
             <div className="rts-testimonials-area-start bg-dream rts-section-gap">
                 <div className="container">
                     <div className="row">
@@ -84,10 +83,8 @@ function TestimonialNine() {
                     </div>
                 </div>
             </div>
-            {/* rts testimonials area end */}
-
+            {}
         </div>
     )
 }
-
 export default TestimonialNine

@@ -1,9 +1,8 @@
 import React from 'react'
-
 function TeamSix() {
     return (
         <div>
-            {/* rts team area ten start */}
+            {}
             <div className="rts-testimonials-area-ten rts-section-gapBottom">
                 <div className="container">
                     <div className="row">
@@ -18,7 +17,7 @@ function TeamSix() {
                     </div>
                     <div className="row g-5 mt--30">
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                            {/* single team area start */}
+                            {}
                             <div className="team-style-ten bg_image">
                                 <div className="thumbnail-image-team">
                                     <a href="#" className="thumbnail">
@@ -49,10 +48,10 @@ function TeamSix() {
                                     <span>Finance Manager</span>
                                 </div>
                             </div>
-                            {/* single team area end */}
+                            {}
                         </div>
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                            {/* single team area start */}
+                            {}
                             <div className="team-style-ten bg_image">
                                 <div className="thumbnail-image-team">
                                     <a href="#" className="thumbnail">
@@ -83,10 +82,10 @@ function TeamSix() {
                                     <span>Finance Manager</span>
                                 </div>
                             </div>
-                            {/* single team area end */}
+                            {}
                         </div>
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                            {/* single team area start */}
+                            {}
                             <div className="team-style-ten bg_image">
                                 <div className="thumbnail-image-team">
                                     <a href="#" className="thumbnail">
@@ -117,10 +116,10 @@ function TeamSix() {
                                     <span>Finance Manager</span>
                                 </div>
                             </div>
-                            {/* single team area end */}
+                            {}
                         </div>
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                            {/* single team area start */}
+                            {}
                             <div className="team-style-ten bg_image">
                                 <div className="thumbnail-image-team">
                                     <a href="#" className="thumbnail">
@@ -151,14 +150,13 @@ function TeamSix() {
                                     <span>Finance Manager</span>
                                 </div>
                             </div>
-                            {/* single team area end */}
+                            {}
                         </div>
                     </div>
                 </div>
             </div>
-            {/* rts team area ten end */}
+            {}
         </div>
     )
 }
-
 export default TeamSix

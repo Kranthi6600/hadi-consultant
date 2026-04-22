@@ -1,67 +1,60 @@
 "use client"
 import React, { useEffect } from 'react';
 // import WOW from 'wow.js';
-
-
 function AboutOne() {
-
     return (
         <div>
-
-            {/* rts about us section start */}
+            {}
             <div className="rts-about-area rts-section-gap bg-about-sm-shape" id="about">
                 <div className="container">
                     <div className="row g-5 align-items-center">
-                        {/* about left */}
+                        {}
                         <div className="col-lg-6 col-md-12 col-sm-12 col-12 order-lg-1 order-md-2 order-sm-2 order-2 mt_md--50 mt_sm--50">
                             <div className="rts-title-area">
-                                <p className="pre-title">More About Us</p>
-                                <h2 className="title">We Provide Best Business Solution in Town</h2>
+                                <p className="pre-title">About Hadi Consultant</p>
+                                <h2 className="title">We Are Experienced Business Solution</h2>
                             </div>
                             <div className="about-inner">
                                 <p className="disc">
-                                    Porttitor ornare fermentum aliquam pharetra ut facilisis gravida
-                                    risus suscipit. dui feugiat fusce conubia ridiculus tristique
-                                    parturient natoque vulputate risu business solution ceter 24/7
-                                    great support
+                                    Neque partrient nascetur facilisis suscipit ridiculus agna lobortis imperdiet vivamus est aliquam euismod nector quam convallis ornare justo service lifereu visionary sources unleash online businesss solutions
                                 </p>
-                                {/* start about success area */}
+                                {}
                                 <div className="row about-success-wrapper">
-                                    {/* left wrapper start */}
+                                    {}
                                     <div className="col-lg-6 col-md-6">
                                         <div className="single">
                                             <i className="far fa-check" />
-                                            <p className="details">24/7 Call Services Avilable</p>
+                                            <p className="details">What should i included my personal details?</p>
                                         </div>
                                         <div className="single">
                                             <i className="far fa-check" />
-                                            <p className="details">Great Skilled Consultant</p>
+                                            <p className="details">Where i can find my business growth result?</p>
                                         </div>
                                         <div className="single">
                                             <i className="far fa-check" />
-                                            <p className="details">Expert Team Members</p>
+                                            <p className="details">Did you get any business consultant?</p>
                                         </div>
                                     </div>
-                                    {/* left wrapper end */}
+                                    {}
                                     <div className="col-lg-6 col-md-6">
                                         <div className="single">
                                             <i className="far fa-check" />
-                                            <p className="details">How to improve business</p>
+                                            <p className="details">Corporate Tax Services</p>
                                         </div>
                                         <div className="single">
                                             <i className="far fa-check" />
-                                            <p className="details">Business is the best plan</p>
+                                            <p className="details">T4 Filing Services</p>
                                         </div>
                                         <div className="single">
                                             <i className="far fa-check" />
-                                            <p className="details">Services we provide</p>
+                                            <p className="details">Accurate Record Keeping</p>
                                         </div>
                                     </div>
                                 </div>
-                                {/* start about success area */}
-                                {/* about founder & get in touch start */}
+                                {}
+                                {}
                                 <div className="row about-founder-wrapper align-items-center mt--40">
-                                    {/* left area start */}
+                                    {}
                                     <div className="col-lg-6 col-md-6 col-sm-6 col-12">
                                         <div className="author-inner">
                                             <a className="thumbnail" href="#">
@@ -72,14 +65,14 @@ function AboutOne() {
                                             </a>
                                             <div className="founder-details">
                                                 <a href="team-details.html">
-                                                    <h6 className="title">Adrew David</h6>
+                                                    <h6 className="title">Faisal</h6>
                                                 </a>
-                                                <span>CEO &amp; Founder</span>
+                                                <span>Certified Public Accountant &amp; Founder</span>
                                             </div>
                                         </div>
                                     </div>
-                                    {/* left area end */}
-                                    {/* right founder area */}
+                                    {}
+                                    {}
                                     <div className="col-lg-6 col-md-6 col-sm-6 col-12 mt_sm--20">
                                         <div className="author-call-option">
                                             <img
@@ -89,19 +82,19 @@ function AboutOne() {
                                             />
                                             <div className="call-details">
                                                 <span>Call us anytime</span>
-                                                <a href="tel:+18475555555">
-                                                    <h6 className="title">+256 21458.2146</h6>
+                                                <a href="tel:+16471234567">
+                                                    <h6 className="title">+1 (647) 123-4567</h6>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
-                                    {/* left founder area */}
+                                    {}
                                 </div>
-                                {/* about founder & get in touch end */}
+                                {}
                             </div>
                         </div>
-                        {/* about right */}
-                        {/* about-right Start*/}
+                        {}
+                        {}
                         <div className="col-lg-6 col-md-12 col-sm-12 col-12 order-lg-2 order-md-1 order-sm-1 order-1">
                             <div className="about-one-thumbnail">
                                 <img
@@ -115,23 +108,21 @@ function AboutOne() {
                                 />
                                 <div className="experience">
                                     <div className="left single">
-                                        <h2 className="title">25+</h2>
+                                        <h2 className="title">15+</h2>
                                         <p className="time">Years</p>
                                     </div>
                                     <div className="right single">
-                                        <p className="disc">Of experience in consulting service</p>
+                                        <p className="disc">Of experience in tax and financial consulting</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        {/* about-right end */}
+                        {}
                     </div>
                 </div>
             </div>
-            {/* rts about us section end */}
-
+            {}
         </div >
     )
 }
-
 export default AboutOne

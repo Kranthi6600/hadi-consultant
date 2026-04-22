@@ -5,13 +5,10 @@ import HeaderOne from "@/components/header/HeaderOne";
 import BackToTop from "@/components/BackToTop";
 import FooterOne from "@/components/footer/FooterOne";
 export default function Home() {
-
     return (
-
         <div className="">
             <HeaderOne />
-
-            {/* rts- 404 area start */}
+            {}
             <div className="rts-404-area rts-section-gap">
                 <div className="container">
                     <div className="row">
@@ -33,12 +30,9 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            {/* rts- 404 area end */}
-           
-
-            <FooterOne />
+            {}
+<FooterOne />
             <BackToTop />
         </div>
-
     );
 }

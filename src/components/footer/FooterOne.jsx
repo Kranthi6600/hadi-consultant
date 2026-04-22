@@ -4,26 +4,25 @@ import Link from 'next/link';
 function FooterOne() {
     return (
         <div>
-
-            {/* rts footer area start */}
+            {}
             <div className="rts-footer-area footer-one rts-section-gapTop bg-footer-one" id='f-contact'>
                 <div className="container bg-shape-f1">
-                    {/* footer call to action area */}
+                    {}
                     <div className="row">
                         <div className="col-12">
                             <div className="rts-cta-wrapper">
                                 <div className="background-cta">
                                     <div className="row">
-                                        {/* cta-left */}
+                                        {}
                                         <div className="col-lg-6">
                                             <div className="cta-left-wrapepr">
-                                                <p className="cta-disc">Latest Business Ideas</p>
-                                                <h3 className="title">Sign Up Newsletter</h3>
+                                                <p className="cta-disc">Practical Tax and Finance Advice</p>
+                                                <h3 className="title">Get Expert Tax Updates</h3>
                                             </div>
                                         </div>
-                                        {/* cta left end */}
+                                        {}
                                         <div className="col-lg-6">
-                                            {/* cta right */}
+                                            {}
                                             <form className="cta-input-arae">
                                                 <input
                                                     type="email"
@@ -35,15 +34,15 @@ function FooterOne() {
                                                     Subscribe Now
                                                 </button>
                                             </form>
-                                            {/* cta right End */}
+                                            {}
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    {/* footer call to action area End */}
-                    {/* rts footer area */}
+                    {}
+                    {}
                     <div className="row pt--120 pt_sm--80 pb--80 pb_sm--40">
                         <div className="col-xl-4 col-md-6 col-sm-12 col-12">
                             <div className="footer-one-single-wized">
@@ -57,63 +56,34 @@ function FooterOne() {
                                 <div className="quick-link-inner">
                                     <ul className="links">
                                         <li>
-                                            <Link href={'#'}>
-                                                <i className="far fa-arrow-right" /> Forum Support
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href={'#'}>
-                                                <i className="far fa-arrow-right" /> Help &amp; FAQ
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href={'#'}>
-                                                <i className="far fa-arrow-right" /> Contact Us
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href={'#'}>
-                                                <i className="far fa-arrow-right" /> Pricing &amp; Plans
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href={'#'}>
-                                                <i className="far fa-arrow-right" /> Cookie Policy
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                    <ul className="links margin-left-70">
-                                        <li>
-                                            <Link href={'#'}>
+                                            <Link href={'/about-us'}>
                                                 <i className="far fa-arrow-right" /> About Us
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href={'#'}>
-                                                <i className="far fa-arrow-right" /> My Account
+                                            <Link href={'/our-service'}>
+                                                <i className="far fa-arrow-right" /> Our Services
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href={'#'}>
-                                                <i className="far fa-arrow-right" />
-                                                Our Company
+                                            <Link href={'/contact'}>
+                                                <i className="far fa-arrow-right" /> Contact Us
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href={'#'}>
-                                                <i className="far fa-arrow-right" />
-                                                Service
+                                            <Link href={'/blogs'}>
+                                                <i className="far fa-arrow-right" /> Blogs
                                             </Link>
                                         </li>
                                     </ul>
-                                </div>
+</div>
                             </div>
                         </div>
-                        {/* footer mid area */}
+                        {}
                         <div className="col-xl-4 col-md-6 col-sm-12 col-12">
                             <div className="footer-one-single-wized mid-bg">
                                 <div className="wized-title">
-                                    <h5 className="title">Opening Hours</h5>
+                                    <h5 className="title">Business Hours</h5>
                                     <img
                                         src="/assets/images/footer/under-title.png"
                                         alt="hadi_consultant_footer"
@@ -121,110 +91,86 @@ function FooterOne() {
                                 </div>
                                 <div className="opening-time-inner">
                                     <div className="single-opening">
-                                        <p className="day">Week Days</p>
-                                        <p className="time">09.00 - 24:00</p>
+                                        <p className="day">Monday - Friday</p>
+                                        <p className="time">9:00 AM - 6:00 PM</p>
                                     </div>
                                     <div className="single-opening">
                                         <p className="day">Saturday</p>
-                                        <p className="time">08:00 - 03.00</p>
+                                        <p className="time">10:00 AM - 4:00 PM</p>
                                     </div>
                                     <div className="single-opening mb--30 mb_sm--10">
                                         <p className="day">Sunday</p>
-                                        <p className="time">Day Off</p>
+                                        <p className="time">By Appointment</p>
                                     </div>
-                                    <Link href={'/contactus'} className="rts-btn btn-primary contact-us">
-                                        Contact Us
+                                    <Link href={'/contact'} className="rts-btn btn-primary contact-us">
+                                        Get A Free Quote
                                     </Link>
                                 </div>
                             </div>
                         </div>
-                        {/* footer mid area end */}
-                        {/* footer end area post */}
+                        {}
+                        {}
                         <div className="col-xl-4 col-md-6 col-sm-12 col-12">
                             <div className="footer-one-single-wized margin-left-65">
                                 <div className="wized-title">
-                                    <h5 className="title">Popular Updates</h5>
+                                    <h5 className="title">Contact Information</h5>
                                     <img
                                         src="/assets/images/footer/under-title.png"
                                         alt="hadi_consultant_footer"
                                     />
                                 </div>
-                                <div className="post-wrapper">
-                                    {/* single post */}
-                                    <div className="single-footer-post mb--30">
-                                        <div className="left-thumbnail">
-                                            <img
-                                                src="/assets/images/footer/post/01.png"
-                                                alt="hadi_consultant_business-post"
-                                            />
-                                        </div>
-                                        <div className="post-right">
-                                            <p>
-                                                {" "}
-                                                <i className="fal fa-clock" /> 15th April, 2024
-                                            </p>
-                                            <Link href={'/blog-details-default'}>
-                                                <h6 className="title">
-                                                    Best Business Ideas For Getting Solution
-                                                </h6>
-                                            </Link>
-                                            <Link className="red-more" href={'/blog-details-default'}>
-                                                Read More
-                                                <i className="far fa-arrow-right" />
-                                            </Link>
-                                        </div>
-                                    </div>
-                                    {/* single post End */}
-                                    {/* single post */}
-                                    <div className="single-footer-post">
-                                        <div className="left-thumbnail">
-                                            <img
-                                                src="/assets/images/footer/post/02.png"
-                                                alt="hadi_consultant_business-post"
-                                            />
-                                        </div>
-                                        <div className="post-right">
-                                            <p>
-                                                {" "}
-                                                <i className="fal fa-clock" /> 15th April, 2022
-                                            </p>
-                                            <Link href={'/blog-details-default'}>
-                                                <h6 className="title">
-                                                    Best Business Ideas For Getting Solution
-                                                </h6>
-                                            </Link>
-                                            <Link className="red-more" href={'/blog-details-default'}>
-                                                Read More
-                                                <i className="far fa-arrow-right" />
-                                            </Link>
+                                <div className="contact-info-wrapper">
+                                    <div className="row">
+                                        <div className="col-12">
+                                            <div className="single-contact-info mb--20">
+                                                <div className="contact-icon">
+                                                    <i className="far fa-phone"></i>
+                                                </div>
+                                                <div className="contact-details">
+                                                    <p className="contact-value">(416) 998-7909</p>
+                                                </div>
+                                            </div>
+                                            <div className="single-contact-info mb--20">
+                                                <div className="contact-icon">
+                                                    <i className="far fa-envelope"></i>
+                                                </div>
+                                                <div className="contact-details">
+                                                    <p className="contact-value">fmcacpa@gmail.com</p>
+                                                </div>
+                                            </div>
+                                            <div className="single-contact-info">
+                                                <div className="contact-icon">
+                                                    <i className="far fa-map-marker-alt"></i>
+                                                </div>
+                                                <div className="contact-details">
+                                                    <p className="contact-value">1290 Eglinton Ave E #8, Mississauga, ON L4W 1K8</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    {/* single post End */}
                                 </div>
                             </div>
                         </div>
-                        {/* footer end area post end*/}
+                        {}
                     </div>
-                    {/* rts footer area End */}
+                    {}
                 </div>
-                {/* copyright area start */}
+                {}
                 <div className="rts-copyright-area">
                     <div className="container">
                         <div className="row">
                             <div className="col-12">
                                 <div className="text-center">
-                                    <p>HADI CONSULTANT - Copyright 2022. All rights reserved.</p>
+                                    <p>HADI CONSULTANT - Copyright 2024. All rights reserved. | Practical Tax and Finance Advice You Can Count On</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                {/* copyright area end */}
+                {}
             </div>
-            {/* rts footer area end */}
-
+            {}
         </div>
     )
 }
-
 export default FooterOne

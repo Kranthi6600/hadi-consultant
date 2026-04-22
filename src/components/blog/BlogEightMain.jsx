@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import Link from 'next/link';
-
 const BlogGridMain = (props) => {
     const { blogID, blogImage, blogTitle, blogPublishedDate } = props;
     return (
@@ -20,8 +19,6 @@ const BlogGridMain = (props) => {
                 </div>
             </div>
         </>
-
     )
 }
-
 export default BlogGridMain

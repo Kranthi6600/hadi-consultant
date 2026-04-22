@@ -1,31 +1,27 @@
 "use client"
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css'; // Core Swiper styles
+import 'swiper/swiper-bundle.css';
 import { Navigation, Scrollbar, A11y, EffectFade, Autoplay } from 'swiper/modules';
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import Link from 'next/link';
-
 function TeamOne() {
     return (
         <div>
-            {/* start team section */}
             <div className="rts-team-area rts-section-gap bg-team">
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
                             <div className="rts-title-area team text-center">
-                                <p className="pre-title">Professionals Team</p>
-                                <h2 className="title">Professionals Team</h2>
+                                <p className="pre-title">Meet Our Team</p>
+                                <h2 className="title">Expert Consultants</h2>
                             </div>
                         </div>
                     </div>
                     <div className="row g-5 mt--0">
                         <Swiper
-                            // install Swiper modules
                             modules={[Navigation, Scrollbar, A11y, Autoplay]}
                             className="mySwiperh1_team"
                             speed={1500}
@@ -68,9 +64,9 @@ function TeamOne() {
                                     </div>
                                     <div className="single-details">
                                         <Link href={'/team-details'}>
-                                            <h5 className="title">Archer Graham</h5>
+                                            <h5 className="title">Sarah Johnson</h5>
                                         </Link>
-                                        <p>Founder</p>
+                                        <p>Senior Consultant</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -96,9 +92,9 @@ function TeamOne() {
                                     </div>
                                     <div className="single-details">
                                         <Link href={'/team-details'}>
-                                            <h5 className="title">Amelia Clover</h5>
+                                            <h5 className="title">Michael Chen</h5>
                                         </Link>
-                                        <p>Co-Founder</p>
+                                        <p>Business Strategist</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -124,9 +120,9 @@ function TeamOne() {
                                     </div>
                                     <div className="single-details">
                                         <Link href={'/team-details'}>
-                                            <h5 className="title">Beckett Hayden</h5>
+                                            <h5 className="title">Emily Rodriguez</h5>
                                         </Link>
-                                        <p>Deputy Manager</p>
+                                        <p>Marketing Expert</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -152,9 +148,9 @@ function TeamOne() {
                                     </div>
                                     <div className="single-details">
                                         <Link href={'/team-details'}>
-                                            <h5 className="title">Julian Wyat</h5>
+                                            <h5 className="title">David Thompson</h5>
                                         </Link>
-                                        <p>Finance Manager</p>
+                                        <p>Operations Manager</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -163,7 +159,7 @@ function TeamOne() {
                                     <div className="team-image-area">
                                         <Link href={'/team-details'}>
                                             <img
-                                                src="assets/images/team/tm/04.jpg"
+                                                src="assets/images/team/tm/18.webp"
                                                 alt="Business_Team_single"
                                             />
                                             <div className="team-social">
@@ -180,9 +176,9 @@ function TeamOne() {
                                     </div>
                                     <div className="single-details">
                                         <Link href={'/team-details'}>
-                                            <h5 className="title">Julian Wyat</h5>
+                                            <h5 className="title">Lisa Anderson</h5>
                                         </Link>
-                                        <p>Finance Manager</p>
+                                        <p>HR Director</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -190,9 +186,7 @@ function TeamOne() {
                     </div>
                 </div>
             </div>
-            {/* end team section */}
         </div>
     )
 }
-
 export default TeamOne

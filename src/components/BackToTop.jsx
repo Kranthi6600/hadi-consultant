@@ -1,33 +1,26 @@
 'use client';
-
 import React, { useEffect } from 'react';
-
 function BackToTop() {
     useEffect(() => {
         const progressPath = document.querySelector('.progress-wrap path');
         if (!progressPath) return;
-
         const pathLength = progressPath.getTotalLength();
         progressPath.style.transition = 'none';
         progressPath.style.strokeDasharray = `${pathLength} ${pathLength}`;
         progressPath.style.strokeDashoffset = pathLength;
         progressPath.getBoundingClientRect();
         progressPath.style.transition = 'stroke-dashoffset 10ms linear';
-
         const updateProgress = () => {
             const scroll = window.scrollY;
             const height = document.documentElement.scrollHeight - window.innerHeight;
             const progress = pathLength - (scroll * pathLength / height);
             progressPath.style.strokeDashoffset = progress;
         };
-
         const handleScroll = () => {
             updateProgress();
-
             const offset = 50;
             const backToTopButton = document.querySelector('.progress-wrap');
             const switcher = document.querySelector('.rts-switcher');
-
             if (backToTopButton && switcher) {
                 if (window.scrollY > offset) {
                     backToTopButton.classList.add('active-progress');
@@ -38,19 +31,15 @@ function BackToTop() {
                 }
             }
         };
-
         const scrollToTop = (event) => {
             event.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         };
-
         window.addEventListener('scroll', handleScroll);
-
         const backToTopButton = document.querySelector('.progress-wrap');
         if (backToTopButton) {
             backToTopButton.addEventListener('click', scrollToTop);
         }
-
         return () => {
             window.removeEventListener('scroll', handleScroll);
             if (backToTopButton) {
@@ -58,10 +47,9 @@ function BackToTop() {
             }
         };
     }, []);
-
     return (
         <>
-            {/* BACK TO TOP AREA START */}
+            {}
             <div className="progress-wrap">
                 <svg
                     className="progress-circle svg-content"
@@ -80,9 +68,8 @@ function BackToTop() {
                 </svg>
             </div>
             <div className="rts-switcher"></div>
-            {/* BACK TO TOP AREA END */}
+            {}
         </>
     );
 }
-
 export default BackToTop;

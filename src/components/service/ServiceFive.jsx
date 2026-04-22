@@ -4,7 +4,7 @@ import Link from 'next/link';
 function ServiceFive() {
     return (
         <div>
-            {/* rts-service area start */}
+            {}
             <div className="rts-service-area rts-service-area5" id='service'>
                 <div className="container">
                     <div className="row g-5 mt--20">
@@ -24,7 +24,6 @@ function ServiceFive() {
                                     </p>
                                 </div>
                                 <Link href={'/service-details'} className="rts-btn btn-primary-3">
-
                                     Read More
                                 </Link>
                             </div>
@@ -74,10 +73,8 @@ function ServiceFive() {
                     </div>
                 </div>
             </div>
-            {/* rts-service area end */}
-
+            {}
         </div>
     )
 }
-
 export default ServiceFive

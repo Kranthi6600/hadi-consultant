@@ -1,10 +1,9 @@
 "use client"
 import React from 'react'
-
 function BrandTwo() {
     return (
         <div>
-            {/* start client area */}
+            {}
             <div className="rts-client-area ptb--100 client-bg">
                 <div className="container">
                     <div className="row">
@@ -21,9 +20,8 @@ function BrandTwo() {
                     </div>
                 </div>
             </div>
-            {/* start client area End */}
+            {}
         </div>
     )
 }
-
 export default BrandTwo

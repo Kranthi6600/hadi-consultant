@@ -7,7 +7,6 @@ import FooterOne from "@/components/footer/FooterOne";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProjectMain from "./ProjectMain";
 import Project from "@/data/Project.json";
-
 export default function Home() {
     const breadcrumbs = [
         { label: 'Home', link: '/' },
@@ -15,13 +14,10 @@ export default function Home() {
     ];
     const [activeKey, setActiveKey] = useState('home');
     return (
-
         <div className="">
             <HeaderOne />
-
             <Breadcrumb title="Portfolio Style 4" breadcrumbs={breadcrumbs} />
-
-            {/*portfolio-area start*/}
+            {}
             <section className="portfolio-area style-4 pt--120 pb--120 pt_xs--60 pt_xs--60">
                 <div className="container">
                     <div className="row">
@@ -45,10 +41,9 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            {/*portfolio-area end*/}
+            {}
             <FooterOne />
             <BackToTop />
         </div>
-
     );
 }

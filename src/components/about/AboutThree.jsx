@@ -3,21 +3,17 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import ErrorBoundary from "@/components/ErrorBoundary";
 function AboutThree() {
-
     const [isVideoOpen, setIsVideoOpen] = useState(false);
-
     // Function to open the video overlay
     const openVideo = (e) => {
         e.preventDefault();
         setIsVideoOpen(true);
     };
-
     // Function to close the video overlay
     const closeVideo = (e) => {
         e.preventDefault();
         setIsVideoOpen(false);
     };
-
     // Effect to handle the escape key for closing the video overlay
     useEffect(() => {
         const handleKeyUp = (e) => {
@@ -25,10 +21,8 @@ function AboutThree() {
                 setIsVideoOpen(false);
             }
         };
-
         // Add event listener for keyup
         document.addEventListener('keyup', handleKeyUp);
-
         // Cleanup function to remove event listener on component unmount
         return () => {
             document.removeEventListener('keyup', handleKeyUp);
@@ -37,7 +31,7 @@ function AboutThree() {
     return (
         <ErrorBoundary>
         <div>
-            {/* start about area two */}
+            {}
             <div className="rts-about-area-two rts-section-gap about-two-bg" id="about">
                 <div className="container">
                     <div className="row g-5">
@@ -60,11 +54,11 @@ function AboutThree() {
                                     </span>
                                     {isVideoOpen && (
                                         <div id="video-overlay" className="video-overlay open">
-                                            {/* Close button for the video overlay */}
+                                            {}
                                             <a className="video-overlay-close" href="#" onClick={closeVideo}>
                                                 ×
                                             </a>
-                                            {/* Video iframe */}
+                                            {}
                                             <iframe
                                                 width="560"
                                                 height="315"
@@ -97,71 +91,71 @@ function AboutThree() {
                                         aliquet vivamus curabitur, sociis libero lacus cubilia leo porta
                                         penatibus varius arcu sagittis nec sapien velit
                                     </p>
-                                    {/* start */}
+                                    {}
                                     <div className="row">
-                                        {/* start */}
+                                        {}
                                         <div className="col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div className="solution-wrapper">
-                                                {/* single business solution */}
+                                                {}
                                                 <div className="single-business-solution">
                                                     <i className="far fa-check" />
                                                     <p>Leading Business Solution</p>
                                                 </div>
-                                                {/* single business solution */}
-                                                {/* single business solution */}
+                                                {}
+                                                {}
                                                 <div className="single-business-solution">
                                                     <i className="far fa-check" />
                                                     <p>Business is the best plan</p>
                                                 </div>
-                                                {/* single business solution */}
-                                                {/* single business solution */}
+                                                {}
+                                                {}
                                                 <div className="single-business-solution">
                                                     <i className="far fa-check" />
                                                     <p>Services we provide </p>
                                                 </div>
-                                                {/* single business solution */}
-                                                {/* single business solution */}
+                                                {}
+                                                {}
                                                 <div className="single-business-solution">
                                                     <i className="far fa-check" />
                                                     <p>How to improve business</p>
                                                 </div>
-                                                {/* single business solution */}
+                                                {}
                                             </div>
                                         </div>
-                                        {/* end */}
-                                        {/* start */}
+                                        {}
+                                        {}
                                         <div className="col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div className="solution-wrapper-right">
-                                                {/* single business solution */}
+                                                {}
                                                 <div className="single-business-solution">
                                                     <i className="far fa-check" />
                                                     <p>Leading Business Solution</p>
                                                 </div>
-                                                {/* single business solution */}
-                                                {/* single business solution */}
+                                                {}
+                                                {}
                                                 <div className="single-business-solution">
                                                     <i className="far fa-check" />
                                                     <p>Business is the best plan</p>
                                                 </div>
-                                                {/* single business solution */}
-                                                {/* single business solution */}
+                                                {}
+                                                {}
                                                 <div className="single-business-solution">
                                                     <i className="far fa-check" />
                                                     <p>Services we provide </p>
                                                 </div>
-                                                {/* single business solution */}
-                                                {/* single business solution */}
+                                                {}
+                                                {}
                                                 <div className="single-business-solution">
                                                     <i className="far fa-check" />
                                                     <p>How to improve business</p>
                                                 </div>
-                                                {/* single business solution */}
+                                                {}
                                             </div>
                                         </div>
-                                        {/* end */}
+                                        {}
                                     </div>
                                 </div>
-                                {/*usrer aresa start */}
+                                {}
                                 <div className="row">
                                     <div className="col-l2">
                                         <div className="rts-user-three-wrapper">
@@ -198,16 +192,15 @@ function AboutThree() {
                                         </div>
                                     </div>
                                 </div>
-                                {/*usrer aresa end */}
+                                {}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* end about area two */}
+            {}
         </div>
         </ErrorBoundary>
     )
 }
-
 export default AboutThree

@@ -6,15 +6,13 @@ import { Navigation, Scrollbar, A11y, EffectFade, Autoplay } from 'swiper/module
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
-
 import Link from 'next/link';
 import post from '../../data/Posts.json';
 import BlogEightMain from './BlogEightMain';
-
 function BlogEight() {
     return (
         <div>
-            {/* start blog area */}
+            {}
             <div className="rts-blog-area eight rts-section-gapTop" id='blog-section'>
                 <div className="container">
                     <div className="row">
@@ -24,7 +22,6 @@ function BlogEight() {
                         </div>
                     </div>
                     <div className=" mt--20">
-
                         <Swiper
                             // install Swiper modules
                             modules={[Navigation, EffectFade, Scrollbar, A11y, Autoplay]}
@@ -38,9 +35,7 @@ function BlogEight() {
                                 nextEl: '.swiper-button-next',
                                 prevEl: '.swiper-button-prev',
                             }}
-
                         >
-
                             {post.map((data, index) => {
                                 return (
                                     <SwiperSlide key={index}>
@@ -62,10 +57,8 @@ function BlogEight() {
                     </div>
                 </div>
             </div>
-            {/* start blog area End */}
-
+            {}
         </div>
     )
 }
-
 export default BlogEight

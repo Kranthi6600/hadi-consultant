@@ -7,14 +7,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import ErrorBoundary from "@/components/ErrorBoundary";
-
-
-
 function TestimonialFive() {
     return (
          <ErrorBoundary>
         <div>
-            {/* rts customer feedback area start */}
+            {}
             <div className="rts-customer-feedback-area-six rts-section-gap bg-feedback-seven">
                 <div className="container">
                     <div className="row">
@@ -27,7 +24,6 @@ function TestimonialFive() {
                     </div>
                     <div className="row mt--40">
                         <div className="swiper">
-
                             <Swiper
                                 // install Swiper modules
                                 modules={[Navigation, EffectFade, Scrollbar, A11y, Autoplay]}
@@ -47,7 +43,7 @@ function TestimonialFive() {
                                 }}
                             >
                                 <SwiperSlide>
-                                    {/* single client reviews */}
+                                    {}
                                     <div className="rts-client-reviews-h2 six">
                                         <div className="review-header">
                                             <a href="#" className="thumbnail">
@@ -86,10 +82,10 @@ function TestimonialFive() {
                                             </div>
                                         </div>
                                     </div>
-                                    {/* single client reviews End */}
+                                    {}
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    {/* single client reviews */}
+                                    {}
                                     <div className="rts-client-reviews-h2 six">
                                         <div className="review-header">
                                             <a href="#" className="thumbnail">
@@ -128,10 +124,10 @@ function TestimonialFive() {
                                             </div>
                                         </div>
                                     </div>
-                                    {/* single client reviews End */}
+                                    {}
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    {/* single client reviews */}
+                                    {}
                                     <div className="rts-client-reviews-h2 six">
                                         <div className="review-header">
                                             <a href="#" className="thumbnail">
@@ -170,10 +166,10 @@ function TestimonialFive() {
                                             </div>
                                         </div>
                                     </div>
-                                    {/* single client reviews End */}
+                                    {}
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    {/* single client reviews */}
+                                    {}
                                     <div className="rts-client-reviews-h2 six">
                                         <div className="review-header">
                                             <a href="#" className="thumbnail">
@@ -212,10 +208,10 @@ function TestimonialFive() {
                                             </div>
                                         </div>
                                     </div>
-                                    {/* single client reviews End */}
+                                    {}
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    {/* single client reviews */}
+                                    {}
                                     <div className="rts-client-reviews-h2 six">
                                         <div className="review-header">
                                             <a href="#" className="thumbnail">
@@ -254,10 +250,10 @@ function TestimonialFive() {
                                             </div>
                                         </div>
                                     </div>
-                                    {/* single client reviews End */}
+                                    {}
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    {/* single client reviews */}
+                                    {}
                                     <div className="rts-client-reviews-h2 six">
                                         <div className="review-header">
                                             <a href="#" className="thumbnail">
@@ -296,18 +292,16 @@ function TestimonialFive() {
                                             </div>
                                         </div>
                                     </div>
-                                    {/* single client reviews End */}
+                                    {}
                                 </SwiperSlide>
-
                             </Swiper>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* rts customer feedback area end */}
+            {}
         </div>
         </ErrorBoundary>
     )
 }
-
 export default TestimonialFive

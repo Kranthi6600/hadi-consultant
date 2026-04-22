@@ -6,54 +6,46 @@ import BackToTop from "@/components/BackToTop";
 import FooterOne from "@/components/footer/FooterOne";
 import Breadcrumb from "@/components/Breadcrumb";
 import post from "@/data/Posts.json";
-
-
 export default function Home() {
     const breadcrumbs = [
         { label: 'Home', link: '/' },
         { label: 'Blog Details' }
     ];
     return (
-
         <div className="">
             <HeaderOne />
-
             <Breadcrumb title="Blog Details" breadcrumbs={breadcrumbs} />
-
-
-
-
-            {/* rts blog mlist area */}
+            {}
             <div className="rts-blog-list-area rts-section-gap">
                 <div className="container">
                     <div className="row g-5">
-                        {/* rts blo post area */}
+                        {}
                         <div className="col-xl-8 col-md-12 col-sm-12 col-12">
-                            {/* single post */}
+                            {}
                             <div className="blog-single-post-listing details mb--0">
                                 <div className="thumbnail">
                                     <img src="assets/images/blog/blog-lg-1.jpg" alt="Business-Blog" />
                                 </div>
                                 <div className="blog-listing-content">
                                     <div className="user-info">
-                                        {/* single info */}
+                                        {}
                                         <div className="single">
                                             <i className="far fa-user-circle" />
                                             <span>by David Smith</span>
                                         </div>
-                                        {/* single infoe end */}
-                                        {/* single info */}
+                                        {}
+                                        {}
                                         <div className="single">
                                             <i className="far fa-clock" />
                                             <span>by David Smith</span>
                                         </div>
-                                        {/* single infoe end */}
-                                        {/* single info */}
+                                        {}
+                                        {}
                                         <div className="single">
                                             <i className="far fa-tags" />
                                             <span>by David Smith</span>
                                         </div>
-                                        {/* single infoe end */}
+                                        {}
                                     </div>
                                     <h3 className="title">Profitable business makes your profit</h3>
                                     <p className="disc para-1">
@@ -73,7 +65,7 @@ export default function Home() {
                                         platea iaculis posuere per mauris, eros porta blandit curabitur
                                         ullamcorper varius
                                     </p>
-                                    {/* quote area start */}
+                                    {}
                                     <div className="rts-quote-area text-center">
                                         <h5 className="title">
                                             “Placerat pretium tristique mattis tellus accuan metus
@@ -85,7 +77,7 @@ export default function Home() {
                                         </a>
                                         <span>Author</span>
                                     </div>
-                                    {/* quote area end */}
+                                    {}
                                     <p className="disc">
                                         Ultrices iaculis commodo parturient euismod pulvinar donec cum
                                         eget a, accumsan viverra cras praesent cubilia dignissim ad
@@ -136,36 +128,36 @@ export default function Home() {
                                         </div>
                                         <div className="col-lg-7">
                                             <div className="check-area-details">
-                                                {/* single check */}
+                                                {}
                                                 <div className="single-check">
                                                     <i className="far fa-check-circle" />
                                                     <span>How will activities traditional manufacturing</span>
                                                 </div>
-                                                {/* single check End */}
-                                                {/* single check */}
+                                                {}
+                                                {}
                                                 <div className="single-check">
                                                     <i className="far fa-check-circle" />
                                                     <span>All these digital and projects aim to enhance</span>
                                                 </div>
-                                                {/* single check End */}
-                                                {/* single check */}
+                                                {}
+                                                {}
                                                 <div className="single-check">
                                                     <i className="far fa-check-circle" />
                                                     <span>I monitor my software that takes screenshots</span>
                                                 </div>
-                                                {/* single check End */}
-                                                {/* single check */}
+                                                {}
+                                                {}
                                                 <div className="single-check">
                                                     <i className="far fa-check-circle" />
                                                     <span>Laoreet dolore niacin sodium glutimate</span>
                                                 </div>
-                                                {/* single check End */}
-                                                {/* single check */}
+                                                {}
+                                                {}
                                                 <div className="single-check">
                                                     <i className="far fa-check-circle" />
                                                     <span>Minim veniam sodium glutimate nostrud</span>
                                                 </div>
-                                                {/* single check End */}
+                                                {}
                                             </div>
                                         </div>
                                     </div>
@@ -179,14 +171,14 @@ export default function Home() {
                                     </p>
                                     <div className="row  align-items-center">
                                         <div className="col-lg-6 col-md-12">
-                                            {/* tags details */}
+                                            {}
                                             <div className="details-tag">
                                                 <h6>Tags:</h6>
                                                 <button>Services</button>
                                                 <button>Business</button>
                                                 <button>Growth</button>
                                             </div>
-                                            {/* tags details End */}
+                                            {}
                                         </div>
                                         <div className="col-lg-6 col-md-12">
                                             <div className="details-share">
@@ -246,12 +238,12 @@ export default function Home() {
                                     </a>
                                 </div>
                             </div>
-                            {/* single post End*/}
+                            {}
                         </div>
-                        {/* rts-blog post end area */}
-                        {/*rts blog wizered area */}
+                        {}
+                        {}
                         <div className="col-xl-4 col-md-12 col-sm-12 col-12">
-                            {/* single wizered start */}
+                            {}
                             <div className="rts-single-wized search">
                                 <div className="wized-header">
                                     <h5 className="title">Search Hear</h5>
@@ -269,14 +261,14 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            {/* single wizered End */}
-                            {/* single wizered start */}
+                            {}
+                            {}
                             <div className="rts-single-wized Categories">
                                 <div className="wized-header">
                                     <h5 className="title">Categories</h5>
                                 </div>
                                 <div className="wized-body">
-                                    {/* single categoris */}
+                                    {}
                                     <ul className="single-categories">
                                         <li>
                                             <a href="#">
@@ -284,8 +276,8 @@ export default function Home() {
                                             </a>
                                         </li>
                                     </ul>
-                                    {/* single categoris End */}
-                                    {/* single categoris */}
+                                    {}
+                                    {}
                                     <ul className="single-categories">
                                         <li>
                                             <a href="#">
@@ -294,8 +286,8 @@ export default function Home() {
                                             </a>
                                         </li>
                                     </ul>
-                                    {/* single categoris End */}
-                                    {/* single categoris */}
+                                    {}
+                                    {}
                                     <ul className="single-categories">
                                         <li>
                                             <a href="#">
@@ -304,8 +296,8 @@ export default function Home() {
                                             </a>
                                         </li>
                                     </ul>
-                                    {/* single categoris End */}
-                                    {/* single categoris */}
+                                    {}
+                                    {}
                                     <ul className="single-categories">
                                         <li>
                                             <a href="#">
@@ -314,8 +306,8 @@ export default function Home() {
                                             </a>
                                         </li>
                                     </ul>
-                                    {/* single categoris End */}
-                                    {/* single categoris */}
+                                    {}
+                                    {}
                                     <ul className="single-categories">
                                         <li>
                                             <a href="#">
@@ -324,17 +316,17 @@ export default function Home() {
                                             </a>
                                         </li>
                                     </ul>
-                                    {/* single categoris End */}
+                                    {}
                                 </div>
                             </div>
-                            {/* single wizered End */}
-                            {/* single wizered start */}
+                            {}
+                            {}
                             <div className="rts-single-wized Recent-post">
                                 <div className="wized-header">
                                     <h5 className="title">Recent Posts</h5>
                                 </div>
                                 <div className="wized-body">
-                                    {/* recent-post */}
+                                    {}
                                     <div className="recent-post-single">
                                         <div className="thumbnail">
                                             <a href="#">
@@ -356,8 +348,8 @@ export default function Home() {
                                             </a>
                                         </div>
                                     </div>
-                                    {/* recent-post End */}
-                                    {/* recent-post */}
+                                    {}
+                                    {}
                                     <div className="recent-post-single">
                                         <div className="thumbnail">
                                             <a href="#">
@@ -379,8 +371,8 @@ export default function Home() {
                                             </a>
                                         </div>
                                     </div>
-                                    {/* recent-post End */}
-                                    {/* recent-post */}
+                                    {}
+                                    {}
                                     <div className="recent-post-single">
                                         <div className="thumbnail">
                                             <a href="#">
@@ -402,8 +394,8 @@ export default function Home() {
                                             </a>
                                         </div>
                                     </div>
-                                    {/* recent-post End */}
-                                    {/* recent-post */}
+                                    {}
+                                    {}
                                     <div className="recent-post-single">
                                         <div className="thumbnail">
                                             <a href="#">
@@ -425,11 +417,11 @@ export default function Home() {
                                             </a>
                                         </div>
                                     </div>
-                                    {/* recent-post End */}
+                                    {}
                                 </div>
                             </div>
-                            {/* single wizered End */}
-                            {/* single wizered start */}
+                            {}
+                            {}
                             <div className="rts-single-wized Recent-post">
                                 <div className="wized-header">
                                     <h5 className="title">Gallery Posts</h5>
@@ -479,8 +471,8 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            {/* single wizered End */}
-                            {/* single wizered start */}
+                            {}
+                            {}
                             <div className="rts-single-wized">
                                 <div className="wized-header">
                                     <h5 className="title">Popular Tags</h5>
@@ -499,8 +491,8 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            {/* single wizered End */}
-                            {/* single wizered start */}
+                            {}
+                            {}
                             <div className="rts-single-wized contact">
                                 <div className="wized-header">
                                     <a href="#">
@@ -509,23 +501,20 @@ export default function Home() {
                                 </div>
                                 <div className="wized-body">
                                     <h5 className="title">Need Help? We Are Here To Help You</h5>
-                                    <a className="rts-btn btn-primary" href="contactus.html">
+                                    <a className="rts-btn btn-primary" href="/contact">
                                         Contact Us
                                     </a>
                                 </div>
                             </div>
-                            {/* single wizered End */}
+                            {}
                         </div>
-                        {/* rts- blog wizered end area */}
+                        {}
                     </div>
                 </div>
             </div>
-            {/* rts blog mlist area End */}
-
-
+            {}
             <FooterOne />
             <BackToTop />
         </div>
-
     );
 }

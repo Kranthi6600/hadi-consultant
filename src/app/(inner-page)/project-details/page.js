@@ -11,14 +11,10 @@ export default function Home() {
         { label: 'Project Details' }
     ];
     return (
-
         <div className="">
             <HeaderOne />
-
             <Breadcrumb title="Project Details" breadcrumbs={breadcrumbs} />
-
-
-            {/* project details image area */}
+            {}
             <div className="rts-project-details-area rts-section-gap">
                 <div className="container">
                     <div className="row">
@@ -33,7 +29,7 @@ export default function Home() {
                                         <h5 className="title">Project Information</h5>
                                     </div>
                                     <div className="info-body">
-                                        {/* single info */}
+                                        {}
                                         <div className="single-info">
                                             <div className="info-ico">
                                                 <i className="fas fa-user" />
@@ -43,8 +39,8 @@ export default function Home() {
                                                 <h6 className="name">Josefin H. Smith</h6>
                                             </div>
                                         </div>
-                                        {/* end single info */}
-                                        {/* single info */}
+                                        {}
+                                        {}
                                         <div className="single-info">
                                             <div className="info-ico">
                                                 <i className="fas fa-layer-group" />
@@ -54,8 +50,8 @@ export default function Home() {
                                                 <h6 className="name">Business Solution</h6>
                                             </div>
                                         </div>
-                                        {/* end single info */}
-                                        {/* single info */}
+                                        {}
+                                        {}
                                         <div className="single-info">
                                             <div className="info-ico">
                                                 <i className="fas fa-calendar-alt" />
@@ -65,8 +61,8 @@ export default function Home() {
                                                 <h6 className="name">25 January, 2023</h6>
                                             </div>
                                         </div>
-                                        {/* end single info */}
-                                        {/* single info */}
+                                        {}
+                                        {}
                                         <div className="single-info">
                                             <div className="info-ico">
                                                 <i className="fas fa-map-marker-alt" />
@@ -76,7 +72,7 @@ export default function Home() {
                                                 <h6 className="name">258 Dancing Street, USA</h6>
                                             </div>
                                         </div>
-                                        {/* end single info */}
+                                        {}
                                     </div>
                                 </div>
                             </div>
@@ -191,13 +187,9 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            {/* project details image area end */}
-
-
-
+            {}
             <FooterOne />
             <BackToTop />
         </div>
-
     );
 }

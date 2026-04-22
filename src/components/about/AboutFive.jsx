@@ -1,9 +1,8 @@
 import React from 'react'
-
 function AboutFive() {
     return (
         <div>
-            {/* rts about area start */}
+            {}
             <div className="rts-about-area-start rts-section-gapBottom" id="about">
                 <div className="container">
                     <div className="row align-items-center">
@@ -90,9 +89,8 @@ function AboutFive() {
                     </div>
                 </div>
             </div>
-            {/* rts about area end */}
+            {}
         </div>
     )
 }
-
 export default AboutFive

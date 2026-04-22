@@ -7,17 +7,13 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import ErrorBoundary from "@/components/ErrorBoundary";
-
-
-
 function BannerOne() {
     return (
         <ErrorBoundary>
             <div>
-                {/* banner blank space area */}
+                {}
                 <div className="rts-banner-area rts-banner-one" id='banner'>
                     <div className="swiper mySwiper banner-one">
-
                         <Swiper
                             // install Swiper modules
                             modules={[Navigation, EffectFade, Scrollbar, A11y, Autoplay]}
@@ -40,22 +36,22 @@ function BannerOne() {
                             }}
                         >
                             <SwiperSlide>
-                                {/* banner single content */}
+                                {}
                                 <div className="banner-one-inner text-start">
                                     <p className="pre-title">
-                                        <span>Welcome!</span> Start Growing Your Business Today
+                                        <span>Hadi Consultant.</span> Practical Tax and Finance Advice You Can Count On
                                     </p>
                                     <h1 className="title ">
-                                        Make <span>Business Unique </span> <br />
-                                        With Great Ideas
+                                        Your <span>Financial Consultancy</span> <br />
+                                        Expert
                                     </h1>
                                     <p className="disc banner-para">
-                                        Porttitor ornare fermentum aliquam pharetra facilisis gravida
-                                        risus suscipit <br /> Dui feugiat fusce conubia ridiculus
-                                        tristique parturient
+                                        Hadi Consultants Tax Experts in Mississauga, Ontario offers a wide range of 
+                                        bookkeeping and accountancy services for individual and corporate accounts. <br />
+                                        Our Certified Public Accountants provide well-organized accounting assistance.
                                     </p>
-                                    <a href="#" className="rts-btn btn-primary color-h-black">
-                                        Get Consultant
+                                    <a href="/contact" className="rts-btn btn-primary color-h-black">
+                                        Get A Free Quote
                                     </a>
                                     <img
                                         className="shape-img one"
@@ -63,24 +59,25 @@ function BannerOne() {
                                         alt="banner_business"
                                     />
                                 </div>
-                                {/* banner single content end */}
+                                {}
                             </SwiperSlide>
                             <SwiperSlide>
-                                {/* banner single content */}
+                                {}
                                 <div className="banner-one-inner text-start">
                                     <p className="pre-title">
-                                        <span>Welcome!</span> Start Growing Your Business Today
+                                        <span>Trusted</span> Experienced Professional
                                     </p>
                                     <h1 className="title ">
-                                        Launch <span>Ultra Modern</span> <br /> Effective Business
+                                        Expert <span>Tax Filing</span> <br />
+                                        For Individuals
                                     </h1>
                                     <p className="disc banner-para">
-                                        Porttitor ornare fermentum aliquam pharetra facilisis gravida
-                                        risus suscipit <br /> Dui feugiat fusce conubia ridiculus
-                                        tristique parturient
+                                        Whether you need proper and timely tax filing services or corporate bookkeeping – 
+                                        Hadi Consultants Tax Experts keeps an eye on the details, <br />
+                                        giving you improved manageability of everything else.
                                     </p>
-                                    <a href="#" className="rts-btn btn-primary color-h-black">
-                                        Get Consultant
+                                    <a href="/contact" className="rts-btn btn-primary color-h-black">
+                                        Get A Free Quote
                                     </a>
                                     <img
                                         className="shape-img one"
@@ -88,24 +85,25 @@ function BannerOne() {
                                         alt="banner_business"
                                     />
                                 </div>
-                                {/* banner single content end */}
+                                {}
                             </SwiperSlide>
                             <SwiperSlide>
-                                {/* banner single content */}
+                                {}
                                 <div className="banner-one-inner text-start">
                                     <p className="pre-title">
-                                        <span>Welcome!</span> Start Growing Your Business Today
+                                        <span>24/7 Availability</span> Always On Time
                                     </p>
                                     <h1 className="title ">
-                                        Make <span>Business Growth</span> <br /> With Next Level
+                                        Corporate <span>Tax Services</span> <br />
+                                        & Financial Advisory
                                     </h1>
                                     <p className="disc banner-para">
-                                        Porttitor ornare fermentum aliquam pharetra facilisis gravida
-                                        risus suscipit <br /> Dui feugiat fusce conubia ridiculus
-                                        tristique parturient
+                                        Our Certified Public Accountants provide well-organized accounting assistance, 
+                                        tailored to suit your specific requirements. <br />
+                                        Accurate Record Keeping with professional service you can trust.
                                     </p>
-                                    <a href="#" className="rts-btn btn-primary color-h-black">
-                                        Get Consultant
+                                    <a href="/contact" className="rts-btn btn-primary color-h-black">
+                                        Get A Free Quote
                                     </a>
                                     <img
                                         className="shape-img one"
@@ -113,7 +111,7 @@ function BannerOne() {
                                         alt="banner_business"
                                     />
                                 </div>
-                                {/* banner single content end */}
+                                {}
                             </SwiperSlide>
                         </Swiper>
                     </div>
@@ -130,10 +128,9 @@ function BannerOne() {
                         />
                     </div>
                 </div>
-                {/* banner blank space area end */}
+                {}
             </div>
         </ErrorBoundary>
     )
 }
-
 export default BannerOne

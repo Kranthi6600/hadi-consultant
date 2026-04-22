@@ -10,12 +10,10 @@ import 'swiper/css/scrollbar';
 import  Link  from 'next/link';
 import post from '../../data/Posts.json';
 import BlogOneMain from './BlogOneMain';
-
 function BlogOne() {
     return (
         <div>
-
-            {/* blog area start */}
+            {}
             <div className="rts-blog-area rts-section-gap style-seven " id='blog-section'>
                 <div className="container">
                     <div className="row">
@@ -41,9 +39,7 @@ function BlogOne() {
                                     nextEl: '.swiper-button-next',
                                     prevEl: '.swiper-button-prev',
                                 }}
-
                             >
-
                                 {post.map((data, index) => {
                                     return (
                                         <SwiperSlide key={index}>
@@ -67,10 +63,8 @@ function BlogOne() {
                     </div>
                 </div>
             </div>
-            {/* blog area end */}
-
+            {}
         </div>
     )
 }
-
 export default BlogOne

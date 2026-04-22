@@ -15,13 +15,10 @@ export default function Home(props) {
     ];
     const [activeKey, setActiveKey] = useState('home');
     return (
-
         <div className="">
             <HeaderOne />
-
             <Breadcrumb title="Portfolio" breadcrumbs={breadcrumbs} />
-
-            {/* project section srart */}
+            {}
             <div className="rts-project-area rts-section-gap">
                 <div className="container">
                     <div className="row">
@@ -42,7 +39,7 @@ export default function Home(props) {
                             <div className="tab-content-area mt--50 mt_sm--30">
                                 {activeKey === 'home' && (
                                     <TabContent>
-                                        {/* tab product area */}
+                                        {}
                                         <div className="row g-5">
                                             {Project.map((data, index) => {
                                                 return (
@@ -62,12 +59,12 @@ export default function Home(props) {
                                                 )
                                             }).slice(6, 12)}
                                         </div>
-                                        {/* tab product area end*/}
+                                        {}
                                     </TabContent>
                                 )}
                                 {activeKey === 'profile' && (
                                     <TabContent>
-                                  {/* tab product area */}
+                                  {}
                                   <div className="row g-5">
                                             {Project.map((data, index) => {
                                                 return (
@@ -87,15 +84,15 @@ export default function Home(props) {
                                                 )
                                             }).slice(6, 12)}
                                         </div>
-                                        {/* tab product area end*/}
+                                        {}
                                     </TabContent>
                                 )}
                                 {activeKey === 'contact' && (
                                     <TabContent>
-                                        {/* tab product area */}
+                                        {}
                                         <div className="row g-5">
                                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                                                {/* single -product area */}
+                                                {}
                                                 <div className="rts-product-one">
                                                     <div className="thumbnail-area">
                                                         <img
@@ -120,10 +117,10 @@ export default function Home(props) {
                                                         </p>
                                                     </div>
                                                 </div>
-                                                {/* single -product area End */}
+                                                {}
                                             </div>
                                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                                                {/* single -product area */}
+                                                {}
                                                 <div className="rts-product-one">
                                                     <div className="thumbnail-area">
                                                         <img
@@ -148,10 +145,10 @@ export default function Home(props) {
                                                         </p>
                                                     </div>
                                                 </div>
-                                                {/* single -product area End */}
+                                                {}
                                             </div>
                                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                                {/* single -product area */}
+                                                {}
                                                 <div className="rts-product-one">
                                                     <div className="thumbnail-area">
                                                         <img
@@ -176,10 +173,10 @@ export default function Home(props) {
                                                         </p>
                                                     </div>
                                                 </div>
-                                                {/* single -product area End */}
+                                                {}
                                             </div>
                                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                                {/* single -product area */}
+                                                {}
                                                 <div className="rts-product-one">
                                                     <div className="thumbnail-area">
                                                         <img
@@ -204,10 +201,10 @@ export default function Home(props) {
                                                         </p>
                                                     </div>
                                                 </div>
-                                                {/* single -product area End */}
+                                                {}
                                             </div>
                                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                                {/* single -product area */}
+                                                {}
                                                 <div className="rts-product-one">
                                                     <div className="thumbnail-area">
                                                         <img
@@ -232,10 +229,10 @@ export default function Home(props) {
                                                         </p>
                                                     </div>
                                                 </div>
-                                                {/* single -product area End */}
+                                                {}
                                             </div>
                                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                                {/* single -product area */}
+                                                {}
                                                 <div className="rts-product-one">
                                                     <div className="thumbnail-area">
                                                         <img
@@ -260,18 +257,18 @@ export default function Home(props) {
                                                         </p>
                                                     </div>
                                                 </div>
-                                                {/* single -product area End */}
+                                                {}
                                             </div>
                                         </div>
-                                        {/* tab product area end*/}
+                                        {}
                                     </TabContent>
                                 )}
                                 {activeKey === 'marketing' && (
                                     <TabContent>
-                                        {/* tab product area */}
+                                        {}
                                         <div className="row g-5">
                                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                                                {/* single -product area */}
+                                                {}
                                                 <div className="rts-product-one">
                                                     <div className="thumbnail-area">
                                                         <img
@@ -296,10 +293,10 @@ export default function Home(props) {
                                                         </p>
                                                     </div>
                                                 </div>
-                                                {/* single -product area End */}
+                                                {}
                                             </div>
                                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                                                {/* single -product area */}
+                                                {}
                                                 <div className="rts-product-one">
                                                     <div className="thumbnail-area">
                                                         <img
@@ -324,10 +321,10 @@ export default function Home(props) {
                                                         </p>
                                                     </div>
                                                 </div>
-                                                {/* single -product area End */}
+                                                {}
                                             </div>
                                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                                {/* single -product area */}
+                                                {}
                                                 <div className="rts-product-one">
                                                     <div className="thumbnail-area">
                                                         <img
@@ -352,10 +349,10 @@ export default function Home(props) {
                                                         </p>
                                                     </div>
                                                 </div>
-                                                {/* single -product area End */}
+                                                {}
                                             </div>
                                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                                {/* single -product area */}
+                                                {}
                                                 <div className="rts-product-one">
                                                     <div className="thumbnail-area">
                                                         <img
@@ -380,10 +377,10 @@ export default function Home(props) {
                                                         </p>
                                                     </div>
                                                 </div>
-                                                {/* single -product area End */}
+                                                {}
                                             </div>
                                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                                {/* single -product area */}
+                                                {}
                                                 <div className="rts-product-one">
                                                     <div className="thumbnail-area">
                                                         <img
@@ -408,10 +405,10 @@ export default function Home(props) {
                                                         </p>
                                                     </div>
                                                 </div>
-                                                {/* single -product area End */}
+                                                {}
                                             </div>
                                             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                                                {/* single -product area */}
+                                                {}
                                                 <div className="rts-product-one">
                                                     <div className="thumbnail-area">
                                                         <img
@@ -436,10 +433,10 @@ export default function Home(props) {
                                                         </p>
                                                     </div>
                                                 </div>
-                                                {/* single -product area End */}
+                                                {}
                                             </div>
                                         </div>
-                                        {/* tab product area end*/}
+                                        {}
                                     </TabContent>
                                 )}
                             </div>
@@ -447,12 +444,9 @@ export default function Home(props) {
                     </div>
                 </div>
             </div>
-            {/* project section end */}
-
-
+            {}
             <FooterOne />
             <BackToTop />
         </div>
-
     );
 }

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function TestimonialFour() {
     return (
         <div>
-            {/* rts customer feedback area start */}
+            {}
             <div className="rts-customer-feedback-area-six rts-section-gap bg-feedback-seven">
                 <div className="container">
                     <div className="row">
@@ -18,7 +18,7 @@ function TestimonialFour() {
                         <div className="swiper mySwiperh2_clients">
                             <div className="swiper-wrapper">
                                 <div className="swiper-slide">
-                                    {/* single client reviews */}
+                                    {}
                                     <div className="rts-client-reviews-h2 six">
                                         <div className="review-header">
                                             <Link to={'#'} className="thumbnail">
@@ -57,10 +57,10 @@ function TestimonialFour() {
                                             </div>
                                         </div>
                                     </div>
-                                    {/* single client reviews End */}
+                                    {}
                                 </div>
                                 <div className="swiper-slide">
-                                    {/* single client reviews */}
+                                    {}
                                     <div className="rts-client-reviews-h2 six">
                                         <div className="review-header">
                                             <Link to={'#'} className="thumbnail">
@@ -99,10 +99,10 @@ function TestimonialFour() {
                                             </div>
                                         </div>
                                     </div>
-                                    {/* single client reviews End */}
+                                    {}
                                 </div>
                                 <div className="swiper-slide">
-                                    {/* single client reviews */}
+                                    {}
                                     <div className="rts-client-reviews-h2 six">
                                         <div className="review-header">
                                             <Link to={'#'} className="thumbnail">
@@ -141,16 +141,15 @@ function TestimonialFour() {
                                             </div>
                                         </div>
                                     </div>
-                                    {/* single client reviews End */}
+                                    {}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* rts customer feedback area end */}
+            {}
         </div>
     )
 }
-
 export default TestimonialFour

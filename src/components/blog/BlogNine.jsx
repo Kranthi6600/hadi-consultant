@@ -1,11 +1,10 @@
 "use client"
 import React from 'react'
 import Link from 'next/link';
-
 function BlogNine() {
     return (
         <div>
-            {/* blog post area start */}
+            {}
             <div className="blog-post-ten-area rts-section-gapTop" id='blog-section'>
                 <div className="container">
                     <div className="row">
@@ -20,7 +19,7 @@ function BlogNine() {
                     </div>
                     <div className="row g-5 mt--30">
                         <div className="col-lg-6">
-                            {/* single blog style ten */}
+                            {}
                             <div className="single-blog-style-ten">
                                 <Link href="/blog-list/26" className="thumbnail">
                                     <img src="assets/images/blog/17.png" alt="blog" />
@@ -52,10 +51,10 @@ function BlogNine() {
                                     </div>
                                 </div>
                             </div>
-                            {/* single blog style ten end */}
+                            {}
                         </div>
                         <div className="col-lg-6">
-                            {/* single blog style ten */}
+                            {}
                             <div className="single-blog-style-ten">
                                 <Link href="/blog-list/26" className="thumbnail">
                                     <img src="assets/images/blog/18.png" alt="blog" />
@@ -88,10 +87,10 @@ function BlogNine() {
                                     </div>
                                 </div>
                             </div>
-                            {/* single blog style ten end */}
+                            {}
                         </div>
                         <div className="col-lg-6">
-                            {/* single blog style ten */}
+                            {}
                             <div className="single-blog-style-ten">
                                 <Link href="/blog-list/26" className="thumbnail">
                                     <img src="assets/images/blog/19.png" alt="blog" />
@@ -123,10 +122,10 @@ function BlogNine() {
                                     </div>
                                 </div>
                             </div>
-                            {/* single blog style ten end */}
+                            {}
                         </div>
                         <div className="col-lg-6">
-                            {/* single blog style ten */}
+                            {}
                             <div className="single-blog-style-ten">
                                 <Link href="/blog-list/26" className="thumbnail">
                                     <img src="assets/images/blog/20.png" alt="blog" />
@@ -158,14 +157,13 @@ function BlogNine() {
                                     </div>
                                 </div>
                             </div>
-                            {/* single blog style ten end */}
+                            {}
                         </div>
                     </div>
                 </div>
             </div>
-            {/* blog post area end */}
+            {}
         </div>
     )
 }
-
 export default BlogNine

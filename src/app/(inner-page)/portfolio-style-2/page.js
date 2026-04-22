@@ -14,13 +14,10 @@ export default function Home() {
     ];
     const [activeKey, setActiveKey] = useState('home');
     return (
-
         <div className="">
             <HeaderOne />
-
             <Breadcrumb title="Portfolio Style 2" breadcrumbs={breadcrumbs} />
-
-            {/*case-study-area start*/}
+            {}
             <section className="case-study-area case-bg2 nav-style-1 pt--115 pt_md--60 pt_xs--60 pb--115 pb_md--60 pb_xs--60">
                 <div className="container">
                     <div className="row">
@@ -44,11 +41,9 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            {/*case-study-area end*/}
-
+            {}
             <FooterOne />
             <BackToTop />
         </div>
-
     );
 }

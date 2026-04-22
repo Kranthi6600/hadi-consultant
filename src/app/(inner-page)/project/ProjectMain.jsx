@@ -5,7 +5,7 @@ const BlogGridMain = (props) => {
     const { Slug, blogImage, blogTitle, blogCategory, blogPublishedDate, descripTion } = props;
     return (
         <>
-            {/* single -product area */}
+            {}
             <div className="rts-product-one">
                 <div className="thumbnail-area">
                     <img
@@ -30,10 +30,8 @@ const BlogGridMain = (props) => {
                     </p>
                 </div>
             </div>
-            {/* single -product area End */}
+            {}
         </>
-
     )
 }
-
 export default BlogGridMain

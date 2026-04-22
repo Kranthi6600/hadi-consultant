@@ -8,17 +8,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import  Link  from 'next/link';
-
-
-
-
-
-
 function TestimonialSeven() {
     return (
         <div>
             <div className="bg-shape-wrapper-two">
-                {/* customers testimonials start */}
+                {}
                 <div className="rts-testimonials-6 rts-section-gap">
                     <div className="container">
                         <div className="row">
@@ -56,7 +50,6 @@ function TestimonialSeven() {
                                             nextEl: '.swiper-button-next',
                                             prevEl: '.swiper-button-prev',
                                         }}
-
                                     >
                                         <SwiperSlide>
                                             <div className="testimonials-7-style">
@@ -178,18 +171,15 @@ function TestimonialSeven() {
                                                 </div>
                                             </div>
                                         </SwiperSlide>
-
                                     </Swiper>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                {/* customers testimonials end */}
+                {}
             </div>
-
         </div>
     )
 }
-
 export default TestimonialSeven

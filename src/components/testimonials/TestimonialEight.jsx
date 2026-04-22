@@ -6,11 +6,10 @@ import { Navigation, Scrollbar, A11y, EffectFade, Autoplay } from 'swiper/module
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
-
 function TestimonialEight() {
     return (
         <div>
-            {/* start client review area start */}
+            {}
             <div className="rts-client-review-two rts-section-gapTop bg-client-r-h2">
                 <div className="container">
                     <div className="row mt--30">
@@ -48,7 +47,7 @@ function TestimonialEight() {
                                     }}
                                 >
                                     <SwiperSlide>
-                                        {/* single client reviews */}
+                                        {}
                                         <div className="rts-client-reviews-h2">
                                             <div className="review-header">
                                                 <a href="#" className="thumbnail">
@@ -87,10 +86,10 @@ function TestimonialEight() {
                                                 </div>
                                             </div>
                                         </div>
-                                        {/* single client reviews End */}
+                                        {}
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        {/* single client reviews */}
+                                        {}
                                         <div className="rts-client-reviews-h2">
                                             <div className="review-header">
                                                 <a href="#" className="thumbnail">
@@ -129,10 +128,10 @@ function TestimonialEight() {
                                                 </div>
                                             </div>
                                         </div>
-                                        {/* single client reviews End */}
+                                        {}
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        {/* single client reviews */}
+                                        {}
                                         <div className="rts-client-reviews-h2">
                                             <div className="review-header">
                                                 <a href="#" className="thumbnail">
@@ -171,10 +170,10 @@ function TestimonialEight() {
                                                 </div>
                                             </div>
                                         </div>
-                                        {/* single client reviews End */}
+                                        {}
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        {/* single client reviews */}
+                                        {}
                                         <div className="rts-client-reviews-h2">
                                             <div className="review-header">
                                                 <a href="#" className="thumbnail">
@@ -213,10 +212,10 @@ function TestimonialEight() {
                                                 </div>
                                             </div>
                                         </div>
-                                        {/* single client reviews End */}
+                                        {}
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        {/* single client reviews */}
+                                        {}
                                         <div className="rts-client-reviews-h2">
                                             <div className="review-header">
                                                 <a href="#" className="thumbnail">
@@ -255,10 +254,10 @@ function TestimonialEight() {
                                                 </div>
                                             </div>
                                         </div>
-                                        {/* single client reviews End */}
+                                        {}
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        {/* single client reviews */}
+                                        {}
                                         <div className="rts-client-reviews-h2">
                                             <div className="review-header">
                                                 <a href="#" className="thumbnail">
@@ -297,18 +296,16 @@ function TestimonialEight() {
                                                 </div>
                                             </div>
                                         </div>
-                                        {/* single client reviews End */}
+                                        {}
                                     </SwiperSlide>
-
                                 </Swiper>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* start client review area end */}
+            {}
         </div>
     )
 }
-
 export default TestimonialEight

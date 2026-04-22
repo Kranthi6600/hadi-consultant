@@ -1,12 +1,11 @@
 "use client"
 import React, { useState } from 'react';
 import { Tabs, Tab, TabContent } from 'react-bootstrap';
-
 function AboutCompany() {
     const [activeKey, setActiveKey] = useState('home');
     return (
         <div>
-            {/* start about our company */}
+            {}
             <div className="rts-about-our-company-h2 eight rts-section-gap" id="about">
                 <div className="container">
                     <div className="row">
@@ -43,7 +42,7 @@ function AboutCompany() {
                                         <div className="tab-content-wrapper">
                                             {activeKey === 'home' && (
                                                 <TabContent>
-                                                    {/* start tab content */}
+                                                    {}
                                                     <div className="rts-tab-content-one">
                                                         <p>
                                                             <img src="assets/images/faq/info.webp" alt="image" />
@@ -68,17 +67,17 @@ function AboutCompany() {
                                                         </div>
                                                         <a
                                                             className="rts-btn btn-primary-2 color-h-black"
-                                                            href="#"
+                                                            href="/contact"
                                                         >
                                                             Contact Us
                                                         </a>
                                                     </div>
-                                                    {/* start tab content End */}
+                                                    {}
                                                 </TabContent>
                                             )}
                                             {activeKey === 'two' && (
                                                 <TabContent>
-                                                    {/* start tab content */}
+                                                    {}
                                                     <div className="rts-tab-content-one">
                                                         <p>
                                                             <img
@@ -106,17 +105,17 @@ function AboutCompany() {
                                                         </div>
                                                         <a
                                                             className="rts-btn btn-primary-2 color-h-black"
-                                                            href="#"
+                                                            href="/contact"
                                                         >
                                                             Contact Us
                                                         </a>
                                                     </div>
-                                                    {/* start tab content End */}
+                                                    {}
                                                 </TabContent>
                                             )}
                                             {activeKey === 'three' && (
                                                 <TabContent>
-                                                    {/* start tab content */}
+                                                    {}
                                                     <div className="rts-tab-content-one">
                                                         <p>
                                                             <img
@@ -144,17 +143,17 @@ function AboutCompany() {
                                                         </div>
                                                         <a
                                                             className="rts-btn btn-primary-2 color-h-black"
-                                                            href="#"
+                                                            href="/contact"
                                                         >
                                                             Contact Us
                                                         </a>
                                                     </div>
-                                                    {/* start tab content End */}
+                                                    {}
                                                 </TabContent>
                                             )}
                                             {activeKey === 'four' && (
                                                 <TabContent>
-                                                    {/* start tab content */}
+                                                    {}
                                                     <div className="rts-tab-content-one">
                                                         <p>
                                                             <img
@@ -182,17 +181,17 @@ function AboutCompany() {
                                                         </div>
                                                         <a
                                                             className="rts-btn btn-primary-2 color-h-black"
-                                                            href="#"
+                                                            href="/contact"
                                                         >
                                                             Contact Us
                                                         </a>
                                                     </div>
-                                                    {/* start tab content End */}
+                                                    {}
                                                 </TabContent>
                                             )}
                                             {activeKey === 'five' && (
                                                 <TabContent>
-                                                    {/* start tab content */}
+                                                    {}
                                                     <div className="rts-tab-content-one">
                                                         <p>
                                                             <img
@@ -220,17 +219,17 @@ function AboutCompany() {
                                                         </div>
                                                         <a
                                                             className="rts-btn btn-primary-2 color-h-black"
-                                                            href="#"
+                                                            href="/contact"
                                                         >
                                                             Contact Us
                                                         </a>
                                                     </div>
-                                                    {/* start tab content End */}
+                                                    {}
                                                 </TabContent>
                                             )}
                                             {activeKey === 'six' && (
                                                 <TabContent>
-                                                    {/* start tab content */}
+                                                    {}
                                                     <div className="rts-tab-content-one">
                                                         <p>
                                                             <img
@@ -258,12 +257,12 @@ function AboutCompany() {
                                                         </div>
                                                         <a
                                                             className="rts-btn btn-primary-2 color-h-black"
-                                                            href="#"
+                                                            href="/contact"
                                                         >
                                                             Contact Us
                                                         </a>
                                                     </div>
-                                                    {/* start tab content End */}
+                                                    {}
                                                 </TabContent>
                                             )}
                                         </div>
@@ -274,9 +273,8 @@ function AboutCompany() {
                     </div>
                 </div>
             </div>
-            {/* start about our company End */}
+            {}
         </div>
     )
 }
-
 export default AboutCompany

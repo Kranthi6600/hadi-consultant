@@ -5,7 +5,7 @@ function AboutTwo() {
     const [activeKey, setActiveKey] = useState('home1');
     return (
         <div>
-            {/* start about our company */}
+            {}
             <div className="rts-about-our-company-h2 rts-section-gap" id='about'>
                 <div className="container">
                     <div className="row">
@@ -25,7 +25,6 @@ function AboutTwo() {
                                 </p>
                                 <div className="rts-tab-style-one">
                                     <div className=" align-items-start contoler-company">
-
                                         <Tabs
                                             activeKey={activeKey}
                                             onSelect={(k) => setActiveKey(k)}
@@ -38,7 +37,7 @@ function AboutTwo() {
                                         </Tabs>
                                         {activeKey === 'home1' && (
                                             <TabContent>
-                                                {/* start tab content */}
+                                                {}
                                                 <div className="rts-tab-content-one">
                                                     <p className="disc">
                                                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere exercitationem atque voluptatum! Massa laoreet lacinia placerat eleifend cs curae
@@ -60,17 +59,17 @@ function AboutTwo() {
                                                     </div>
                                                     <a
                                                         className="rts-btn btn-primary-2 color-h-black"
-                                                        href="#"
+                                                        href="/contact"
                                                     >
                                                         Contact Us
                                                     </a>
                                                 </div>
-                                                {/* start tab content End */}
+                                                {}
                                             </TabContent>
                                         )}
                                         {activeKey === 'profile1' && (
                                             <TabContent>
-                                                {/* start tab content */}
+                                                {}
                                                 <div className="rts-tab-content-one">
                                                     <p className="disc">
                                                         Business laoreet lacinia placerat eleifend cs curae
@@ -92,18 +91,17 @@ function AboutTwo() {
                                                     </div>
                                                     <a
                                                         className="rts-btn btn-primary-2 color-h-black"
-                                                        href="#"
+                                                        href="/contact"
                                                     >
                                                         Contact Us
                                                     </a>
                                                 </div>
-                                                {/* start tab content End */}
+                                                {}
                                             </TabContent>
                                         )}
-
                                         {activeKey === 'contact1' && (
                                             <TabContent>
-                                                {/* start tab content */}
+                                                {}
                                                 <div className="rts-tab-content-one">
                                                     <p className="disc">
                                                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, sunt! lacinia placerat eleifend cs curae
@@ -125,12 +123,12 @@ function AboutTwo() {
                                                     </div>
                                                     <a
                                                         className="rts-btn btn-primary-2 color-h-black"
-                                                        href="#"
+                                                        href="/contact"
                                                     >
                                                         Contact Us
                                                     </a>
                                                 </div>
-                                                {/* start tab content End */}
+                                                {}
                                             </TabContent>
                                         )}
                                     </div>
@@ -145,10 +143,8 @@ function AboutTwo() {
                     </div>
                 </div>
             </div>
-            {/* start about our company End */}
-
+            {}
         </div>
     )
 }
-
 export default AboutTwo

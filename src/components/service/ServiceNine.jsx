@@ -1,9 +1,8 @@
 import React from 'react'
-
 function ServiceNine() {
     return (
         <div>
-            {/* awesome startupo service area start */}
+            {}
             <div className="awesome-service-ten rts-section-gap" id='service'>
                 <div className="container">
                     <div className="row">
@@ -17,7 +16,7 @@ function ServiceNine() {
                     </div>
                     <div className="row mt--20 g-5">
                         <div className="col-lg-4 col-md-6 col-sm-12 col-12">
-                            {/* single inner service aarea */}
+                            {}
                             <div className="single-inner-service-ten">
                                 <div className="icon">
                                     <svg
@@ -62,10 +61,10 @@ function ServiceNine() {
                                     Read More
                                 </a>
                             </div>
-                            {/* single inner service aarea end */}
+                            {}
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12 col-12">
-                            {/* single inner service aarea */}
+                            {}
                             <div className="single-inner-service-ten">
                                 <div className="icon">
                                     <svg
@@ -110,10 +109,10 @@ function ServiceNine() {
                                     Read More
                                 </a>
                             </div>
-                            {/* single inner service aarea end */}
+                            {}
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12 col-12">
-                            {/* single inner service aarea */}
+                            {}
                             <div className="single-inner-service-ten">
                                 <div className="icon">
                                     <svg
@@ -158,14 +157,13 @@ function ServiceNine() {
                                     Read More
                                 </a>
                             </div>
-                            {/* single inner service aarea end */}
+                            {}
                         </div>
                     </div>
                 </div>
             </div>
-            {/* awesome startupo service area end */}
+            {}
         </div>
     )
 }
-
 export default ServiceNine

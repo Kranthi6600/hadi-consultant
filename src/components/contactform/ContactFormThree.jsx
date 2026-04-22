@@ -1,10 +1,9 @@
 "use client"
 import React from 'react'
-
 function ContactFormThree() {
     return (
         <div>
-            {/* contact area start */}
+            {}
             <div className="rts-contact-area contact-one contact-four" id="f-contact">
                 <div className="container">
                     <div className="row align-items-center g-0">
@@ -50,9 +49,8 @@ function ContactFormThree() {
                     </div>
                 </div>
             </div>
-            {/* contact area end */}
+            {}
         </div>
     )
 }
-
 export default ContactFormThree

@@ -4,7 +4,7 @@ import Link from 'next/link';
 function ServiceFour() {
     return (
         <div>
-            {/* rts-service area start */}
+            {}
             <div className="rts-service-area rts-service-area4 rts-section-gap" id='service'>
                 <div className="container">
                     <div className="row">
@@ -94,9 +94,8 @@ function ServiceFour() {
                     </div>
                 </div>
             </div>
-            {/* rts-service area end */}
+            {}
         </div>
     )
 }
-
 export default ServiceFour

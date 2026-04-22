@@ -3,12 +3,12 @@ import React from 'react'
 function ContactTwo() {
     return (
         <div>
-            {/* start project with us section */}
+            {}
             <div className="rts-project-area rts-section-gap bg-project-three margin-controlerproject mt_sm--0">
                 <div className="container controler">
                     <div className="row g-0">
                         <div className="col-lg-7">
-                            {/* project area left wrapper */}
+                            {}
                             <div className="title-area-project-w-in">
                                 <span className="sub">Make An Appointment</span>
                                 <h2 className="title">
@@ -20,7 +20,7 @@ function ContactTwo() {
                                 </p>
                                 <div className="bg-email">
                                     <div className="content-wrapper">
-                                        {/* single-contact info */}
+                                        {}
                                         <div className="contact-info">
                                             <div className="icon">
                                                 <img
@@ -33,8 +33,8 @@ function ContactTwo() {
                                                 <h5 className="title-sm">+254 21456.21458</h5>
                                             </div>
                                         </div>
-                                        {/* single-contact info End */}
-                                        {/* single-contact info */}
+                                        {}
+                                        {}
                                         <div className="contact-info">
                                             <div className="icon">
                                                 <img
@@ -47,11 +47,11 @@ function ContactTwo() {
                                                 <h5 className="title-sm">info@example.com</h5>
                                             </div>
                                         </div>
-                                        {/* single-contact info End */}
+                                        {}
                                     </div>
                                 </div>
                             </div>
-                            {/* project area left wrapper end */}
+                            {}
                         </div>
                         <div className="col-lg-5">
                             <div className="bg-input-project">
@@ -104,9 +104,8 @@ function ContactTwo() {
                     </div>
                 </div>
             </div>
-            {/* start project with us section End */}
+            {}
         </div>
     )
 }
-
 export default ContactTwo

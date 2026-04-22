@@ -2,11 +2,10 @@ import React from 'react'
 import  Link from 'next/link';
 import post from '../../data/Posts.json';
 import BlogSevenMain from './BlogSevenMain';
-
 function BlogSeven() {
     return (
         <div>
-            {/* rts blog area start */}
+            {}
             <div className="rts-blog-area rts-section-gapBottom" id='blog-section'>
                 <div className="container">
                     <div className="row">
@@ -45,17 +44,14 @@ function BlogSeven() {
                                             />
                                         }
                                     </div>
-
                                 </div>
                             )
                         }).slice(26, 29)}
                     </div>
                 </div>
             </div>
-            {/* rts blog area edn */}
-
+            {}
         </div>
     )
 }
-
 export default BlogSeven

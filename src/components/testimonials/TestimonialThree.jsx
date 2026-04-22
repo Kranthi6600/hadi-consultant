@@ -6,11 +6,10 @@ import { Navigation, Scrollbar, A11y, EffectFade, Autoplay } from 'swiper/module
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
-
 function TestimonialThree() {
     return (
         <div>
-            {/* testimonials area start */}
+            {}
             <div className="rts-testimonials-h2-area rts-section-gap bg_testimonials-h2">
                 <div className="container">
                     <div className="row mb--30">
@@ -28,7 +27,7 @@ function TestimonialThree() {
                     </div>
                     <div className="row g-5">
                         <div className="col-12">
-                            {/* Swiper */}
+                            {}
                             <div className="swiper testimonials-h2">
                                 <Swiper
                                     // install Swiper modules
@@ -53,7 +52,7 @@ function TestimonialThree() {
                                     }}
                                 >
                                     <SwiperSlide>
-                                        {/* single testimonials area */}
+                                        {}
                                         <div className="single-testimonials-h2">
                                             <div className="body">
                                                 <h5 className="title">Great Business Solution</h5>
@@ -113,10 +112,10 @@ function TestimonialThree() {
                                                 </div>
                                             </div>
                                         </div>
-                                        {/* single testimonials area End */}
+                                        {}
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        {/* single testimonials area */}
+                                        {}
                                         <div className="single-testimonials-h2">
                                             <div className="body">
                                                 <h5 className="title">Great Marketing Solution</h5>
@@ -176,10 +175,10 @@ function TestimonialThree() {
                                                 </div>
                                             </div>
                                         </div>
-                                        {/* single testimonials area End */}
+                                        {}
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        {/* single testimonials area */}
+                                        {}
                                         <div className="single-testimonials-h2">
                                             <div className="body">
                                                 <h5 className="title">Great Business Solution</h5>
@@ -239,10 +238,10 @@ function TestimonialThree() {
                                                 </div>
                                             </div>
                                         </div>
-                                        {/* single testimonials area End */}
+                                        {}
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        {/* single testimonials area */}
+                                        {}
                                         <div className="single-testimonials-h2">
                                             <div className="body">
                                                 <h5 className="title">Great Marketing Solution</h5>
@@ -302,23 +301,18 @@ function TestimonialThree() {
                                                 </div>
                                             </div>
                                         </div>
-                                        {/* single testimonials area End */}
+                                        {}
                                     </SwiperSlide>
-
-
                                 </Swiper>
                             </div>
-                            {/* swiper end */}
+                            {}
                         </div>
-
                         <div className="swiper-pagination2" />
                     </div>
                 </div>
             </div>
-            {/* testimonials area end */}
-
+            {}
         </div>
     )
 }
-
 export default TestimonialThree

@@ -4,7 +4,7 @@ import Link from 'next/link';
 function BlogThree() {
     return (
         <div>
-            {/* tart latest blog area */}
+            {}
             <div className="rts-latest-blog-three rts-section-gapBottom" id='blog-section'>
                 <div className="container">
                     <div className="row">
@@ -16,7 +16,7 @@ function BlogThree() {
                         </div>
                     </div>
                     <div className="row g-5 mt--20">
-                        {/* single blog */}
+                        {}
                         <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                             <div className="blog-three-wrapepr">
                                 <Link href={'/blog-list/Profitable%20business%20makes%20your%20profi'} className="main-thumbnail">
@@ -47,8 +47,8 @@ function BlogThree() {
                                 </div>
                             </div>
                         </div>
-                        {/* single blog */}
-                        {/* single blog */}
+                        {}
+                        {}
                         <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                             <div className="blog-three-wrapepr">
                                 <Link href={'/blog-list/Profitable%20business%20makes%20your%20profi'} className="main-thumbnail">
@@ -79,8 +79,8 @@ function BlogThree() {
                                 </div>
                             </div>
                         </div>
-                        {/* single blog */}
-                        {/* single blog */}
+                        {}
+                        {}
                         <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                             <div className="blog-three-wrapepr">
                                 <Link href={'/blog-list/Profitable%20business%20makes%20your%20profi'} className="main-thumbnail">
@@ -111,13 +111,12 @@ function BlogThree() {
                                 </div>
                             </div>
                         </div>
-                        {/* single blog */}
+                        {}
                     </div>
                 </div>
             </div>
-            {/* tart latest blog area End */}
+            {}
         </div>
     )
 }
-
 export default BlogThree

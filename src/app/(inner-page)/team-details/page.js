@@ -11,14 +11,10 @@ export default function Home() {
         { label: 'Team Details' }
     ];
     return (
-
         <div className="">
             <HeaderOne />
-
             <Breadcrumb title="Team Details" breadcrumbs={breadcrumbs} />
-
-
-           {/* rts-team details area Start*/}
+           {}
                        <div className="rts-team-details rts-section-gap">
                            <div className="container">
                                <div className="row g-5">
@@ -75,14 +71,13 @@ export default function Home() {
                                </div>
                            </div>
                        </div>
-                       {/* rts-team details area ENd */}
-           
-                       {/* rts skills area start */}
+                       {}
+{}
                        <div className="rts-team-skill-area rts-section-gapBottom">
                            <div className="container">
                                <div className="row g-5">
                                    <div className="col-lg-6">
-                                       {/* single skill area */}
+                                       {}
                                        <div className="single-about-skill-inner">
                                            <h5 className="title">Professional Skills</h5>
                                            <p className="disc">
@@ -121,10 +116,10 @@ export default function Home() {
                                                </div>
                                            </div>
                                        </div>
-                                       {/* single skill area end*/}
+                                       {}
                                    </div>
                                    <div className="col-lg-6">
-                                       {/* single skill area */}
+                                       {}
                                        <div className="single-about-skill-inner pl--30 pl_md--0 pl_sm--0">
                                            <h5 className="title">Educational Experience</h5>
                                            <p className="disc">
@@ -180,16 +175,13 @@ export default function Home() {
                                                </div>
                                            </div>
                                        </div>
-                                       {/* single skill area end*/}
+                                       {}
                                    </div>
                                </div>
                            </div>
                        </div>
-
-
             <FooterOne />
             <BackToTop />
         </div>
-
     );
 }

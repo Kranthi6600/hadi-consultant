@@ -1,9 +1,8 @@
 import React from 'react'
-
 function TeamFour() {
     return (
         <div>
-            {/* rts team area start */}
+            {}
             <div className="rts-team-area rts-section-gap rts-team-bg-home-7">
                 <div className="container">
                     <div className="row">
@@ -15,7 +14,7 @@ function TeamFour() {
                         </div>
                     </div>
                     <div className="row g-5 mt--10">
-                        {/* single teaam area start */}
+                        {}
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                             <div className="rts-single-team-h7 six">
                                 <div className="social-area">
@@ -53,8 +52,8 @@ function TeamFour() {
                                 </div>
                             </div>
                         </div>
-                        {/* single teaam area end */}
-                        {/* single teaam area start */}
+                        {}
+                        {}
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                             <div className="rts-single-team-h7 six">
                                 <div className="social-area">
@@ -92,8 +91,8 @@ function TeamFour() {
                                 </div>
                             </div>
                         </div>
-                        {/* single teaam area end */}
-                        {/* single teaam area start */}
+                        {}
+                        {}
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                             <div className="rts-single-team-h7 six">
                                 <div className="social-area">
@@ -131,8 +130,8 @@ function TeamFour() {
                                 </div>
                             </div>
                         </div>
-                        {/* single teaam area end */}
-                        {/* single teaam area start */}
+                        {}
+                        {}
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                             <div className="rts-single-team-h7 six">
                                 <div className="social-area">
@@ -170,13 +169,12 @@ function TeamFour() {
                                 </div>
                             </div>
                         </div>
-                        {/* single teaam area end */}
+                        {}
                     </div>
                 </div>
             </div>
-            {/* rts team area end */}
+            {}
         </div>
     )
 }
-
 export default TeamFour

@@ -7,11 +7,10 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import Link from 'next/link';
-
 function ServiceThree() {
     return (
         <div>
-            {/* rts-service area start */}
+            {}
             <div className="rts-service-area rts-section-gap pb--140">
                 <div className="container">
                     <div className="row">
@@ -254,9 +253,8 @@ function ServiceThree() {
                     </div>
                 </div>
             </div>
-            {/* rts-service area end */}
+            {}
         </div>
     )
 }
-
 export default ServiceThree

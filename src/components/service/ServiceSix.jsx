@@ -4,7 +4,7 @@ import Link  from 'next/link';
 function ServiceSix() {
     return (
         <div>
-            {/* rts-service area start */}
+            {}
             <div className="rts-service-area rts-section-gap" id="service">
                 <div className="container">
                     <div className="row">
@@ -17,7 +17,7 @@ function ServiceSix() {
                     </div>
                     <div className="row g-5 mt--10">
                         <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                            {/* single service for home six */}
+                            {}
                             <div className="single-service-home-six">
                                 <div className="icon">
                                     <img src="assets/images/service/icon/19.svg" alt="" />
@@ -33,10 +33,10 @@ function ServiceSix() {
                                     </Link>
                                 </div>
                             </div>
-                            {/* single service for home six End */}
+                            {}
                         </div>
                         <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                            {/* single service for home six */}
+                            {}
                             <div className="single-service-home-six">
                                 <div className="icon">
                                     <img src="assets/images/service/icon/20.svg" alt="" />
@@ -52,10 +52,10 @@ function ServiceSix() {
                                     </Link>
                                 </div>
                             </div>
-                            {/* single service for home six End */}
+                            {}
                         </div>
                         <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                            {/* single service for home six */}
+                            {}
                             <div className="single-service-home-six">
                                 <div className="icon">
                                     <img src="assets/images/service/icon/21.svg" alt="" />
@@ -71,14 +71,13 @@ function ServiceSix() {
                                     </Link>
                                 </div>
                             </div>
-                            {/* single service for home six End */}
+                            {}
                         </div>
                     </div>
                 </div>
             </div>
-            {/* rts-service area end */}
+            {}
         </div>
     )
 }
-
 export default ServiceSix

@@ -10,19 +10,17 @@ export default function Home() {
         { label: 'Appoinment' }
     ];
     return (
-
         <div className="">
             <HeaderOne />
             <Breadcrumb title="Appoinment" breadcrumbs={breadcrumbs} />
-
-            {/* rts circle progress area */}
+            {}
             <div className="rts-circle-progress-area rts-section-gap">
                 <div className="container">
                     <div className="row g-5">
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                            {/* single progress area */}
+                            {}
                             <div className="single-circle-progress-inner">
-                                {/* single */}
+                                {}
                                 <div className="progress red">
                                     <span className="progress-left">
                                         <span className="progress-bar" />
@@ -32,15 +30,15 @@ export default function Home() {
                                     </span>
                                     <div className="progress-value">85%</div>
                                 </div>
-                                {/* single */}
+                                {}
                                 <h5 className="title">Quality Service</h5>
                             </div>
-                            {/* single progress area End */}
+                            {}
                         </div>
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                            {/* single progress area */}
+                            {}
                             <div className="single-circle-progress-inner">
-                                {/* single */}
+                                {}
                                 <div className="progress red">
                                     <span className="progress-left">
                                         <span className="progress-bar" />
@@ -50,15 +48,15 @@ export default function Home() {
                                     </span>
                                     <div className="progress-value">90%</div>
                                 </div>
-                                {/* single */}
+                                {}
                                 <h5 className="title">Skilled Members</h5>
                             </div>
-                            {/* single progress area End */}
+                            {}
                         </div>
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                            {/* single progress area */}
+                            {}
                             <div className="single-circle-progress-inner">
-                                {/* single */}
+                                {}
                                 <div className="progress red">
                                     <span className="progress-left">
                                         <span className="progress-bar" />
@@ -68,15 +66,15 @@ export default function Home() {
                                     </span>
                                     <div className="progress-value">78%</div>
                                 </div>
-                                {/* single */}
+                                {}
                                 <h5 className="title">Happy Customers</h5>
                             </div>
-                            {/* single progress area End */}
+                            {}
                         </div>
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                            {/* single progress area */}
+                            {}
                             <div className="single-circle-progress-inner">
-                                {/* single */}
+                                {}
                                 <div className="progress red">
                                     <span className="progress-left">
                                         <span className="progress-bar" />
@@ -86,17 +84,16 @@ export default function Home() {
                                     </span>
                                     <div className="progress-value">79%</div>
                                 </div>
-                                {/* single */}
+                                {}
                                 <h5 className="title">Project Fails</h5>
                             </div>
-                            {/* single progress area End */}
+                            {}
                         </div>
                     </div>
                 </div>
             </div>
-            {/* rts circle progress area End */}
-
-            {/* contact area start */}
+            {}
+            {}
             <div className="rts-contact-area contact-one appoinment background-contact-appoinment">
                 <div className="">
                     <div className="row g-0 align-items-center">
@@ -131,12 +128,10 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            {/* contact area end */}
-
+            {}
             <TeamTwo/>
             <FooterOne />
             <BackToTop />
         </div>
-
     );
 }

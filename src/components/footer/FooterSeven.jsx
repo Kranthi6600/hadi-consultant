@@ -1,16 +1,14 @@
 "use client"
 import React from 'react'
 import Link from 'next/link';
-
-
 function FooterSeven() {
     return (
         <div>
-            {/* footer area start */}
+            {}
             <div className="rts-footer-area rts-section-gap footer-two footer-bg-two mt--120 mt_md--80 mt_sm--60" id='f-contact'>
                 <div className="container">
                     <div className="row">
-                        {/* single wized */}
+                        {}
                         <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div className="footer-two-single-wized left">
                                 <h3 className="title">
@@ -71,7 +69,7 @@ function FooterSeven() {
                                 </div>
                             </div>
                         </div>
-                        {/* single wized */}
+                        {}
                         <div className="col-xl-2 col-lg-6 col-md-6 col-sm-12 col-12 mt_sm--30 mt_md--30">
                             <div className="footer-two-single-wized">
                                 <div className="wized-title-area">
@@ -103,8 +101,8 @@ function FooterSeven() {
                                 </div>
                             </div>
                         </div>
-                        {/* single wized */}
-                        {/* single wized */}
+                        {}
+                        {}
                         <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div className="footer-two-single-wized right">
                                 <div className="wized-2-body">
@@ -123,11 +121,11 @@ function FooterSeven() {
                                 </div>
                             </div>
                         </div>
-                        {/* single wized */}
+                        {}
                     </div>
                 </div>
             </div>
-            {/* copyright-area start */}
+            {}
             <div className="rts-copy-right ptb--30">
                 <div className="container">
                     <div className="row">
@@ -145,7 +143,7 @@ function FooterSeven() {
                                             <Link href={'#'}>Faq</Link>
                                         </li>
                                         <li>
-                                            <Link href="contactus.html">Contact</Link>
+                                            <Link href="/contact">Contact</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -154,10 +152,8 @@ function FooterSeven() {
                     </div>
                 </div>
             </div>
-            {/* copyright-area end */}
-
+            {}
         </div>
     )
 }
-
 export default FooterSeven

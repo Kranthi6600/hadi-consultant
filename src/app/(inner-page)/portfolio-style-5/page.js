@@ -13,14 +13,11 @@ export default function Home() {
         { label: 'Portfolio Style 4' }
     ];
     return (
-
         <div className="">
             <HeaderOne />
-
             <Breadcrumb title="Portfolio Style 4" breadcrumbs={breadcrumbs} />
-
             <>
-                {/*portfolio-area start*/}
+                {}
                 <section className="portfolio-area style-5 pt--120 pb--120 pt_xs--60 pt_xs--60">
                     <div className="container">
                         <div className="row">
@@ -44,14 +41,10 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                {/*portfolio-area end*/}
+                {}
             </>
-
-
-
             <FooterOne />
             <BackToTop />
         </div>
-
     );
 }

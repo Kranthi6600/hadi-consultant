@@ -3,9 +3,6 @@ import BannerOne from "@/components/banner/BannerOne";
 import HeaderOne from "@/components/header/HeaderOne";
 import ServiceOne from "@/components/service/ServiceOne";
 import BusinessGoalOne from "@/components/businessgoal/BusinessGoalOne";
-import Counterup from "@/components/counterup/Counterup";
-import GalleryOne from "@/components/gallery/GalleryOne";
-import BrandOne from "@/components/brand/BrandOne";
 import TeamOne from "@/components/team/TeamOne";
 import Feature from "@/components/feature/Feature";
 import TestimonialOne from "@/components/testimonials/TestimonialOne";
@@ -22,11 +19,8 @@ export default function Home() {
       <HeaderOne />
       <BannerOne />
       <AboutOne />
-      <ServiceOne />
+      <ServiceOne /> 
       <BusinessGoalOne />
-      <Counterup />
-      <GalleryOne />
-      <BrandOne />
       <TeamOne />
       <Feature />
       <TestimonialOne />

@@ -8,22 +8,20 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import ErrorBoundary from "@/components/ErrorBoundary";
-
 function TestimonialOne() {
     return (
         <ErrorBoundary>
             <div>
-
-                {/* start client feed back section */}
+                {}
                 <div className="rts-client-feedback">
                     <div className="container">
                         <div className="row">
-                            {/* start testimonials area */}
+                            {}
                             <div className="col-lg-7">
                                 <div className="rts-title-area reviews text-start pl--30 pt--70">
-                                    <p className="pre-title">Our Testimonials</p>
-                                    <h2 className="title">Client’s Feedbacks</h2>
-                                    {/* swiper area start */}
+                                    <p className="pre-title">Testimonials</p>
+                                    <h2 className="title">What My Clients Say?</h2>
+                                    {}
                                     <div className="swiper mySwipertestimonial">
                                         <Swiper
                                             // install Swiper modules
@@ -37,17 +35,11 @@ function TestimonialOne() {
                                                 nextEl: '.swiper-button-next',
                                                 prevEl: '.swiper-button-prev',
                                             }}
-
                                         >
                                             <SwiperSlide>
                                                 <div className="testimonial-inner">
                                                     <p className="disc text-start">
-                                                        “Consectetur adipiscing elit velit porta sapien purus erat
-                                                        nec, a ornare laoreet sem gravida accumsan in commodo
-                                                        aliquet nascetur maecenas. Sem tempus hendrerit diam
-                                                        mauris leo magna sociosqu viverra, accumsan massa
-                                                        tristique egestas cum sodales hac lacinia feugiat
-                                                        scelerisque porttitor”
+                                                        "Faisal was surprisingly awesome at finding tax savings for me. Made the process extremely easy from my side. Very professional, everything was done on time, required only one meeting and a couple of follow up phone calls. I highly recommend Faisal for tax filings."
                                                     </p>
                                                     <div className="testimonial-bottom-one">
                                                         <div className="thumbnail">
@@ -58,9 +50,9 @@ function TestimonialOne() {
                                                         </div>
                                                         <div className="details">
                                                             <a href="#">
-                                                                <h5 className="title">David Smith</h5>
+                                                                <h5 className="title">Amanda Lee</h5>
                                                             </a>
-                                                            <span>JHKL Owner</span>
+                                                            <span>Client</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -68,12 +60,7 @@ function TestimonialOne() {
                                             <SwiperSlide>
                                                 <div className="testimonial-inner">
                                                     <p className="disc text-start">
-                                                        “Consectetur adipiscing elit velit porta sapien purus erat
-                                                        nec, a ornare laoreet sem gravida accumsan in commodo
-                                                        aliquet nascetur maecenas. Sem tempus hendrerit diam
-                                                        mauris leo magna sociosqu viverra, accumsan massa
-                                                        tristique egestas cum sodales hac lacinia feugiat
-                                                        scelerisque porttitor”
+                                                        "I have been a client of Faisal CPA since I moved to Canada in 2006. Faisal has helped me through a plethora of issues over the years. He always gets back to me quickly with sensible advice. Faisal's experience gives me confidence, which is exactly what you want in the firm you turn to for advice. I highly recommend Faisal's tax services."
                                                     </p>
                                                     <div className="testimonial-bottom-one">
                                                         <div className="thumbnail">
@@ -84,9 +71,9 @@ function TestimonialOne() {
                                                         </div>
                                                         <div className="details">
                                                             <a href="#">
-                                                                <h5 className="title">David Smith</h5>
+                                                                <h5 className="title">Adam Cheise</h5>
                                                             </a>
-                                                            <span>JHKL Owner</span>
+                                                            <span>Long-term Client</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -94,12 +81,7 @@ function TestimonialOne() {
                                             <SwiperSlide>
                                                 <div className="testimonial-inner">
                                                     <p className="disc text-start">
-                                                        “Consectetur adipiscing elit velit porta sapien purus erat
-                                                        nec, a ornare laoreet sem gravida accumsan in commodo
-                                                        aliquet nascetur maecenas. Sem tempus hendrerit diam
-                                                        mauris leo magna sociosqu viverra, accumsan massa
-                                                        tristique egestas cum sodales hac lacinia feugiat
-                                                        scelerisque porttitor”
+                                                        "I've used Faisal Consulting services for years now, always highly satisfied with Faisal's work. My tax filings and advice requests were always taken care of in timely manner and most importantly, Faisal always made sure all potential deductions were discussed and considered. As a non-US resident, I wanted a specialist and not just another ordinary tax service, and this is what you get with Faisal."
                                                     </p>
                                                     <div className="testimonial-bottom-one">
                                                         <div className="thumbnail">
@@ -110,9 +92,9 @@ function TestimonialOne() {
                                                         </div>
                                                         <div className="details">
                                                             <a href="#">
-                                                                <h5 className="title">David Smith</h5>
+                                                                <h5 className="title">Catherine Gilbert</h5>
                                                             </a>
-                                                            <span>JHKL Owner</span>
+                                                            <span>International Client</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -121,11 +103,11 @@ function TestimonialOne() {
                                         <div className="swiper-button-next" />
                                         <div className="swiper-button-prev" />
                                     </div>
-                                    {/* swiper area end */}
+                                    {}
                                 </div>
                             </div>
-                            {/* end testimonials are */}
-                            {/* images area */}
+                            {}
+                            {}
                             <div className="col-lg-5">
                                 <div className="rts-test-one-image-inner">
                                     <img
@@ -134,15 +116,13 @@ function TestimonialOne() {
                                     />
                                 </div>
                             </div>
-                            {/* image area end */}
+                            {}
                         </div>
                     </div>
                 </div>
-                {/* start client feed back section End */}
-
+                {}
             </div>
         </ErrorBoundary>
     )
 }
-
 export default TestimonialOne
