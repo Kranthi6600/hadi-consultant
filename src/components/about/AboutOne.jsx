@@ -12,11 +12,11 @@ function AboutOne() {
                         <div className="col-lg-6 col-md-12 col-sm-12 col-12 order-lg-1 order-md-2 order-sm-2 order-2 mt_md--50 mt_sm--50">
                             <div className="rts-title-area">
                                 <p className="pre-title">About Hadi Consultant</p>
-                                <h2 className="title">We Are Experienced Business Solution</h2>
+                                <h2 className="title">We Are Experienced&nbsp;Business Solution</h2>
                             </div>
                             <div className="about-inner">
                                 <p className="disc">
-                                    Neque partrient nascetur facilisis suscipit ridiculus agna lobortis imperdiet vivamus est aliquam euismod nector quam convallis ornare justo service lifereu visionary sources unleash online businesss solutions
+                                    Hadi Consultant is a premier financial consulting firm specializing in tax planning, corporate tax services, and comprehensive business solutions. With over 15 years of experience in Canadian tax law and financial management, our team of certified professionals provides personalized strategies to help businesses minimize tax liabilities, ensure regulatory compliance, and achieve sustainable growth. We combine deep industry expertise with innovative approaches to deliver tailored solutions that drive financial success for our clients across various sectors.
                                 </p>
                                 {}
                                 <div className="row about-success-wrapper">

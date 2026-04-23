@@ -51,7 +51,7 @@ function BusinessGoalOne() {
                             <div className="col-lg-6 mt--35 mt_md--70 mt_sm--70">
                                 <div className="business-goal-right">
                                     <div className="rts-title-area business text-start pl--30">
-                                        <p className="pre-title">We Are Experienced Business Solution</p>
+                                        <p className="pre-title">We Are Experienced&nbsp;Business Solution</p>
                                         <h2 className="title">Hadi Consultant - Your Trusted Tax Expert</h2>
                                     </div>
                                     <div className="rts-business-goal pl--30">
@@ -62,10 +62,10 @@ function BusinessGoalOne() {
                                                 className="thumb"
                                             />
                                             <div className="goal-wrapper">
-                                                <h6 className="title">Accurate Record Keeping</h6>
+                                                <h6 className="title">What should i included my personal details?</h6>
                                                 <p className="disc">
-                                        With over 15 years of experience in Canadian tax law and financial consulting, I provide personalized tax solutions tailored to your specific business needs. My expertise includes personal and corporate tax planning, cross-border taxation, and strategic business advisory.
-                                    </p>
+                                                    We provide comprehensive personal details including your financial information, tax records, and business documentation to ensure complete transparency and accuracy in all our consulting services.
+                                                </p>
                                             </div>
                                         </div>
                                         <div className="single-goal">
@@ -75,10 +75,10 @@ function BusinessGoalOne() {
                                                 className="thumb"
                                             />
                                             <div className="goal-wrapper">
-                                                <h6 className="title">Always On Time</h6>
+                                                <h6 className="title">Where i can find my business growth result?</h6>
                                                 <p className="disc">
-                                        My clients have seen an average of 23% business growth and 35% tax savings through my strategic tax planning and optimization services. I help businesses navigate complex tax regulations while maximizing their financial efficiency.
-                                    </p>
+                                                    Your business growth results can be tracked through our detailed monthly reports, quarterly performance reviews, and annual financial statements that we provide to all our clients.
+                                                </p>
                                             </div>
                                         </div>
                                         <div className="single-goal">
@@ -88,10 +88,10 @@ function BusinessGoalOne() {
                                                 className="thumb"
                                             />
                                             <div className="goal-wrapper">
-                                                <h6 className="title">Hard Working</h6>
+                                                <h6 className="title">Did you get any business consultant?</h6>
                                                 <p className="disc">
-                                        I work with certified public accountants and financial experts to provide comprehensive solutions. All my clients receive direct access to my expertise and personalized attention to their unique financial situations.
-                                    </p>
+                                                    Yes, we have experienced business consultants who specialize in tax planning, financial strategy, and business development to help you achieve your goals.
+                                                </p>
                                             </div>
                                         </div>
                                         <div className="single-goal">
@@ -101,10 +101,35 @@ function BusinessGoalOne() {
                                                 className="thumb"
                                             />
                                             <div className="goal-wrapper">
-                                                <h6 className="title">24/7 Availability</h6>
+                                                <h6 className="title">Corporate Tax Services</h6>
                                                 <p className="disc">
-                                                    Round-the-clock support for urgent tax and financial matters, ensuring 
-                                                    you have expert help whenever you need it most.
+                                                    Our corporate tax services help businesses minimize tax liabilities while ensuring full compliance with Canadian tax laws. We handle everything from corporate tax returns to complex tax strategies.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div className="single-goal">
+                                            <img
+                                                src="assets/images/business-goal/icon/01.svg"
+                                                alt="business_Icone"
+                                                className="thumb"
+                                            />
+                                            <div className="goal-wrapper">
+                                                <h6 className="title">T4 Filing Services</h6>
+                                                <p className="disc">
+                                                    Professional T4 filing services for businesses of all sizes. We ensure accurate and timely T4 slip preparation and filing for your employees, keeping you compliant with CRA requirements.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div className="single-goal">
+                                            <img
+                                                src="assets/images/business-goal/icon/02.svg"
+                                                alt="business_Icone"
+                                                className="thumb"
+                                            />
+                                            <div className="goal-wrapper">
+                                                <h6 className="title">Accurate Record Keeping</h6>
+                                                <p className="disc">
+                                                    Maintain accurate financial records with our professional record keeping services. We handle financial statements, document management, and comprehensive record solutions for businesses of all sizes.
                                                 </p>
                                             </div>
                                         </div>

@@ -10,7 +10,7 @@ Create a `.env.local` file in your project root with the following variables:
 # Email Configuration
 SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
-SMTP_USER=your-email@gmail.com
+SMTP_USER=consultantshadi1@gmail.com
 SMTP_PASS=your-app-password
 ADMIN_EMAIL=admin@hadiconsultant.com
 ```

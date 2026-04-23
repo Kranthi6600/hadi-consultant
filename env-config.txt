@@ -1,0 +1,16 @@
+# Email Configuration for Gmail
+# Copy this content to your .env.local file
+
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=consultantshadi1@gmail.com
+SMTP_PASS=your-app-password-here
+ADMIN_EMAIL=admin@hadiconsultant.com
+
+# Instructions:
+# 1. Create .env.local file in project root
+# 2. Copy the above content into .env.local
+# 3. Replace "your-app-password-here" with your actual Gmail app password
+# 4. Enable 2-factor authentication on consultantshadi1@gmail.com
+# 5. Generate app password from Google Account settings > Security > App passwords
+# 6. Restart your development server after creating .env.local

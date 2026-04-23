@@ -66,7 +66,7 @@ function SideMenu({ isSidebarOpen, toggleSidebar }) {
                                 {}
                                 <div className="single">
                                     <i className="fas fa-envelope" />
-                                    <Link href="#">fmcacpa@gmail.com</Link>
+                                    <Link href="#">consultantshadi1@gmail.com</Link>
                                 </div>
                                 {}
                                 {}

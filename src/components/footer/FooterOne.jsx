@@ -135,7 +135,7 @@ function FooterOne() {
                                                     <i className="far fa-envelope"></i>
                                                 </div>
                                                 <div className="contact-details">
-                                                    <p className="contact-value">fmcacpa@gmail.com</p>
+                                                    <p className="contact-value">consultantshadi1@gmail.com</p>
                                                 </div>
                                             </div>
                                             <div className="single-contact-info">

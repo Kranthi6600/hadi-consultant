@@ -151,8 +151,8 @@ export default function Home() {
                                     </div>
                                     <div className="info">
                                         <span>Email Us</span>
-                                        <Link href={'mailto:fmcacpa@gmail.com'}>
-                                            <h5>fmcacpa@gmail.com</h5>
+                                        <Link href={'mailto:consultantshadi1@gmail.com'}>
+                                            <h5>consultantshadi1@gmail.com</h5>
                                         </Link>
                                     </div>
                                 </div>

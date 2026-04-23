@@ -96,7 +96,7 @@ function FooterTwo() {
                                             </div>
                                             <div className="disc">
                                                 <span>Work with us</span>
-                                                <Link href={'#'}>fmcacpa@gmail.com</Link>
+                                                <Link href={'#'}>consultantshadi1@gmail.com</Link>
                                             </div>
                                         </div>
                                     </div>

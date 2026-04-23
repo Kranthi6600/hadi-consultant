@@ -91,13 +91,13 @@ export default function Home() {
                                 <div className="title-area">
                                     <span>HADI CONSULTANTS</span>
                                     <h2 className="title">
-                                        We Are Experienced Business Solution
+                                        We Are Experienced&nbsp;Business Solution
                                     </h2>
                                 </div>
                                 {}
                                 <div className="inner">
                                     <p className="disc">
-                                        Hadi Consultants provides expert financial and tax consulting services tailored to meet your unique business needs. Our team of certified professionals brings decades of experience in tax planning, financial strategy, and business development to help you achieve your goals.
+                                        Hadi Consultant is a premier financial consulting firm specializing in tax planning, corporate tax services, and comprehensive business solutions. With over 15 years of experience in Canadian tax law and financial management, our team of certified professionals provides personalized strategies to help businesses minimize tax liabilities, ensure regulatory compliance, and achieve sustainable growth. We combine deep industry expertise with innovative approaches to deliver tailored solutions that drive financial success for our clients across various sectors.
                                     </p>
                                     <div className="rts-progress-one-wrapper">
                                         <div className="single-progress">
@@ -143,23 +143,22 @@ export default function Home() {
                             <div className="col-xl-4 col-md-6 col-sm-12 col-12 pt--15 mb--80 mb_md--40 mb_sm--30">
                                 <div className="service-one-inner-four">
                                     <div className="big-thumbnail-area">
-                                        <Link href={'#'} className="thumbnail">
+                                        <div className="thumbnail">
                                             <img
                                                 src="assets/images/service/07.jpg"
                                                 alt="Business-service"
                                             />
-                                        </Link>
+                                        </div>
                                         <div className="content">
                                             <img
                                                 src="assets/images/service/icon/13.svg"
                                                 alt="Business-icon"
                                             />
-                                            <h5 className="title">Tax Planning & Compliance</h5>
+                                            <h5 className="title">Corporate Tax Services</h5>
                                             <p className="disc">
-                                                Our tax planning services help individuals and businesses minimize tax liabilities while ensuring full compliance with Canadian tax laws. We handle everything from personal tax returns to complex corporate tax strategies.
+                                                Our corporate tax services help businesses minimize tax liabilities while ensuring full compliance with Canadian tax laws. We handle everything from corporate tax returns to complex tax strategies.
                                             </p>
                                         </div>
-                                        <Link href="service-details.html" className="over_link" />
                                     </div>
                                 </div>
                             </div>
@@ -167,23 +166,22 @@ export default function Home() {
                             <div className="col-xl-4 col-md-6 col-sm-12 col-12 pt--15 mb--80 mb_md--40 mb_sm--30">
                                 <div className="service-one-inner-four">
                                     <div className="big-thumbnail-area">
-                                        <Link href={'#'} className="thumbnail">
+                                        <div className="thumbnail">
                                             <img
                                                 src="assets/images/service/08.jpg"
                                                 alt="Business-service"
                                             />
-                                        </Link>
+                                        </div>
                                         <div className="content">
                                             <img
                                                 src="assets/images/service/icon/14.svg"
                                                 alt="Business-icon"
                                             />
-                                            <h5 className="title">Financial Advisory</h5>
+                                            <h5 className="title">T4 Filing Services</h5>
                                             <p className="disc">
-                                                Get personalized financial advice from our experienced consultants. We help with investment planning, retirement strategies, business valuations, and comprehensive financial analysis to secure your financial future.
+                                                Professional T4 filing services for businesses of all sizes. We ensure accurate and timely T4 slip preparation and filing for your employees, keeping you compliant with CRA requirements.
                                             </p>
                                         </div>
-                                        <Link href="service-details.html" className="over_link" />
                                     </div>
                                 </div>
                             </div>
@@ -191,23 +189,22 @@ export default function Home() {
                             <div className="col-xl-4 col-md-6 col-sm-12 col-12 pt--15 mb--80">
                                 <div className="service-one-inner-four">
                                     <div className="big-thumbnail-area">
-                                        <Link href={'#'} className="thumbnail">
+                                        <div className="thumbnail">
                                             <img
                                                 src="assets/images/service/09.jpg"
                                                 alt="Business-service"
                                             />
-                                        </Link>
+                                        </div>
                                         <div className="content">
                                             <img
                                                 src="assets/images/service/icon/15.svg"
                                                 alt="Business-icon"
                                             />
-                                            <h5 className="title">Bookkeeping & Accounting</h5>
+                                            <h5 className="title">Accurate Record Keeping</h5>
                                             <p className="disc">
-                                                Maintain accurate financial records with our professional bookkeeping services. We handle financial statements, payroll management, and comprehensive accounting solutions for businesses of all sizes.
+                                                Maintain accurate financial records with our professional record keeping services. We handle financial statements, document management, and comprehensive record solutions for businesses of all sizes.
                                             </p>
                                         </div>
-                                        <Link href="service-details.html" className="over_link" />
                                     </div>
                                 </div>
                             </div>

@@ -31,7 +31,7 @@ function MapOne() {
                                             ON L4W 1K8 Canada
                                         </Link>
                                         <p className="headoffice">Email</p>
-                                        <p className="office">fmcacpa@gmail.com</p>
+                                        <p className="office">consultantshadi1@gmail.com</p>
                                     </div>
                                 </div>
                             </div>
