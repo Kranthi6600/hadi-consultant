@@ -3,7 +3,6 @@ import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import ServiceEleven from "@/components/service/ServiceEleven";
 import FooterOne from "@/components/footer/FooterOne";
-import PricingThree from "@/components/pricing/PricingThree";
 export default function Home() {
     const breadcrumbs = [
         { label: 'Home', link: '/' },
@@ -14,7 +13,6 @@ export default function Home() {
             <HeaderOne />
             <Breadcrumb title="Our Service" breadcrumbs={breadcrumbs} />
             <ServiceEleven />
-            <PricingThree />
             <FooterOne />
             <BackToTop />
         </div>
