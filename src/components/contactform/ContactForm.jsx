@@ -138,54 +138,63 @@ function ContactForm() {
                                     </div>
                                 )}
                                 
-                                <form onSubmit={handleSubmit}>
-                                    <div className="name-email">
-                                        <div>
+                                <form onSubmit={handleSubmit} className="modern-contact-form">
+                                    <div className="form-row">
+                                        <div className="form-group">
+                                            <label htmlFor="name" className="form-label">Your Name *</label>
                                             <input
                                                 type="text"
-                                                placeholder="Your Name"
+                                                id="name"
+                                                placeholder="Enter your full name"
                                                 name="name"
                                                 value={formData.name}
                                                 onChange={handleInputChange}
-                                                className={errors.name ? 'error' : ''}
+                                                className={`form-input ${errors.name ? 'error' : ''}`}
                                                 disabled={isSubmitting}
                                             />
                                             {errors.name && <span className="error-message">{errors.name}</span>}
                                         </div>
-                                        <div>
+                                        <div className="form-group">
+                                            <label htmlFor="email" className="form-label">Email Address *</label>
                                             <input
                                                 type="email"
-                                                placeholder="Email Address"
+                                                id="email"
+                                                placeholder="your.email@example.com"
                                                 name="email"
                                                 value={formData.email}
                                                 onChange={handleInputChange}
-                                                className={errors.email ? 'error' : ''}
+                                                className={`form-input ${errors.email ? 'error' : ''}`}
                                                 disabled={isSubmitting}
                                             />
                                             {errors.email && <span className="error-message">{errors.email}</span>}
                                         </div>
                                     </div>
                                     
-                                    <div>
+                                    <div className="form-group">
+                                        <label htmlFor="phone" className="form-label">Phone Number *</label>
                                         <input 
                                             type="tel" 
-                                            placeholder="Phone Number" 
+                                            id="phone"
+                                            placeholder="+1 (555) 123-4567" 
                                             name="phone" 
                                             value={formData.phone}
                                             onChange={handleInputChange}
-                                            className={errors.phone ? 'error' : ''}
+                                            className={`form-input ${errors.phone ? 'error' : ''}`}
                                             disabled={isSubmitting}
                                         />
                                         {errors.phone && <span className="error-message">{errors.phone}</span>}
                                     </div>
                                     
-                                    <div>
+                                    <div className="form-group">
+                                        <label htmlFor="service" className="form-label">Service Type *</label>
                                         <select 
+                                            id="service"
                                             name="service" 
-                                            className={`service-select ${errors.service ? 'error' : ''}`}
+                                            className={`form-select ${errors.service ? 'error' : ''}`}
                                             value={formData.service}
                                             onChange={handleInputChange}
                                             disabled={isSubmitting}
+                                            style={{ fontSize: '19px' }}
                                         >
                                             <option value="">Select a Service</option>
                                             <option value="financial-statements">Financial Statements Preparation</option>
@@ -205,26 +214,49 @@ function ContactForm() {
                                         {errors.service && <span className="error-message">{errors.service}</span>}
                                     </div>
                                     
-                                    <div>
+                                    <div className="form-group">
+                                        <label htmlFor="message" className="form-label">Message *</label>
                                         <textarea
+                                            id="message"
                                             placeholder="Tell us about your tax/financial needs..."
                                             name="message"
                                             value={formData.message}
                                             onChange={handleInputChange}
-                                            className={errors.message ? 'error' : ''}
+                                            className={`form-textarea ${errors.message ? 'error' : ''}`}
                                             disabled={isSubmitting}
                                             rows="5"
                                         />
                                         {errors.message && <span className="error-message">{errors.message}</span>}
                                     </div>
                                     
-                                    <button 
-                                        type="submit" 
-                                        className="rts-btn btn-primary"
-                                        disabled={isSubmitting}
-                                    >
-                                        {isSubmitting ? 'Submitting...' : 'Get Free Consultation'}
-                                    </button>
+                                    <div className="form-submit">
+                                        <button 
+                                            type="submit" 
+                                            disabled={isSubmitting}
+                                            style={{
+                                                backgroundColor: '#DF0A0A',
+                                                color: '#FFFFFF',
+                                                border: '2px solid #DF0A0A',
+                                                borderRadius: '15px',
+                                                fontSize: '16px',
+                                                fontWeight: '700',
+                                                padding: '17px 30px',
+                                                cursor: 'pointer',
+                                                boxShadow: '0 4px 15px rgba(223, 10, 10, 0.3)',
+                                                transition: 'all 0.3s ease',
+                                                display: 'inline-flex',
+                                                alignItems: 'center',
+                                                gap: '8px'
+                                            }}
+                                        >
+                                            {isSubmitting ? 'Submitting...' : (
+                                                <>
+                                                    <span style={{ fontSize: '24px' }}></span>
+                                                    Get Free Consultation
+                                                </>
+                                            )}
+                                        </button>
+                                    </div>
                                 </form>
                             </div>
                         </div>

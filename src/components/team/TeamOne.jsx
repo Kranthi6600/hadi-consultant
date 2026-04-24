@@ -45,7 +45,7 @@ function TeamOne() {
                             <SwiperSlide>
                                 <div className="team-single-one-start">
                                     <div className="team-image-area">
-                                        <Link href={'/team-details'}>
+                                        <Link href={'#'}>
                                             <img
                                                 src="assets/images/team/tm/01.jpg"
                                                 alt="Business_Team_single"
@@ -63,8 +63,8 @@ function TeamOne() {
                                         </Link>
                                     </div>
                                     <div className="single-details">
-                                        <Link href={'/team-details'}>
-                                            <h5 className="title">Sarah Johnson</h5>
+                                        <Link href={'#'}>
+                                            <h5 className="title">Robert Martinez</h5>
                                         </Link>
                                         <p>Senior Consultant</p>
                                     </div>
@@ -73,7 +73,7 @@ function TeamOne() {
                             <SwiperSlide>
                                 <div className="team-single-one-start">
                                     <div className="team-image-area">
-                                        <Link href={'/team-details'}>
+                                        <Link href={'#'}>
                                             <img
                                                 src="assets/images/team/tm/02.jpg"
                                                 alt="Business_Team_single"
@@ -91,8 +91,8 @@ function TeamOne() {
                                         </Link>
                                     </div>
                                     <div className="single-details">
-                                        <Link href={'/team-details'}>
-                                            <h5 className="title">Michael Chen</h5>
+                                        <Link href={'#'}>
+                                            <h5 className="title">Sarah Williams</h5>
                                         </Link>
                                         <p>Business Strategist</p>
                                     </div>
@@ -101,7 +101,7 @@ function TeamOne() {
                             <SwiperSlide>
                                 <div className="team-single-one-start">
                                     <div className="team-image-area">
-                                        <Link href={'/team-details'}>
+                                        <Link href={'#'}>
                                             <img
                                                 src="assets/images/team/tm/03.jpg"
                                                 alt="Business_Team_single"
@@ -119,8 +119,8 @@ function TeamOne() {
                                         </Link>
                                     </div>
                                     <div className="single-details">
-                                        <Link href={'/team-details'}>
-                                            <h5 className="title">Emily Rodriguez</h5>
+                                        <Link href={'#'}>
+                                            <h5 className="title">Michael Brown</h5>
                                         </Link>
                                         <p>Marketing Expert</p>
                                     </div>
@@ -129,7 +129,7 @@ function TeamOne() {
                             <SwiperSlide>
                                 <div className="team-single-one-start">
                                     <div className="team-image-area">
-                                        <Link href={'/team-details'}>
+                                        <Link href={'#'}>
                                             <img
                                                 src="assets/images/team/tm/04.jpg"
                                                 alt="Business_Team_single"
@@ -147,8 +147,8 @@ function TeamOne() {
                                         </Link>
                                     </div>
                                     <div className="single-details">
-                                        <Link href={'/team-details'}>
-                                            <h5 className="title">David Thompson</h5>
+                                        <Link href={'#'}>
+                                            <h5 className="title">Emily Johnson</h5>
                                         </Link>
                                         <p>Operations Manager</p>
                                     </div>
@@ -157,7 +157,7 @@ function TeamOne() {
                             <SwiperSlide>
                                 <div className="team-single-one-start">
                                     <div className="team-image-area">
-                                        <Link href={'/team-details'}>
+                                        <Link href={'#'}>
                                             <img
                                                 src="assets/images/team/tm/18.webp"
                                                 alt="Business_Team_single"
@@ -175,8 +175,8 @@ function TeamOne() {
                                         </Link>
                                     </div>
                                     <div className="single-details">
-                                        <Link href={'/team-details'}>
-                                            <h5 className="title">Lisa Anderson</h5>
+                                        <Link href={'#'}>
+                                            <h5 className="title">Michelle Anderson</h5>
                                         </Link>
                                         <p>HR Director</p>
                                     </div>
