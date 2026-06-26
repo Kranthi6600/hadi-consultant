@@ -6,7 +6,7 @@ const BlogGridMain = (props) => {
     return (
         <>
             <div className="blog-header">
-                <Link className="thumbnail" href={`/blogs/${Slug}`}>
+                <Link className="thumbnail" href={`/blog/${Slug}`}>
                     <img
                         src={`assets/images/blog/${blogImage}`}
                         alt="Business_Blog"
@@ -28,7 +28,7 @@ const BlogGridMain = (props) => {
                 </div>
             </div>
             <div className="blog-body">
-                <Link href={`/blogs/${Slug}`}>
+                <Link href={`/blog/${Slug}`}>
                     <h5 className="title">
                         {blogTitle ? blogTitle : 'How to growing your business'}
                     </h5>

@@ -61,7 +61,7 @@ function FooterOne() {
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href={'/our-service'}>
+                                            <Link href={'/services'}>
                                                 <i className="far fa-arrow-right" /> Our Services
                                             </Link>
                                         </li>
@@ -71,7 +71,7 @@ function FooterOne() {
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href={'/blogs'}>
+                                            <Link href={'/blog'}>
                                                 <i className="far fa-arrow-right" /> Blogs
                                             </Link>
                                         </li>

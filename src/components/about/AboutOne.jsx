@@ -5,7 +5,7 @@ function AboutOne() {
     return (
         <div>
             {}
-            <div className="rts-about-area rts-section-gap bg-about-sm-shape" id="about">
+            <div className="rts-about-area rts-section-gap bg-about-sm-shape mt--50" id="about">
                 <div className="container">
                     <div className="row g-5 align-items-center">
                         {}

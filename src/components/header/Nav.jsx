@@ -13,12 +13,12 @@ function Nav() {
                     </li>
                     {}
                     <li>
-                        <Link className="nav-item" href={'/our-service'}>
+                        <Link className="nav-item" href={'/services'}>
                             Our Services
                         </Link>
                     </li>
                     <li>
-                        <Link className="nav-item" href={'/blogs'}>
+                        <Link className="nav-item" href={'/blog'}>
                             Blogs
                         </Link>
                     </li>

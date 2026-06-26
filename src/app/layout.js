@@ -4,11 +4,18 @@ import "../../public/assets/css/plugins/animate.min.css";
 import "../../public/assets/css/plugins/unicons.css";
 import "../../public/assets/css/vendor/bootstrap.min.css";
 import "../../public/assets/css/style.css";
+import { SITE_URL } from "@/lib/site";
 export const metadata = {
   title: "Hadi Consultant Business",
   description: "Hadi Consultant Business",
   icons: {
     icon: "/assets/images/cropped-cropped-HADI_CONSULTANTS_logo-removebg-preview-140x74.ico",
+  },
+  alternates: {
+    canonical: SITE_URL,
+  },
+  openGraph: {
+    url: SITE_URL,
   },
 };
 export default function RootLayout({ children }) {

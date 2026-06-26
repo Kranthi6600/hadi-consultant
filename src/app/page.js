@@ -11,6 +11,16 @@ import ContactForm from "@/components/contactform/ContactForm";
 import MapOne from "@/components/map/MapOne";
 import FooterOne from "@/components/footer/FooterOne";
 import BackToTop from "@/components/BackToTop";
+import { SITE_URL } from "@/lib/site";
+
+export const metadata = {
+  alternates: {
+    canonical: SITE_URL,
+  },
+  openGraph: {
+    url: SITE_URL,
+  },
+};
 
 export default function Home() {
   return (

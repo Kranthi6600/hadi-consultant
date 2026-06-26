@@ -90,12 +90,12 @@ function SideMenu({ isSidebarOpen, toggleSidebar }) {
                                     </Link>
                                 </li>
                                 <li className="menu-item">
-                                    <Link className="menu-link" href={'/our-service'}>
+                                    <Link className="menu-link" href={'/services'}>
                                         Our Services
                                     </Link>
                                 </li>
                                 <li className="menu-item">
-                                    <Link className="menu-link" href={'/blogs'}>
+                                    <Link className="menu-link" href={'/blog'}>
                                         Blogs
                                     </Link>
                                 </li>

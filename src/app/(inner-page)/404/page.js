@@ -1,9 +1,18 @@
-"use client"
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import HeaderOne from "@/components/header/HeaderOne";
 import BackToTop from "@/components/BackToTop";
 import FooterOne from "@/components/footer/FooterOne";
+import { SITE_URL } from "@/lib/site";
+
+export const metadata = {
+    title: 'Page Not Found - Hadi Consultant',
+    robots: 'noindex, nofollow',
+    alternates: {
+        canonical: `${SITE_URL}/404`,
+    },
+};
+
 export default function Home() {
     return (
         <div className="">

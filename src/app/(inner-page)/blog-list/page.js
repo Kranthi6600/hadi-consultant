@@ -1,11 +1,23 @@
-"use client"
 import Link from 'next/link';
-import React, { useState, useEffect } from 'react';
 import HeaderOne from "@/components/header/HeaderOne";
 import FooterOne from "@/components/footer/FooterOne";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogGridMain from "./BlogGridMain";
 import post from "@/data/Posts.json";
+import { SITE_URL } from "@/lib/site";
+
+export const metadata = {
+    title: 'Blog List - Hadi Consultant',
+    description: 'Browse our blog list for expert insights on tax, accounting, and business growth.',
+    robots: 'index, follow',
+    alternates: {
+        canonical: `${SITE_URL}/blog-list`,
+    },
+    openGraph: {
+        url: `${SITE_URL}/blog-list`,
+    },
+};
+
 export default function Home() {
     const breadcrumbs = [
         { label: 'Home', link: '/' },

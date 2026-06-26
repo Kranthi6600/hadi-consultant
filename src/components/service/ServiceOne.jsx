@@ -148,7 +148,7 @@ function ServiceOne() {
                         </div>
                         <div className="row">
                             <div className="col-12 text-center mt--60 mb--60">
-                                <Link className="rts-btn btn-primary btn-large" href="/our-service">
+                                <Link className="rts-btn btn-primary btn-large" href="/services">
                                     View All Services
                                 </Link>
                             </div>
