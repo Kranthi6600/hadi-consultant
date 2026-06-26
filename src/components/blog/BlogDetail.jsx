@@ -2,9 +2,14 @@
 import React from 'react'
 import Link from 'next/link';
 
+function stripHtml(html) {
+    if (!html) return '';
+    return html.replace(/<[^>]*>/g, '').trim();
+}
+
 function BlogDetail({ blog }) {
     const title = blog.title || 'Blog Details';
-    const excerpt = blog.excerpt || '';
+    const excerpt = stripHtml(blog.excerpt || '');
     const content = blog.content || '';
     const thumbnail = blog.thumbnail || '';
     const category = blog.wehoware_blog_categories;

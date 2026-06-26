@@ -12,12 +12,17 @@ function formatDate(dateStr) {
     };
 }
 
+function stripHtml(html) {
+    if (!html) return '';
+    return html.replace(/<[^>]*>/g, '').trim();
+}
+
 const BlogListMain = ({ blog }) => {
     const { day, month } = formatDate(blog.published_at || blog.created_at);
     const category = blog.wehoware_blog_categories;
     const image = blog.thumbnail || '';
     const title = blog.title || '';
-    const excerpt = blog.excerpt || '';
+    const excerpt = stripHtml(blog.excerpt || '');
 
     return (
         <>

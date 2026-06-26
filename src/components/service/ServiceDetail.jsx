@@ -2,9 +2,14 @@
 import React from 'react'
 import Link from 'next/link';
 
+function stripHtml(html) {
+    if (!html) return '';
+    return html.replace(/<[^>]*>/g, '').trim();
+}
+
 function ServiceDetail({ service }) {
     const title = service.title || 'Service Details';
-    const description = service.description || '';
+    const description = stripHtml(service.description || '');
     const content = service.content || '';
     const thumbnail = service.thumbnail || '';
     const category = service.wehoware_service_categories;
@@ -38,19 +43,6 @@ function ServiceDetail({ service }) {
                                         </div>
                                     )}
                                     <h2 className="title">{title}</h2>
-                                    {category && category.name && (
-                                        <span className="pre-title" style={{
-                                            fontSize: '14px',
-                                            color: '#DF0A0A',
-                                            textTransform: 'uppercase',
-                                            fontWeight: 600,
-                                            letterSpacing: '1px',
-                                            display: 'block',
-                                            marginTop: '10px'
-                                        }}>
-                                            {category.name}
-                                        </span>
-                                    )}
                                     {description && (
                                         <p className="disc" style={{ maxWidth: '800px', margin: '20px auto 0', fontSize: '18px' }}>
                                             {description}
@@ -64,16 +56,6 @@ function ServiceDetail({ service }) {
                                         gap: '16px',
                                         flexWrap: 'wrap'
                                     }}>
-                                        {service.fee !== undefined && service.fee !== null && (
-                                            <span style={{
-                                                fontWeight: 700,
-                                                color: '#DF0A0A',
-                                                fontSize: '20px'
-                                            }}>
-                                                {service.fee_currency || '$'}{service.fee}
-                                                {service.fee_label && ` ${service.fee_label}`}
-                                            </span>
-                                        )}
                                         {service.duration && (
                                             <span style={{
                                                 fontSize: '14px',
@@ -83,11 +65,6 @@ function ServiceDetail({ service }) {
                                                 borderRadius: '16px'
                                             }}>
                                                 {service.duration}
-                                            </span>
-                                        )}
-                                        {service.service_code && (
-                                            <span style={{ fontSize: '13px', color: '#888' }}>
-                                                Code: {service.service_code}
                                             </span>
                                         )}
                                         {service.rating && (
@@ -209,13 +186,13 @@ function ServiceDetail({ service }) {
                                     <div className="blog-single-post-listing" style={{ border: '1px solid #eee', borderRadius: '8px', overflow: 'hidden' }}>
                                         {blog.thumbnail && (
                                             <div className="thumbnail">
-                                                <Link href={`/blog-details/${blog.slug}`}>
+                                                <Link href={`/blog/${blog.slug}`}>
                                                     <img src={blog.thumbnail} alt={blog.title} style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
                                                 </Link>
                                             </div>
                                         )}
                                         <div className="blog-listing-content" style={{ padding: '20px' }}>
-                                            <Link href={`/blog-details/${blog.slug}`}>
+                                            <Link href={`/blog/${blog.slug}`}>
                                                 <h5 className="title" style={{ fontSize: '18px', marginBottom: '10px' }}>{blog.title}</h5>
                                             </Link>
                                             {blog.excerpt && (

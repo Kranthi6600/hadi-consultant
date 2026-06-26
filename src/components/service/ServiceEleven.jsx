@@ -5,6 +5,11 @@ import Link from 'next/link';
 const iconPool = ['01.svg', '02.svg', '03.svg', '04.svg', '05.svg', '06.svg'];
 const classPool = ['one', 'two', 'three', 'four', 'five', 'six'];
 
+function stripHtml(html) {
+    if (!html) return '';
+    return html.replace(/<[^>]*>/g, '').trim();
+}
+
 function ServiceEleven({ services }) {
     if (!services || services.length === 0) {
         return (
@@ -70,7 +75,7 @@ function ServiceEleven({ services }) {
                                                     {category.name}
                                                 </span>
                                             )}
-                                            <p className="disc">{service.description}</p>
+                                            <p className="disc">{stripHtml(service.description)}</p>
                                             <div style={{ marginTop: '12px', display: 'flex', flexWrap: 'wrap', gap: '8px', alignItems: 'center' }}>
                                                 {service.fee !== undefined && service.fee !== null && (
                                                     <span style={{

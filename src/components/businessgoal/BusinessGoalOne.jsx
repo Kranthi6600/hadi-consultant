@@ -94,45 +94,6 @@ function BusinessGoalOne() {
                                                 </p>
                                             </div>
                                         </div>
-                                        <div className="single-goal">
-                                            <img
-                                                src="assets/images/business-goal/icon/02.svg"
-                                                alt="business_Icone"
-                                                className="thumb"
-                                            />
-                                            <div className="goal-wrapper">
-                                                <h6 className="title">Corporate Tax Services</h6>
-                                                <p className="disc">
-                                                    Our corporate tax services help businesses minimize tax liabilities while ensuring full compliance with Canadian tax laws. We handle everything from corporate tax returns to complex tax strategies.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div className="single-goal">
-                                            <img
-                                                src="assets/images/business-goal/icon/01.svg"
-                                                alt="business_Icone"
-                                                className="thumb"
-                                            />
-                                            <div className="goal-wrapper">
-                                                <h6 className="title">T4 Filing Services</h6>
-                                                <p className="disc">
-                                                    Professional T4 filing services for businesses of all sizes. We ensure accurate and timely T4 slip preparation and filing for your employees, keeping you compliant with CRA requirements.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div className="single-goal">
-                                            <img
-                                                src="assets/images/business-goal/icon/02.svg"
-                                                alt="business_Icone"
-                                                className="thumb"
-                                            />
-                                            <div className="goal-wrapper">
-                                                <h6 className="title">Accurate Record Keeping</h6>
-                                                <p className="disc">
-                                                    Maintain accurate financial records with our professional record keeping services. We handle financial statements, document management, and comprehensive record solutions for businesses of all sizes.
-                                                </p>
-                                            </div>
-                                        </div>
                                         <div className="goal-button-wrapper mt--70">
                                             <Link
                                                 href={'/contact'}
