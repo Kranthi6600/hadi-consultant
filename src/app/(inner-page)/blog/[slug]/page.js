@@ -1,8 +1,8 @@
-import HeaderOne from "@/components/header/HeaderOne";
+import Header from "@/components/header/Header";
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogDetail from "@/components/blog/BlogDetail";
-import FooterOne from "@/components/footer/FooterOne";
+import Footer from "@/components/footer/Footer";
 import Link from "next/link";
 import { SITE_URL } from "@/lib/site";
 
@@ -76,7 +76,7 @@ export default async function BlogDetailPage({ params }) {
     if (!blog) {
         return (
             <div className="">
-                <HeaderOne />
+                <Header />
                 <Breadcrumb title="Blog Not Found" breadcrumbs={breadcrumbs} />
                 <div className="rts-section-gap">
                     <div className="container text-center">
@@ -87,7 +87,7 @@ export default async function BlogDetailPage({ params }) {
                         </Link>
                     </div>
                 </div>
-                <FooterOne />
+                <Footer />
                 <BackToTop />
             </div>
         );
@@ -111,10 +111,10 @@ export default async function BlogDetailPage({ params }) {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
             <div className="">
-                <HeaderOne />
+                <Header />
                 <Breadcrumb title={blog.title || 'Blog Details'} breadcrumbs={breadcrumbs} />
                 <BlogDetail blog={blog} />
-                <FooterOne />
+                <Footer />
                 <BackToTop />
             </div>
         </>

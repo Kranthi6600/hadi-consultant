@@ -1,8 +1,8 @@
-import HeaderOne from "@/components/header/HeaderOne";
+import Header from "@/components/header/Header";
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import ServiceDetail from "@/components/service/ServiceDetail";
-import FooterOne from "@/components/footer/FooterOne";
+import Footer from "@/components/footer/Footer";
 import Link from "next/link";
 import { SITE_URL } from "@/lib/site";
 
@@ -76,7 +76,7 @@ export default async function ServiceDetailPage({ params }) {
     if (!service) {
         return (
             <div className="">
-                <HeaderOne />
+                <Header />
                 <Breadcrumb title="Service Not Found" breadcrumbs={breadcrumbs} />
                 <div className="rts-section-gap">
                     <div className="container text-center">
@@ -87,7 +87,7 @@ export default async function ServiceDetailPage({ params }) {
                         </Link>
                     </div>
                 </div>
-                <FooterOne />
+                <Footer />
                 <BackToTop />
             </div>
         );
@@ -109,10 +109,10 @@ export default async function ServiceDetailPage({ params }) {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
             <div className="">
-                <HeaderOne />
+                <Header />
                 <Breadcrumb title={service.title || 'Service Details'} breadcrumbs={breadcrumbs} />
                 <ServiceDetail service={service} />
-                <FooterOne />
+                <Footer />
                 <BackToTop />
             </div>
         </>

@@ -1,15 +1,15 @@
-import AboutOne from "@/components/about/AboutOne";
-import BannerOne from "@/components/banner/BannerOne";
-import HeaderOne from "@/components/header/HeaderOne";
-import ServiceOne from "@/components/service/ServiceOne";
-import BusinessGoalOne from "@/components/businessgoal/BusinessGoalOne";
-import TeamOne from "@/components/team/TeamOne";
+import About from "@/components/about/About";
+import Banner from "@/components/banner/Banner";
+import Header from "@/components/header/Header";
+import Service from "@/components/service/Service";
+import BusinessGoal from "@/components/businessgoal/BusinessGoal";
+import Team from "@/components/team/Team";
 import Feature from "@/components/feature/Feature";
-import TestimonialOne from "@/components/testimonials/TestimonialOne";
-import BlogOne from "@/components/blog/BlogOne";
+import Testimonial from "@/components/testimonials/Testimonial";
+import Blog from "@/components/blog/Blog";
 import ContactForm from "@/components/contactform/ContactForm";
-import MapOne from "@/components/map/MapOne";
-import FooterOne from "@/components/footer/FooterOne";
+import Map from "@/components/map/Map";
+import Footer from "@/components/footer/Footer";
 import BackToTop from "@/components/BackToTop";
 import { SITE_URL } from "@/lib/site";
 
@@ -26,18 +26,18 @@ export default function Home() {
   return (
     <div className="#">
 
-      <HeaderOne />
-      <BannerOne />
-      <AboutOne />
-      <ServiceOne /> 
-      <BusinessGoalOne />
-      <TeamOne />
+      <Header />
+      <Banner />
+      <About />
+      <Service /> 
+      <BusinessGoal />
+      <Team />
       <Feature />
-      <TestimonialOne />
-      <BlogOne />
+      <Testimonial />
+      <Blog />
       <ContactForm />
-      <MapOne />
-      <FooterOne />
+      <Map />
+      <Footer />
       <BackToTop />
 
     </div>

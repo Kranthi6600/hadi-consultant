@@ -1,9 +1,9 @@
-"use client"
+﻿"use client"
 import Link from 'next/link';
 import React, { useState } from 'react';
-import HeaderOne from "@/components/header/HeaderOne";
+import Header from "@/components/header/Header";
 import BackToTop from "@/components/BackToTop";
-import FooterOne from "@/components/footer/FooterOne";
+import Footer from "@/components/footer/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export default function ContactClient() {
@@ -114,7 +114,7 @@ export default function ContactClient() {
     };
     return (
         <div className="">
-            <HeaderOne />
+            <Header />
             <Breadcrumb title="Contact Us" breadcrumbs={breadcrumbs} />
             {}
             <div className="rts-contact-area rts-section-gap">
@@ -301,7 +301,7 @@ export default function ContactClient() {
                 </div>
             </div>
             {}
-            <FooterOne />
+            <Footer />
             <BackToTop />
         </div>
     );

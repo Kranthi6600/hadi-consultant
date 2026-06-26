@@ -1,10 +1,10 @@
-"use client"
+﻿"use client"
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import HeaderOne from "@/components/header/HeaderOne";
+import Header from "@/components/header/Header";
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
-import FooterOne from "@/components/footer/FooterOne";
+import Footer from "@/components/footer/Footer";
 import Accordion from 'react-bootstrap/Accordion';
 
 export default function AboutUsClient() {
@@ -39,7 +39,7 @@ export default function AboutUsClient() {
         }, []);
     return (
         <div className="">
-            <HeaderOne />
+            <Header />
             <Breadcrumb title="About Us" breadcrumbs={breadcrumbs} />
             {}
             <div className="rts-about-area rts-section-gap">
@@ -68,7 +68,7 @@ export default function AboutUsClient() {
                                                 <div id="video-overlay" className="video-overlay open">
                                                     {}
                                                     <Link className="video-overlay-close" href={'#'} onClick={closeVideo}>
-                                                        ×
+                                                        Ã—
                                                     </Link>
                                                     {}
                                                     <iframe
@@ -331,7 +331,7 @@ export default function AboutUsClient() {
                 </div>
             </div>
             {}
-            <FooterOne />
+            <Footer />
             <BackToTop />
         </div>
     );

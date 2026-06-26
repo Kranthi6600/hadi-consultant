@@ -1,8 +1,8 @@
-import HeaderOne from "@/components/header/HeaderOne";
+﻿import Header from "@/components/header/Header";
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import ServiceEleven from "@/components/service/ServiceEleven";
-import FooterOne from "@/components/footer/FooterOne";
+import Footer from "@/components/footer/Footer";
 import { SITE_URL } from "@/lib/site";
 
 const BASE_URL = 'https://wehoware-saas.vercel.app';
@@ -47,10 +47,10 @@ export default async function OurServicePage() {
 
     return (
         <div className="">
-            <HeaderOne />
+            <Header />
             <Breadcrumb title="Our Service" breadcrumbs={breadcrumbs} />
             <ServiceEleven services={services} />
-            <FooterOne />
+            <Footer />
             <BackToTop />
         </div>
     );

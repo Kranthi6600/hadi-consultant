@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import HeaderOne from "@/components/header/HeaderOne";
-import FooterOne from "@/components/footer/FooterOne";
+﻿import Link from 'next/link';
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import BlogListMain from "./BlogListMain";
@@ -54,7 +54,7 @@ export default async function BlogsPage({ searchParams }) {
 
     return (
         <div className="">
-            <HeaderOne />
+            <Header />
             <Breadcrumb title="Blog Post" breadcrumbs={breadcrumbs} />
             <BackToTop />
             <div className="rts-blog-grid-area rts-section-gap">
@@ -202,7 +202,7 @@ export default async function BlogsPage({ searchParams }) {
                     </div>
                 </div>
             </div>
-            <FooterOne />
+            <Footer />
         </div>
     )
 }

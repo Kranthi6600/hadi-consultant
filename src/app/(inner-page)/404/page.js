@@ -1,8 +1,8 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import React from 'react';
-import HeaderOne from "@/components/header/HeaderOne";
+import Header from "@/components/header/Header";
 import BackToTop from "@/components/BackToTop";
-import FooterOne from "@/components/footer/FooterOne";
+import Footer from "@/components/footer/Footer";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata = {
@@ -16,7 +16,7 @@ export const metadata = {
 export default function Home() {
     return (
         <div className="">
-            <HeaderOne />
+            <Header />
             {}
             <div className="rts-404-area rts-section-gap">
                 <div className="container">
@@ -28,7 +28,7 @@ export default function Home() {
                                 </div>
                                 <h2 className="title mt--40">Oops! Nothing Was Found</h2>
                                 <p className="disc">
-                                    Sorry, we couldn’t find the page you where looking for. We suggest{" "}
+                                    Sorry, we couldnâ€™t find the page you where looking for. We suggest{" "}
                                     <br /> that you return to homepage.
                                 </p>
                                 <Link className="rts-btn btn-primary" href={'/'}>
@@ -40,7 +40,7 @@ export default function Home() {
                 </div>
             </div>
             {}
-<FooterOne />
+<Footer />
             <BackToTop />
         </div>
     );
