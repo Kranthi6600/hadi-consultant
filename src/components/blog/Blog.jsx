@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css'; // Core Swiper styles
 import { Navigation, Scrollbar, A11y, EffectFade, Autoplay } from 'swiper/modules';
@@ -7,10 +7,18 @@ import { Navigation, Scrollbar, A11y, EffectFade, Autoplay } from 'swiper/module
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
-import post from '../../data/Posts.json';
 import BlogMain from './BlogMain';
 import ErrorBoundary from "@/components/ErrorBoundary";
 function Blog() {
+    const [blogs, setBlogs] = useState([]);
+
+    useEffect(() => {
+        fetch("/api/proxy-blogs")
+            .then((res) => res.json())
+            .then((data) => setBlogs((data.data || []).slice(0, 6)))
+            .catch(() => setBlogs([]));
+    }, []);
+
     return (
         <ErrorBoundary>
             <div>
@@ -55,24 +63,20 @@ function Blog() {
                                         },
                                     }}
                                 >
-                                    {post.map((data, index) => {
+                                    {blogs.map((blog, index) => {
                                         return (
-                                            <SwiperSlide key={index}>
+                                            <SwiperSlide key={blog.id || index}>
                                                 {
                                                     <BlogMain
-                                                        blogID={data.id}
-                                                        Slug={data.slug}
-                                                        blogImage={`${data.image}`}
-                                                        blogAuthor={data.author}
-                                                        blogPublishedDate={data.publishedDate}
-                                                        blogCategory={data.category}
-                                                        blogTitle={data.title}
-                                                        descripTion={data.descripTion}
+                                                        blogID={blog.slug}
+                                                        blogImage={blog.thumbnail || ''}
+                                                        blogPublishedDate={blog.published_at ? new Date(blog.published_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : ''}
+                                                        blogTitle={blog.title || 'Untitled'}
                                                     />
                                                 }
                                             </SwiperSlide>
                                         )
-                                    }).slice(17, 21)}
+                                    })}
                                 </Swiper>
                             </div>
                         </div>

@@ -1,7 +1,8 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 function ContactForm() {
+    const [services, setServices] = useState([]);
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -12,6 +13,13 @@ function ContactForm() {
     const [errors, setErrors] = useState({});
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState(null);
+
+    useEffect(() => {
+        fetch("/api/proxy-services")
+            .then((res) => res.json())
+            .then((data) => setServices(data.data || []))
+            .catch(() => setServices([]));
+    }, []);
 
     const validateForm = () => {
         const newErrors = {};
@@ -138,10 +146,10 @@ function ContactForm() {
                                     </div>
                                 )}
                                 
-                                <form onSubmit={handleSubmit} className="modern-contact-form">
-                                    <div className="form-row">
-                                        <div className="form-group">
-                                            <label htmlFor="name" className="form-label">Your Name *</label>
+                                <form onSubmit={handleSubmit} className="modern-contact-form" style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                                    <div className="form-row" style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                                        <div className="form-group" style={{ marginBottom: '0', flex: '1 1 48%', minWidth: '200px' }}>
+                                            <label htmlFor="name" className="form-label" style={{ display: 'block', marginBottom: '4px', fontSize: '14px', fontWeight: '500' }}>Your Name *</label>
                                             <input
                                                 type="text"
                                                 id="name"
@@ -151,11 +159,12 @@ function ContactForm() {
                                                 onChange={handleInputChange}
                                                 className={`form-input ${errors.name ? 'error' : ''}`}
                                                 disabled={isSubmitting}
+                                                style={{ width: '100%', height: '42px', padding: '8px 12px', fontSize: '14px', border: '1px solid #ddd', borderRadius: '6px' }}
                                             />
-                                            {errors.name && <span className="error-message">{errors.name}</span>}
+                                            {errors.name && <span className="error-message" style={{ display: 'block', fontSize: '12px', color: '#DF0A0A', marginTop: '2px' }}>{errors.name}</span>}
                                         </div>
-                                        <div className="form-group">
-                                            <label htmlFor="email" className="form-label">Email Address *</label>
+                                        <div className="form-group" style={{ marginBottom: '0', flex: '1 1 48%', minWidth: '200px' }}>
+                                            <label htmlFor="email" className="form-label" style={{ display: 'block', marginBottom: '4px', fontSize: '14px', fontWeight: '500' }}>Email Address *</label>
                                             <input
                                                 type="email"
                                                 id="email"
@@ -165,13 +174,14 @@ function ContactForm() {
                                                 onChange={handleInputChange}
                                                 className={`form-input ${errors.email ? 'error' : ''}`}
                                                 disabled={isSubmitting}
+                                                style={{ width: '100%', height: '42px', padding: '8px 12px', fontSize: '14px', border: '1px solid #ddd', borderRadius: '6px' }}
                                             />
-                                            {errors.email && <span className="error-message">{errors.email}</span>}
+                                            {errors.email && <span className="error-message" style={{ display: 'block', fontSize: '12px', color: '#DF0A0A', marginTop: '2px' }}>{errors.email}</span>}
                                         </div>
                                     </div>
                                     
-                                    <div className="form-group">
-                                        <label htmlFor="phone" className="form-label">Phone Number *</label>
+                                    <div className="form-group" style={{ marginBottom: '0' }}>
+                                        <label htmlFor="phone" className="form-label" style={{ display: 'block', marginBottom: '4px', fontSize: '14px', fontWeight: '500' }}>Phone Number *</label>
                                         <input 
                                             type="tel" 
                                             id="phone"
@@ -181,12 +191,13 @@ function ContactForm() {
                                             onChange={handleInputChange}
                                             className={`form-input ${errors.phone ? 'error' : ''}`}
                                             disabled={isSubmitting}
+                                            style={{ width: '100%', height: '42px', padding: '8px 12px', fontSize: '14px', border: '1px solid #ddd', borderRadius: '6px' }}
                                         />
-                                        {errors.phone && <span className="error-message">{errors.phone}</span>}
+                                        {errors.phone && <span className="error-message" style={{ display: 'block', fontSize: '12px', color: '#DF0A0A', marginTop: '2px' }}>{errors.phone}</span>}
                                     </div>
                                     
-                                    <div className="form-group">
-                                        <label htmlFor="service" className="form-label">Service Type *</label>
+                                    <div className="form-group" style={{ marginBottom: '0' }}>
+                                        <label htmlFor="service" className="form-label" style={{ display: 'block', marginBottom: '4px', fontSize: '14px', fontWeight: '500' }}>Service Type *</label>
                                         <select 
                                             id="service"
                                             name="service" 
@@ -194,28 +205,19 @@ function ContactForm() {
                                             value={formData.service}
                                             onChange={handleInputChange}
                                             disabled={isSubmitting}
-                                            style={{ fontSize: '19px' }}
+                                            style={{ width: '100%', height: '42px', padding: '8px 12px', fontSize: '14px', border: '1px solid #ddd', borderRadius: '6px' }}
                                         >
                                             <option value="">Select a Service</option>
-                                            <option value="financial-statements">Financial Statements Preparation</option>
-                                            <option value="tax-filing-individual">Tax Filing for Individuals</option>
-                                            <option value="financial-advisory">Financial Advisory</option>
-                                            <option value="tax-corporate">Taxes for Corporate</option>
-                                            <option value="t4-filing">T4 Filing</option>
-                                            <option value="family-benefits">Family Benefits</option>
-                                            <option value="child-benefits">Child Benefits</option>
-                                            <option value="canada-workers">Canada Workers Benefits</option>
-                                            <option value="estate-trust">Estate & Trust Tax Services</option>
-                                            <option value="register-business">Register a Business</option>
-                                            <option value="corporate-tax-filing">Corporate Tax Filing</option>
-                                            <option value="individual-tax-filing">Individual Tax Filing</option>
+                                            {services.map((svc) => (
+                                                <option key={svc.id} value={svc.slug}>{svc.title}</option>
+                                            ))}
                                             <option value="other">Other</option>
                                         </select>
-                                        {errors.service && <span className="error-message">{errors.service}</span>}
+                                        {errors.service && <span className="error-message" style={{ display: 'block', fontSize: '12px', color: '#DF0A0A', marginTop: '2px' }}>{errors.service}</span>}
                                     </div>
                                     
-                                    <div className="form-group">
-                                        <label htmlFor="message" className="form-label">Message *</label>
+                                    <div className="form-group" style={{ marginBottom: '0' }}>
+                                        <label htmlFor="message" className="form-label" style={{ display: 'block', marginBottom: '4px', fontSize: '14px', fontWeight: '500' }}>Message *</label>
                                         <textarea
                                             id="message"
                                             placeholder="Tell us about your tax/financial needs..."
@@ -224,12 +226,13 @@ function ContactForm() {
                                             onChange={handleInputChange}
                                             className={`form-textarea ${errors.message ? 'error' : ''}`}
                                             disabled={isSubmitting}
-                                            rows="5"
+                                            rows="4"
+                                            style={{ width: '100%', padding: '8px 12px', fontSize: '14px', border: '1px solid #ddd', borderRadius: '6px', minHeight: '80px' }}
                                         />
-                                        {errors.message && <span className="error-message">{errors.message}</span>}
+                                        {errors.message && <span className="error-message" style={{ display: 'block', fontSize: '12px', color: '#DF0A0A', marginTop: '2px' }}>{errors.message}</span>}
                                     </div>
                                     
-                                    <div className="form-submit">
+                                    <div className="form-submit" style={{ marginTop: '4px' }}>
                                         <button 
                                             type="submit" 
                                             disabled={isSubmitting}

@@ -55,9 +55,9 @@ function Team() {
                                                     <i className="fal fa-plus" />
                                                 </div>
                                                 <div className="team-social-one">
-                                                    <i className="fab fa-youtube" />
-                                                    <i className="fab fa-twitter" />
-                                                    <i className="fab fa-instagram" />
+                                                    <Link href="https://www.instagram.com/p/DYH30C_Epao/?igsh=djFkdGp5YnU0OGMy" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                                        <i className="fab fa-instagram" />
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </Link>
@@ -83,9 +83,9 @@ function Team() {
                                                     <i className="fal fa-plus" />
                                                 </div>
                                                 <div className="team-social-one">
-                                                    <i className="fab fa-youtube" />
-                                                    <i className="fab fa-twitter" />
-                                                    <i className="fab fa-instagram" />
+                                                    <Link href="https://www.instagram.com/p/DYH30C_Epao/?igsh=djFkdGp5YnU0OGMy" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                                        <i className="fab fa-instagram" />
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </Link>
@@ -111,9 +111,9 @@ function Team() {
                                                     <i className="fal fa-plus" />
                                                 </div>
                                                 <div className="team-social-one">
-                                                    <i className="fab fa-youtube" />
-                                                    <i className="fab fa-twitter" />
-                                                    <i className="fab fa-instagram" />
+                                                    <Link href="https://www.instagram.com/p/DYH30C_Epao/?igsh=djFkdGp5YnU0OGMy" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                                        <i className="fab fa-instagram" />
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </Link>
@@ -139,9 +139,9 @@ function Team() {
                                                     <i className="fal fa-plus" />
                                                 </div>
                                                 <div className="team-social-one">
-                                                    <i className="fab fa-youtube" />
-                                                    <i className="fab fa-twitter" />
-                                                    <i className="fab fa-instagram" />
+                                                    <Link href="https://www.instagram.com/p/DYH30C_Epao/?igsh=djFkdGp5YnU0OGMy" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                                        <i className="fab fa-instagram" />
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </Link>
@@ -167,9 +167,9 @@ function Team() {
                                                     <i className="fal fa-plus" />
                                                 </div>
                                                 <div className="team-social-one">
-                                                    <i className="fab fa-youtube" />
-                                                    <i className="fab fa-twitter" />
-                                                    <i className="fab fa-instagram" />
+                                                    <Link href="https://www.instagram.com/p/DYH30C_Epao/?igsh=djFkdGp5YnU0OGMy" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                                        <i className="fab fa-instagram" />
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </Link>

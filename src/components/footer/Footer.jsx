@@ -8,12 +8,18 @@ function Footer() {
     useEffect(() => {
         fetch("/api/proxy-services")
             .then((res) => res.json())
-            .then((data) => setServices((data.data || []).slice(0, 4)))
+            .then((data) => setServices(data.data || []))
             .catch(() => setServices([]));
     }, []);
 
     return (
         <div>
+            <style>{`
+                .footer-social-icon:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 0 6px 20px rgba(223, 10, 10, 0.4);
+                }
+            `}</style>
             <div className="rts-footer-area footer-one rts-section-gapTop bg-footer-one" id='f-contact'>
                 <div className="container bg-shape-f1">
                     <div className="row">
@@ -79,26 +85,19 @@ function Footer() {
                                 </div>
                                 <div className="quick-link-inner">
                                     <ul className="links">
-                                        {services.map((svc) => (
+                                        {services.slice(0, 4).map((svc) => (
                                             <li key={svc.id}>
                                                 <Link href={`/services/${svc.slug}`}>
                                                     <i className="far fa-arrow-right" /> {svc.wehoware_service_categories?.name || svc.title}
                                                 </Link>
                                             </li>
                                         ))}
-                                        {services.length === 0 && (
-                                            <li>
-                                                <Link href={'/services'}>
-                                                    <i className="far fa-arrow-right" /> View All Services
-                                                </Link>
-                                            </li>
-                                        )}
+                                        <li style={{ marginTop: '8px' }}>
+                                            <Link href={'/services'}>
+                                                <i className="far fa-arrow-right" /> View All Services
+                                            </Link>
+                                        </li>
                                     </ul>
-                                    {services.length > 0 && (
-                                        <Link href={'/services'} className="rts-btn btn-primary" style={{ marginTop: '16px', fontSize: '13px' }}>
-                                            View All Services
-                                        </Link>
-                                    )}
                                 </div>
                             </div>
                         </div>
@@ -137,6 +136,26 @@ function Footer() {
                                             </div>
                                         </div>
                                     </div>
+                                    <div className="footer-social-wrapper" style={{ marginTop: '24px', paddingTop: '20px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+                                        <h6 style={{ marginBottom: '12px', fontSize: '14px', fontWeight: '600', color: '#fff' }}>Follow Us</h6>
+                                        <div className="footer-social-links" style={{ display: 'flex', gap: '10px' }}>
+                                            <Link href="https://www.instagram.com/p/DYH30C_Epao/?igsh=djFkdGp5YnU0OGMy" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="footer-social-icon" style={{
+                                                display: 'inline-flex',
+                                                alignItems: 'center',
+                                                justifyContent: 'center',
+                                                width: '40px',
+                                                height: '40px',
+                                                borderRadius: '50%',
+                                                background: 'var(--color-primary)',
+                                                color: '#fff',
+                                                textDecoration: 'none',
+                                                fontSize: '16px',
+                                                transition: 'all 0.3s ease'
+                                            }}>
+                                                <i className="fab fa-instagram" />
+                                            </Link>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -147,7 +166,7 @@ function Footer() {
                         <div className="row">
                             <div className="col-12">
                                 <div className="text-center">
-                                    <p>HADI CONSULTANT - Copyright 2024. All rights reserved. | Practical Tax and Finance Advice You Can Count On</p>
+                                    <p>HADI CONSULTANT - Copyright {new Date().getFullYear()}. All rights reserved. | Practical Tax and Finance Advice You Can Count On</p>
                                 </div>
                             </div>
                         </div>

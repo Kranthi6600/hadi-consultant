@@ -13,6 +13,14 @@ export default function AboutUsClient() {
             { label: 'About Us' }
         ];
         const [isVideoOpen, setIsVideoOpen] = useState(false);
+        const [services, setServices] = useState([]);
+
+        useEffect(() => {
+            fetch("/api/proxy-services")
+                .then((res) => res.json())
+                .then((data) => setServices((data.data || []).slice(0, 3)))
+                .catch(() => setServices([]));
+        }, []);
 // Function to open the video overlay
         const openVideo = (e) => {
             e.preventDefault();
@@ -141,74 +149,30 @@ export default function AboutUsClient() {
                                 <h2 className="title">What We Provide</h2>
                             </div>
                             {}
-                            <div className="col-xl-4 col-md-6 col-sm-12 col-12 pt--15 mb--80 mb_md--40 mb_sm--30">
-                                <div className="service-one-inner-four">
-                                    <div className="big-thumbnail-area">
-                                        <div className="thumbnail">
-                                            <img
-                                                src="assets/images/service/07.jpg"
-                                                alt="Business-service"
-                                            />
-                                        </div>
-                                        <div className="content">
-                                            <img
-                                                src="assets/images/service/icon/13.svg"
-                                                alt="Business-icon"
-                                            />
-                                            <h5 className="title">Corporate Tax Services</h5>
-                                            <p className="disc">
-                                                Our corporate tax services help businesses minimize tax liabilities while ensuring full compliance with Canadian tax laws. We handle everything from corporate tax returns to complex tax strategies.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {}
-                            <div className="col-xl-4 col-md-6 col-sm-12 col-12 pt--15 mb--80 mb_md--40 mb_sm--30">
-                                <div className="service-one-inner-four">
-                                    <div className="big-thumbnail-area">
-                                        <div className="thumbnail">
-                                            <img
-                                                src="assets/images/service/08.jpg"
-                                                alt="Business-service"
-                                            />
-                                        </div>
-                                        <div className="content">
-                                            <img
-                                                src="assets/images/service/icon/14.svg"
-                                                alt="Business-icon"
-                                            />
-                                            <h5 className="title">T4 Filing Services</h5>
-                                            <p className="disc">
-                                                Professional T4 filing services for businesses of all sizes. We ensure accurate and timely T4 slip preparation and filing for your employees, keeping you compliant with CRA requirements.
-                                            </p>
+                            {services.map((svc, index) => (
+                                <div className="col-xl-4 col-md-6 col-sm-12 col-12 pt--15 mb--80 mb_md--40 mb_sm--30" key={svc.id || index}>
+                                    <div className="service-one-inner-four">
+                                        <div className="big-thumbnail-area">
+                                            <div className="thumbnail">
+                                                <img
+                                                    src={svc.thumbnail && svc.thumbnail.startsWith('http') ? svc.thumbnail : `assets/images/service/0${(index % 3) + 7}.jpg`}
+                                                    alt={svc.title || 'Business-service'}
+                                                />
+                                            </div>
+                                            <div className="content">
+                                                <img
+                                                    src={`assets/images/service/icon/${13 + (index % 3)}.svg`}
+                                                    alt="Business-icon"
+                                                />
+                                                <h5 className="title">{svc.title || 'Service'}</h5>
+                                                <p className="disc">
+                                                    {svc.short_description || svc.description || ''}
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            {}
-                            <div className="col-xl-4 col-md-6 col-sm-12 col-12 pt--15 mb--80">
-                                <div className="service-one-inner-four">
-                                    <div className="big-thumbnail-area">
-                                        <div className="thumbnail">
-                                            <img
-                                                src="assets/images/service/09.jpg"
-                                                alt="Business-service"
-                                            />
-                                        </div>
-                                        <div className="content">
-                                            <img
-                                                src="assets/images/service/icon/15.svg"
-                                                alt="Business-icon"
-                                            />
-                                            <h5 className="title">Accurate Record Keeping</h5>
-                                            <p className="disc">
-                                                Maintain accurate financial records with our professional record keeping services. We handle financial statements, document management, and comprehensive record solutions for businesses of all sizes.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            ))}
                         </div>
                     </div>
                     <div className="row">

@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import ErrorBoundary from "@/components/ErrorBoundary";
-function BannerOne() {
+function Banner() {
     return (
         <ErrorBoundary>
             <div>
