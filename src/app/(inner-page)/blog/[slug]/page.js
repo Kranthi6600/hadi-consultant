@@ -17,7 +17,14 @@ async function getBlog(slug) {
         if (!res.ok) return null;
         const data = await res.json();
         if (data && typeof data === 'object' && !Array.isArray(data)) {
-            return data.blog || data.data || data;
+            const blog = data.blog || data.data || data;
+            if (!blog || typeof blog !== 'object') return null;
+            return {
+                blog,
+                blog_schema: data.blog_schema || null,
+                breadcrumb_schema: data.breadcrumb_schema || null,
+                faq_schema: data.faq_schema || blog.faq_schema || null,
+            };
         }
         return null;
     } catch (error) {
@@ -27,13 +34,14 @@ async function getBlog(slug) {
 }
 
 export async function generateMetadata({ params }) {
-    const blog = await getBlog(params.slug);
-    if (!blog) {
+    const result = await getBlog(params.slug);
+    if (!result) {
         return {
             title: 'Blog Not Found - Hadi Consultant',
             robots: 'noindex, nofollow',
         };
     }
+    const { blog } = result;
 
     const metaTitle = blog.meta_title || `${blog.title} - Hadi Consultant`;
     const metaDesc = blog.meta_description || blog.excerpt || '';
@@ -65,7 +73,8 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function BlogDetailPage({ params }) {
-    const blog = await getBlog(params.slug);
+    const result = await getBlog(params.slug);
+    const blog = result?.blog || null;
 
     const breadcrumbs = [
         { label: 'Home', link: '/' },
@@ -93,23 +102,40 @@ export default async function BlogDetailPage({ params }) {
         );
     }
 
-    const jsonLd = blog.faq_schema ? blog.faq_schema : {
-        '@context': 'https://schema.org',
-        '@type': blog.schema_type || 'Article',
-        headline: blog.title,
-        description: blog.excerpt || blog.description,
-        image: blog.thumbnail || blog.open_graph_image || '',
-        datePublished: blog.published_at,
-        dateModified: blog.updated_at,
-        url: `${SITE_URL}/blog/${blog.slug}`,
-    };
+    const jsonLdScripts = [];
+
+    if (result?.blog_schema) {
+        jsonLdScripts.push(result.blog_schema);
+    } else {
+        jsonLdScripts.push({
+            '@context': 'https://schema.org',
+            '@type': blog.schema_type || 'Article',
+            headline: blog.title,
+            description: blog.excerpt || blog.description,
+            image: blog.thumbnail || blog.open_graph_image || '',
+            datePublished: blog.published_at,
+            dateModified: blog.updated_at,
+            url: `${SITE_URL}/blog/${blog.slug}`,
+        });
+    }
+
+    if (result?.breadcrumb_schema) {
+        jsonLdScripts.push(result.breadcrumb_schema);
+    }
+
+    if (result?.faq_schema) {
+        jsonLdScripts.push(result.faq_schema);
+    }
 
     return (
         <>
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-            />
+            {jsonLdScripts.map((jsonLd, i) => (
+                <script
+                    key={i}
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+                />
+            ))}
             <div className="">
                 <Header />
                 <Breadcrumb title={blog.title || 'Blog Details'} breadcrumbs={breadcrumbs} />

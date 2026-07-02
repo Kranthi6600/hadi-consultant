@@ -26,25 +26,34 @@ async function getBlogs(page = 1) {
         const res = await fetch(`${BASE_URL}/api/public/blogs?clientId=${CLIENT_ID}&page=${page}&limit=8`, {
             next: { revalidate: 60 }
         });
-        if (!res.ok) return { data: [], pagination: { totalItems: 0, page: 1, limit: 8, totalPages: 1 } };
+        if (!res.ok) return { data: [], pagination: { totalItems: 0, page: 1, limit: 8, totalPages: 1 }, schema: null };
         const json = await res.json();
         const data = Array.isArray(json.data) ? json.data : (Array.isArray(json) ? json : []);
         const pagination = json.pagination || { totalItems: data.length, page: 1, limit: 8, totalPages: 1 };
-        return { data, pagination };
+        const schema = json.schema || null;
+        return { data, pagination, schema };
     } catch (error) {
         console.error('Failed to fetch blogs:', error);
-        return { data: [], pagination: { totalItems: 0, page: 1, limit: 8, totalPages: 1 } };
+        return { data: [], pagination: { totalItems: 0, page: 1, limit: 8, totalPages: 1 }, schema: null };
     }
 }
 
 export default async function BlogsPage({ searchParams }) {
     const page = parseInt(searchParams?.page, 10) || 1;
-    const { data: blogs, pagination } = await getBlogs(page);
+    const { data: blogs, pagination, schema } = await getBlogs(page);
 
     const breadcrumbs = [
         { label: 'Home', link: '/' },
         { label: 'Blog Post' }
     ];
+
+    const jsonLdScripts = [];
+    if (schema?.item_list) {
+        jsonLdScripts.push(schema.item_list);
+    }
+    if (schema?.collection_page) {
+        jsonLdScripts.push(schema.collection_page);
+    }
 
     const allTags = [...new Set(blogs.flatMap(b => b.tags || []))];
     const allCategories = [...new Map(blogs.map(b => {
@@ -53,7 +62,15 @@ export default async function BlogsPage({ searchParams }) {
     }).filter(([k]) => k !== null)).values()];
 
     return (
-        <div className="">
+        <>
+            {jsonLdScripts.map((jsonLd, i) => (
+                <script
+                    key={i}
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+                />
+            ))}
+            <div className="">
             <Header />
             <Breadcrumb title="Blog Post" breadcrumbs={breadcrumbs} />
             <BackToTop />
@@ -203,6 +220,7 @@ export default async function BlogsPage({ searchParams }) {
                 </div>
             </div>
             <Footer />
-        </div>
+            </div>
+        </>
     )
 }

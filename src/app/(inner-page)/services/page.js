@@ -25,33 +25,58 @@ async function getServices() {
         const res = await fetch(`${BASE_URL}/api/public/services?clientId=${CLIENT_ID}`, {
             next: { revalidate: 60 }
         });
-        if (!res.ok) return [];
-        const data = await res.json();
-        if (Array.isArray(data)) return data;
-        if (Array.isArray(data.services)) return data.services;
-        if (Array.isArray(data.data)) return data.data;
-        return [];
+        if (!res.ok) return { services: [], schema: null };
+        const json = await res.json();
+        let services = [];
+        let schema = null;
+        if (Array.isArray(json)) {
+            services = json;
+        } else if (Array.isArray(json.data)) {
+            services = json.data;
+            schema = json.schema || null;
+        } else if (Array.isArray(json.services)) {
+            services = json.services;
+            schema = json.schema || null;
+        }
+        return { services, schema };
     } catch (error) {
         console.error('Failed to fetch services:', error);
-        return [];
+        return { services: [], schema: null };
     }
 }
 
 export default async function OurServicePage() {
-    const services = await getServices();
+    const { services, schema } = await getServices();
 
     const breadcrumbs = [
         { label: 'Home', link: '/' },
         { label: 'Our Service' }
     ];
 
+    const jsonLdScripts = [];
+    if (schema?.item_list) {
+        jsonLdScripts.push(schema.item_list);
+    }
+    if (schema?.collection_page) {
+        jsonLdScripts.push(schema.collection_page);
+    }
+
     return (
-        <div className="">
-            <Header />
-            <Breadcrumb title="Our Service" breadcrumbs={breadcrumbs} />
-            <ServiceEleven services={services} />
-            <Footer />
-            <BackToTop />
-        </div>
+        <>
+            {jsonLdScripts.map((jsonLd, i) => (
+                <script
+                    key={i}
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+                />
+            ))}
+            <div className="">
+                <Header />
+                <Breadcrumb title="Our Service" breadcrumbs={breadcrumbs} />
+                <ServiceEleven services={services} />
+                <Footer />
+                <BackToTop />
+            </div>
+        </>
     );
 }

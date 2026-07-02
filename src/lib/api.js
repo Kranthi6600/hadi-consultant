@@ -12,19 +12,22 @@ export async function fetchServices(options = {}) {
 
     let data = [];
     let pagination = null;
+    let schema = null;
 
     if (Array.isArray(json)) {
       data = json;
     } else if (Array.isArray(json.data)) {
       data = json.data;
       pagination = json.pagination || null;
+      schema = json.schema || null;
     } else if (Array.isArray(json.services)) {
       data = json.services;
       pagination = json.pagination || null;
+      schema = json.schema || null;
     }
 
-    return { data, pagination };
+    return { data, pagination, schema };
   } catch {
-    return { data: [], pagination: null };
+    return { data: [], pagination: null, schema: null };
   }
 }

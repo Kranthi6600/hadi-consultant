@@ -17,7 +17,14 @@ async function getService(slug) {
         if (!res.ok) return null;
         const data = await res.json();
         if (data && typeof data === 'object' && !Array.isArray(data)) {
-            return data.service || data.data || data;
+            const service = data.service || data.data || data;
+            if (!service || typeof service !== 'object') return null;
+            return {
+                service,
+                service_schema: data.service_schema || null,
+                breadcrumb_schema: data.breadcrumb_schema || null,
+                faq_schema: data.faq_schema || service.faq_schema || null,
+            };
         }
         return null;
     } catch (error) {
@@ -27,13 +34,14 @@ async function getService(slug) {
 }
 
 export async function generateMetadata({ params }) {
-    const service = await getService(params.slug);
-    if (!service) {
+    const result = await getService(params.slug);
+    if (!result) {
         return {
             title: 'Service Not Found - Hadi Consultant',
             robots: 'noindex, nofollow',
         };
     }
+    const { service } = result;
 
     const metaTitle = service.meta_title || `${service.title} - Hadi Consultant`;
     const metaDesc = service.meta_description || service.description || '';
@@ -65,7 +73,8 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function ServiceDetailPage({ params }) {
-    const service = await getService(params.slug);
+    const result = await getService(params.slug);
+    const service = result?.service || null;
 
     const breadcrumbs = [
         { label: 'Home', link: '/' },
@@ -93,21 +102,38 @@ export default async function ServiceDetailPage({ params }) {
         );
     }
 
-    const jsonLd = service.faq_schema ? service.faq_schema : {
-        '@context': 'https://schema.org',
-        '@type': service.schema_type || 'Service',
-        name: service.title,
-        description: service.description,
-        image: service.thumbnail || service.open_graph_image || '',
-        url: `${SITE_URL}/services/${service.slug}`,
-    };
+    const jsonLdScripts = [];
+
+    if (result?.service_schema) {
+        jsonLdScripts.push(result.service_schema);
+    } else {
+        jsonLdScripts.push({
+            '@context': 'https://schema.org',
+            '@type': service.schema_type || 'Service',
+            name: service.title,
+            description: service.description,
+            image: service.thumbnail || service.open_graph_image || '',
+            url: `${SITE_URL}/services/${service.slug}`,
+        });
+    }
+
+    if (result?.breadcrumb_schema) {
+        jsonLdScripts.push(result.breadcrumb_schema);
+    }
+
+    if (result?.faq_schema) {
+        jsonLdScripts.push(result.faq_schema);
+    }
 
     return (
         <>
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-            />
+            {jsonLdScripts.map((jsonLd, i) => (
+                <script
+                    key={i}
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+                />
+            ))}
             <div className="">
                 <Header />
                 <Breadcrumb title={service.title || 'Service Details'} breadcrumbs={breadcrumbs} />

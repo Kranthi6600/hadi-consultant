@@ -8,11 +8,12 @@ export async function GET() {
     const res = await fetch(`${BASE_URL}/api/public/blogs?clientId=${CLIENT_ID}&page=1&limit=10`, {
       cache: 'no-store',
     });
-    if (!res.ok) return NextResponse.json({ data: [] }, { status: 200 });
+    if (!res.ok) return NextResponse.json({ data: [], schema: null }, { status: 200 });
     const json = await res.json();
     const data = Array.isArray(json.data) ? json.data : (Array.isArray(json) ? json : []);
-    return NextResponse.json({ data });
+    const schema = json.schema || null;
+    return NextResponse.json({ data, schema });
   } catch {
-    return NextResponse.json({ data: [] }, { status: 200 });
+    return NextResponse.json({ data: [], schema: null }, { status: 200 });
   }
 }
