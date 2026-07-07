@@ -4,9 +4,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import ServiceEleven from "@/components/service/ServiceEleven";
 import Footer from "@/components/footer/Footer";
 import { SITE_URL } from "@/lib/site";
-
-const BASE_URL = 'https://wehoware-saas.vercel.app';
-const CLIENT_ID = 'bbd8a4a6-b5d8-4af9-aa5d-becfdcadc3ba';
+import { API_BASE_URL, API_CLIENT_ID } from "@/lib/api";
 
 export const metadata = {
     title: 'Our Services - Hadi Consultant',
@@ -22,7 +20,7 @@ export const metadata = {
 
 async function getServices() {
     try {
-        const res = await fetch(`${BASE_URL}/api/public/services?clientId=${CLIENT_ID}`, {
+        const res = await fetch(`${API_BASE_URL}/api/public/services?clientId=${API_CLIENT_ID}`, {
             next: { revalidate: 60 }
         });
         if (!res.ok) return { services: [], schema: null };

@@ -5,9 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import BlogListMain from "./BlogListMain";
 import { SITE_URL } from "@/lib/site";
-
-const BASE_URL = 'https://wehoware-saas.vercel.app';
-const CLIENT_ID = 'bbd8a4a6-b5d8-4af9-aa5d-becfdcadc3ba';
+import { API_BASE_URL, API_CLIENT_ID } from "@/lib/api";
 
 export const metadata = {
     title: 'Blog - Hadi Consultant',
@@ -23,7 +21,7 @@ export const metadata = {
 
 async function getBlogs(page = 1) {
     try {
-        const res = await fetch(`${BASE_URL}/api/public/blogs?clientId=${CLIENT_ID}&page=${page}&limit=8`, {
+        const res = await fetch(`${API_BASE_URL}/api/public/blogs?clientId=${API_CLIENT_ID}&page=${page}&limit=8`, {
             next: { revalidate: 60 }
         });
         if (!res.ok) return { data: [], pagination: { totalItems: 0, page: 1, limit: 8, totalPages: 1 }, schema: null };

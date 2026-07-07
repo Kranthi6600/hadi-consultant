@@ -1,11 +1,9 @@
 import { NextResponse } from "next/server";
-
-const BASE_URL = 'https://wehoware-saas.vercel.app';
-const CLIENT_ID = 'bbd8a4a6-b5d8-4af9-aa5d-becfdcadc3ba';
+import { API_BASE_URL, API_CLIENT_ID } from "@/lib/api";
 
 export async function GET() {
   try {
-    const res = await fetch(`${BASE_URL}/api/public/blogs?clientId=${CLIENT_ID}&page=1&limit=10`, {
+    const res = await fetch(`${API_BASE_URL}/api/public/blogs?clientId=${API_CLIENT_ID}&page=1&limit=10`, {
       cache: 'no-store',
     });
     if (!res.ok) return NextResponse.json({ data: [], schema: null }, { status: 200 });
