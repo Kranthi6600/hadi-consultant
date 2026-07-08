@@ -41,8 +41,8 @@ function SideMenu({ isSidebarOpen, toggleSidebar }) {
                         <div className="get-in-touch">
                             <div className="h6 title">Get In Touch</div>
                             <div className="wrapper">
-                                <div className="single"><i className="fas fa-phone-alt" /><Link href="#">(416) 998-7909</Link></div>
-                                <div className="single"><i className="fas fa-envelope" /><Link href="#">consultantshadi1@gmail.com</Link></div>
+                                <div className="single"><i className="fas fa-phone-alt" /><Link href="tel:+14169987909">+1 (416) 998-7909</Link></div>
+                                <div className="single"><i className="fas fa-envelope" /><Link href="mailto:faisal25us@yahoo.com">faisal25us@yahoo.com</Link></div>
                                 <div className="single"><i className="fas fa-map-marker-alt" /><Link href="#">1290 Eglinton Ave E #8, Mississauga, ON L4W 1K8 Canada</Link></div>
                             </div>
                         </div>

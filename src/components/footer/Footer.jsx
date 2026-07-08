@@ -123,7 +123,7 @@ function Footer() {
                                                     <i className="far fa-envelope"></i>
                                                 </div>
                                                 <div className="contact-details">
-                                                    <p className="contact-value">consultantshadi1@gmail.com</p>
+                                                    <p className="contact-value">faisal25us@yahoo.com</p>
                                                 </div>
                                             </div>
                                             <div className="single-contact-info">

@@ -31,8 +31,8 @@ function Map() {
                                             ON L4W 1K8 Canada
                                         </Link>
                                         <p className="headoffice" style={{ fontWeight: '600', color: '#333', marginBottom: '4px' }}>Email</p>
-                                        <Link href={'mailto:consultantshadi1@gmail.com'} style={{ display: 'block', color: '#DF0A0A', textDecoration: 'none' }}>
-                                            consultantshadi1@gmail.com
+                                        <Link href={'mailto:faisal25us@yahoo.com'} style={{ display: 'block', color: '#DF0A0A', textDecoration: 'none' }}>
+                                            faisal25us@yahoo.com
                                         </Link>
                                     </div>
                                 </div>

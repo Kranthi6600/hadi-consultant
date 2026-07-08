@@ -8,19 +8,18 @@ Create a `.env.local` file in your project root with the following variables:
 
 ```env
 # Email Configuration
-SMTP_HOST=smtp.gmail.com
+SMTP_HOST=smtp.mail.yahoo.com
 SMTP_PORT=587
-SMTP_USER=consultantshadi1@gmail.com
+SMTP_USER=faisal25us@yahoo.com
 SMTP_PASS=your-app-password
-ADMIN_EMAIL=admin@hadiconsultant.com
+ADMIN_EMAIL=faisal25us@yahoo.com
 ```
 
-## Gmail Setup (Recommended)
-1. Enable 2-factor authentication on your Gmail account
-2. Go to Google Account settings > Security
-3. Enable "App passwords"
-4. Generate a new app password for your application
-5. Use the app password as `SMTP_PASS`
+## Yahoo Setup (Recommended)
+1. Enable 2-factor authentication on your Yahoo account
+2. Go to Yahoo Account settings > Account security
+3. Generate a new app password for your application
+4. Use the app password as `SMTP_PASS`
 
 ## Alternative Email Services
 You can also use other email services by updating the SMTP configuration:

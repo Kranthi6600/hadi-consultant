@@ -82,8 +82,8 @@ function About() {
                                             />
                                             <div className="call-details">
                                                 <span>Call us anytime</span>
-                                                <a href="tel:+16471234567">
-                                                    <h6 className="title">+1 (647) 123-4567</h6>
+                                                <a href="tel:+14169987909">
+                                                    <h6 className="title">+1 (416) 998-7909</h6>
                                                 </a>
                                             </div>
                                         </div>

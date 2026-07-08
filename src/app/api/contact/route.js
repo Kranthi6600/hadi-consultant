@@ -6,11 +6,11 @@ const createTransporter = () => {
   // For development, you can use a test account or Gmail
   // For production, you should use environment variables
   return nodemailer.createTransporter({
-    host: process.env.SMTP_HOST || 'smtp.gmail.com',
+    host: process.env.SMTP_HOST || 'smtp.mail.yahoo.com',
     port: process.env.SMTP_PORT || 587,
     secure: false, // true for 465, false for other ports
     auth: {
-      user: process.env.SMTP_USER || 'your-email@gmail.com', // Replace with your email
+      user: process.env.SMTP_USER || 'faisal25us@yahoo.com', // Replace with your email
       pass: process.env.SMTP_PASS || 'your-app-password', // Replace with your password/app password
     },
   });
@@ -129,8 +129,8 @@ export async function POST(request) {
 
       // Send to admin
       await transporter.sendMail({
-        from: process.env.SMTP_USER || 'your-email@gmail.com',
-        to: process.env.ADMIN_EMAIL || 'admin@hadiconsultant.com', // Replace with admin email
+        from: process.env.SMTP_USER || 'faisal25us@yahoo.com',
+        to: process.env.ADMIN_EMAIL || 'faisal25us@yahoo.com', // Replace with admin email
         subject: `New Contact Form Submission - ${getServiceLabel(service)}`,
         html: adminEmailHtml,
         replyTo: email
@@ -138,7 +138,7 @@ export async function POST(request) {
 
       // Send auto-reply to customer
       await transporter.sendMail({
-        from: process.env.SMTP_USER || 'your-email@gmail.com',
+        from: process.env.SMTP_USER || 'faisal25us@yahoo.com',
         to: email,
         subject: 'Thank You for Your Inquiry - Hadi Consultant',
         html: customerEmailHtml
