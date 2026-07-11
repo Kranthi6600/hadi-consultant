@@ -2,7 +2,7 @@
 import React from 'react'
 import Link from 'next/link';
 
-const iconPool = ['01.svg', '02.svg', '03.svg', '04.svg', '05.svg', '06.svg'];
+const iconPool = ['01.svg', '02.svg', '03.svg', '04.svg', '05.svg', '06.svg', '07.svg', '08.svg', '09.svg', '10.svg', '11.svg', '12.svg', '13.svg', '14.svg', '15.svg', '16.svg', '17.svg', '18.svg', '19.svg', '20.svg', '21.svg', '22.svg', '23.svg', '24.svg'];
 const classPool = ['one', 'two', 'three', 'four', 'five', 'six'];
 
 function stripHtml(html) {
@@ -45,7 +45,7 @@ function ServiceEleven({ services }) {
                 <div className="container-fluid service-main plr--120-service mt--50 plr_md--0 pl_sm--0 pr_sm--0">
                     <div className="background-service row">
                         {services.map((service, index) => {
-                            const icon = service.thumbnail ? service.thumbnail : `assets/images/service/icon/${iconPool[index % 6]}`;
+                            const icon = `assets/images/service/icon/${iconPool[index % iconPool.length]}`;
                             const cls = classPool[index % 6];
                             const category = service.wehoware_service_categories;
                             return (
@@ -55,7 +55,7 @@ function ServiceEleven({ services }) {
                                             <img
                                                 src={icon}
                                                 alt={service.thumbnail_alt || service.title || 'service'}
-                                                onError={(e) => { e.target.src = `assets/images/service/icon/${iconPool[index % 6]}`; }}
+                                                onError={(e) => { e.target.src = `assets/images/service/icon/${iconPool[(index + 1) % iconPool.length]}`; }}
                                             />
                                         </div>
                                         <div className="service-details">

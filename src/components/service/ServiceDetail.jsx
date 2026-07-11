@@ -21,6 +21,10 @@ function ServiceDetail({ service }) {
     const ctaBtnUrl = service.cta_button_url || '/contact';
     const allowShare = service.allow_social_share;
 
+    const publishedDate = (service.published_at || service.created_at)
+        ? new Date(service.published_at || service.created_at).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+        : '';
+
     const shareUrl = typeof window !== 'undefined' ? window.location.href : '';
     const shareText = encodeURIComponent(title);
 
@@ -37,79 +41,47 @@ function ServiceDetail({ service }) {
                                             <img
                                                 src={thumbnail}
                                                 alt={service.thumbnail_alt || title}
-                                                style={{ maxWidth: '200px', borderRadius: '8px' }}
                                                 onError={(e) => { e.target.style.display = 'none'; }}
                                             />
                                         </div>
                                     )}
                                     <h2 className="title">{title}</h2>
                                     {description && (
-                                        <p className="disc" style={{ maxWidth: '800px', margin: '20px auto 0', fontSize: '18px' }}>
+                                        <p className="disc">
                                             {description}
                                         </p>
                                     )}
-                                    <div style={{
-                                        marginTop: '20px',
-                                        display: 'flex',
-                                        justifyContent: 'center',
-                                        alignItems: 'center',
-                                        gap: '16px',
-                                        flexWrap: 'wrap'
-                                    }}>
-                                        {service.duration && (
-                                            <span style={{
-                                                fontSize: '14px',
-                                                color: '#666',
-                                                background: '#f5f5f5',
-                                                padding: '4px 14px',
-                                                borderRadius: '16px'
-                                            }}>
-                                                {service.duration}
+                                    <div className="service-meta">
+                                        {publishedDate && (
+                                            <span className="meta-date">
+                                                <i className="far fa-calendar" />
+                                                {publishedDate}
                                             </span>
                                         )}
-                                        {service.rating && (
-                                            <span style={{
-                                                fontSize: '14px',
-                                                color: '#f5a623',
-                                                fontWeight: 600
-                                            }}>
+                                        {service.rating !== undefined && (
+                                            <span className="meta-rating">
                                                 {service.rating} &#9733;
                                                 {service.reviews_count !== undefined && (
-                                                    <span style={{ color: '#888', fontWeight: 400 }}> ({service.reviews_count} reviews)</span>
+                                                    <span className="reviews-count"> ({service.reviews_count} reviews)</span>
                                                 )}
                                             </span>
                                         )}
                                         {service.views !== undefined && (
-                                            <span style={{ fontSize: '13px', color: '#888' }}>
+                                            <span className="meta-views">
                                                 {service.views} views
                                             </span>
                                         )}
                                     </div>
                                     {service.tags && service.tags.length > 0 && (
-                                        <div style={{
-                                            marginTop: '16px',
-                                            display: 'flex',
-                                            justifyContent: 'center',
-                                            flexWrap: 'wrap',
-                                            gap: '8px'
-                                        }}>
+                                        <div className="service-tags">
                                             {service.tags.map((tag, i) => (
-                                                <span key={i} style={{
-                                                    fontSize: '13px',
-                                                    background: '#eee',
-                                                    color: '#555',
-                                                    padding: '4px 12px',
-                                                    borderRadius: '4px',
-                                                    textTransform: 'lowercase'
-                                                }}>
-                                                    #{tag}
-                                                </span>
+                                                <span key={i}>#{tag}</span>
                                             ))}
                                         </div>
                                     )}
                                     {allowShare && (
-                                        <div className="details-share" style={{ marginTop: '24px', justifyContent: 'center' }}>
-                                            <h6 style={{ marginRight: '10px', display: 'inline' }}>Share:</h6>
+                                        <div className="details-share">
+                                            <h6>Share:</h6>
                                             <button onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`, '_blank')}>
                                                 <i className="fab fa-facebook-f" />
                                             </button>
@@ -126,8 +98,7 @@ function ServiceDetail({ service }) {
                                 {content && (
                                     <div className="service-details-content mb--60">
                                         <div
-                                            className="disc service-html-content"
-                                            style={{ fontSize: '18px', lineHeight: '1.8', color: '#333' }}
+                                            className="service-html-content"
                                             dangerouslySetInnerHTML={{ __html: content }}
                                         />
                                     </div>
@@ -136,14 +107,9 @@ function ServiceDetail({ service }) {
                                 {faqs.length > 0 && (
                                     <div className="service-faqs mb--60">
                                         <h3 className="title mb--30">Frequently Asked Questions</h3>
-                                        <div className="accordion" id="serviceFaqAccordion">
+                                        <div className="accordion accordion-one-inner" id="serviceFaqAccordion">
                                             {faqs.map((faq, index) => (
-                                                <div className="accordion-item" key={faq.id || index} style={{
-                                                    border: '1px solid #e5e5e5',
-                                                    borderRadius: '8px',
-                                                    marginBottom: '12px',
-                                                    overflow: 'hidden'
-                                                }}>
+                                                <div className="accordion-item" key={faq.id || index}>
                                                     <h2 className="accordion-header" id={`faqHeading-${index}`}>
                                                         <button
                                                             className={`accordion-button ${index !== 0 ? 'collapsed' : ''}`}
@@ -152,7 +118,6 @@ function ServiceDetail({ service }) {
                                                             data-bs-target={`#faqCollapse-${index}`}
                                                             aria-expanded={index === 0}
                                                             aria-controls={`faqCollapse-${index}`}
-                                                            style={{ fontWeight: 600, fontSize: '16px' }}
                                                         >
                                                             {faq.question}
                                                         </button>
@@ -163,7 +128,7 @@ function ServiceDetail({ service }) {
                                                         aria-labelledby={`faqHeading-${index}`}
                                                         data-bs-parent="#serviceFaqAccordion"
                                                     >
-                                                        <div className="accordion-body" style={{ fontSize: '15px', color: '#555', lineHeight: '1.7' }}>
+                                                        <div className="accordion-body">
                                                             {faq.answer}
                                                         </div>
                                                     </div>
@@ -177,31 +142,33 @@ function ServiceDetail({ service }) {
                     </div>
 
                     {relatedBlogs.length > 0 && (
-                        <div className="row mt--40">
-                            <div className="col-12">
-                                <h3 className="title mb--30">Related Articles</h3>
-                            </div>
-                            {relatedBlogs.map((blog) => (
-                                <div key={blog.id} className="col-lg-4 col-md-6 col-sm-12 mb--30">
-                                    <div className="blog-single-post-listing" style={{ border: '1px solid #eee', borderRadius: '8px', overflow: 'hidden' }}>
-                                        {blog.thumbnail && (
-                                            <div className="thumbnail">
-                                                <Link href={`/blog/${blog.slug}`}>
-                                                    <img src={blog.thumbnail} alt={blog.title} style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
-                                                </Link>
-                                            </div>
-                                        )}
-                                        <div className="blog-listing-content" style={{ padding: '20px' }}>
-                                            <Link href={`/blog/${blog.slug}`}>
-                                                <h5 className="title" style={{ fontSize: '18px', marginBottom: '10px' }}>{blog.title}</h5>
-                                            </Link>
-                                            {blog.excerpt && (
-                                                <p className="disc" style={{ fontSize: '14px', color: '#666' }}>{blog.excerpt}</p>
+                        <div className="related-articles">
+                            <div className="row mt--40">
+                                <div className="col-12">
+                                    <h3 className="title mb--30">Related Articles</h3>
+                                </div>
+                                {relatedBlogs.map((blog) => (
+                                    <div key={blog.id} className="col-lg-4 col-md-6 col-sm-12 mb--30">
+                                        <div className="blog-single-post-listing">
+                                            {blog.thumbnail && (
+                                                <div className="thumbnail">
+                                                    <Link href={`/blog/${blog.slug}`}>
+                                                        <img src={blog.thumbnail} alt={blog.title} />
+                                                    </Link>
+                                                </div>
                                             )}
+                                            <div className="blog-listing-content">
+                                                <Link href={`/blog/${blog.slug}`} className="blog-title">
+                                                    <h5 className="title">{blog.title}</h5>
+                                                </Link>
+                                                {blog.excerpt && (
+                                                    <p className="disc">{blog.excerpt}</p>
+                                                )}
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            ))}
+                                ))}
+                            </div>
                         </div>
                     )}
 
@@ -210,7 +177,7 @@ function ServiceDetail({ service }) {
                             <div className="cta-one-inner">
                                 <div className="cta-left">
                                     <h3 className="title">{ctaHeading}</h3>
-                                    {ctaBody && <p className="disc" style={{ marginTop: '8px' }}>{ctaBody}</p>}
+                                    {ctaBody && <p className="disc">{ctaBody}</p>}
                                 </div>
                                 <div className="cta-right">
                                     <Link className="rts-btn btn-white" href={ctaBtnUrl}>

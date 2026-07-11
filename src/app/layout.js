@@ -3,7 +3,6 @@ import "../../public/assets/css/plugins/fontawesome-5.css";
 import "../../public/assets/css/plugins/animate.min.css";
 import "../../public/assets/css/plugins/unicons.css";
 import "../../public/assets/css/vendor/bootstrap.min.css";
-import "../../public/assets/css/style.css";
 import { SITE_URL } from "@/lib/site";
 export const metadata = {
   title: "Hadi Consultant Business",
@@ -21,6 +20,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="stylesheet" href="/assets/css/style.css" />
+      </head>
       <body className='index-one'>
         {children}
       </body>

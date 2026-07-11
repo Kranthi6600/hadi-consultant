@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link';
 
-const iconPool = ['01.svg', '02.svg', '03.svg', '04.svg', '05.svg', '06.svg'];
+const iconPool = ['01.svg', '02.svg', '03.svg', '04.svg', '05.svg', '06.svg', '07.svg', '08.svg', '09.svg', '10.svg', '11.svg', '12.svg', '13.svg', '14.svg', '15.svg', '16.svg', '17.svg', '18.svg', '19.svg', '20.svg', '21.svg', '22.svg', '23.svg', '24.svg'];
 const classPool = ['one', 'two', 'three', 'four', 'five', 'six'];
 
 function stripHtml(html) {
@@ -41,7 +41,7 @@ function Service() {
                             </div>
                         )}
                         {services.map((service, index) => {
-                            const icon = service.thumbnail ? service.thumbnail : `assets/images/service/icon/${iconPool[index % 6]}`;
+                            const icon = `assets/images/service/icon/${iconPool[index % iconPool.length]}`;
                             const cls = classPool[index % 6];
                             return (
                                 <div key={service.id || index} className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -50,7 +50,7 @@ function Service() {
                                             <img
                                                 src={icon}
                                                 alt={service.thumbnail_alt || service.title || 'service'}
-                                                onError={(e) => { e.target.src = `assets/images/service/icon/${iconPool[index % 6]}`; }}
+                                                onError={(e) => { e.target.src = `assets/images/service/icon/${iconPool[(index + 1) % iconPool.length]}`; }}
                                             />
                                         </div>
                                         <div className="service-details">

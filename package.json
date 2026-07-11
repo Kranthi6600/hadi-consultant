@@ -19,5 +19,8 @@
     "react-intersection-observer": "^9.16.0",
     "react-scroll": "^1.9.3",
     "swiper": "^12.1.3"
+  },
+  "devDependencies": {
+    "sass": "^1.101.0"
   }
 }
