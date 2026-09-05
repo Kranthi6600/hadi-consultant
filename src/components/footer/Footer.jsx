@@ -73,6 +73,16 @@ function Footer() {
                                                 <i className="far fa-arrow-right" /> Blogs
                                             </Link>
                                         </li>
+                                        <li>
+                                            <Link href={'/book-appointment'}>
+                                                <i className="far fa-arrow-right" /> Book Appointment
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href={'/my-bookings'}>
+                                                <i className="far fa-arrow-right" /> My Bookings
+                                            </Link>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>

@@ -52,6 +52,23 @@ function Nav() {
                             Contact
                         </Link>
                     </li>
+                    <li className="has-droupdown">
+                        <Link className="nav-item" href={'/book-appointment'}>
+                            Appointments
+                        </Link>
+                        <ul className="submenu">
+                            <li>
+                                <Link href={'/book-appointment'}>
+                                    Book Appointment
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href={'/my-bookings'}>
+                                    My Bookings
+                                </Link>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>

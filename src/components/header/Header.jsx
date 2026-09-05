@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import Nav from './Nav';
 import SideMenu from './SideMenu';
 import Link from 'next/link';
-import Image from 'next/image';
 function Header() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const toggleSidebar = () => {
@@ -12,14 +11,13 @@ function Header() {
     const [isSticky, setIsSticky] = useState(false);
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 150) {
+            if (window.scrollY > 120) {
                 setIsSticky(true);
             } else {
                 setIsSticky(false);
             }
         };
         window.addEventListener('scroll', handleScroll);
-        // Clean up the event listener on component unmount
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
@@ -36,17 +34,16 @@ function Header() {
     };
     return (
         <div>
-            {}
             <header className={`header--sticky header-one  ${isSticky ? 'sticky' : ''}`}>
                 <div className="header-main-one bg-white">
                     <div className="container">
-                        <div className="row m-0">
+                        <div className="row m-0 align-items-center">
                             <div className="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-4">
                                 <div className="thumbnail m-0">
-                                    <Link className="m-0 d-flex flex-column align-items-center" style={{ padding: '8px', textDecoration: 'none' }} href={'/'} >
-                                        <img src="/assets/images/cropped-cropped-HADI_CONSULTANTS_logo-removebg-preview-140x74.webp" alt="HADI CONSULTANTS logo" style={{ marginBottom: '4px' }} />
-                                        <h6 className="m-0 text-center d-none d-md-block" style={{ fontSize: '18px', fontWeight: '600', color: '#333' }}>Hadi Consultant</h6>
-                                        <h6 className="m-0 text-center d-md-none" style={{ fontSize: '12px', fontWeight: '600', color: '#333', whiteSpace: 'nowrap' }}>Hadi Consultant</h6>
+                                    <Link className="m-0 d-flex flex-column align-items-center" style={{ padding: '6px', textDecoration: 'none' }} href={'/'} >
+                                        <img src="/assets/images/cropped-cropped-HADI_CONSULTANTS_logo-removebg-preview-140x74.webp" alt="HADI CONSULTANTS logo" style={{ marginBottom: '2px' }} />
+                                        <h6 className="m-0 text-center d-none d-md-block" style={{ fontSize: '14px', fontWeight: '700', color: '#1C2539' }}>Hadi Consultant</h6>
+                                        <h6 className="m-0 text-center d-md-none" style={{ fontSize: '11px', fontWeight: '700', color: '#1C2539', whiteSpace: 'nowrap' }}>Hadi Consultant</h6>
                                     </Link>
                                 </div>
                             </div>
@@ -54,7 +51,7 @@ function Header() {
                                 <div className="main-header">
                                     <Nav />
                                     <div className="button-area">
-                                        <button id="search" className="rts-btn btn-primary-alta" onClick={handleSearchClick}>
+                                        <button id="search" className="rts-btn btn-primary-alta" onClick={handleSearchClick} aria-label="Search">
                                             <i className="far fa-search" />
                                         </button>
                                         <Link
@@ -63,10 +60,18 @@ function Header() {
                                         >
                                             Get Quote
                                         </Link>
+                                        <Link
+                                            href={'/book-appointment'}
+                                            className="rts-btn btn-primary-alta ml--20 ml_sm--5 header-one-btn book-btn"
+                                        >
+                                            <i className="far fa-calendar-plus" /> Book
+                                        </Link>
                                         <button
                                             id="menu-btn"
                                             className="menu rts-btn btn-primary-alta ml--20 ml_sm--5"
-                                            onClick={toggleSidebar}>
+                                            onClick={toggleSidebar}
+                                            aria-label="Open menu"
+                                        >
                                             <img
                                                 className="menu-dark"
                                                 src="/assets/images/icon/menu.png"
@@ -85,7 +90,6 @@ function Header() {
                     </div>
                 </div>
             </header>
-            {}
             <div className={`search-input-area ${isSearchVisible ? 'show' : ''}`}>
                 <div className="container">
                     <div className="search-input-inner">

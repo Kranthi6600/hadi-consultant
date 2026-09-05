@@ -5,6 +5,7 @@ import Link from 'next/link';
 function SideMenu({ isSidebarOpen, toggleSidebar }) {
     const [services, setServices] = useState([]);
     const [servicesExpanded, setServicesExpanded] = useState(false);
+    const [apptsExpanded, setApptsExpanded] = useState(false);
 
     useEffect(() => {
         fetch("/api/proxy-services")
@@ -80,6 +81,26 @@ function SideMenu({ isSidebarOpen, toggleSidebar }) {
                                 </li>
                                 <li className="menu-item">
                                     <Link className="menu-link" href="/contact">Contact</Link>
+                                </li>
+                                <li className="menu-item">
+                                    <Link className="menu-link" href="/book-appointment">Appointments</Link>
+                                    <button onClick={() => setApptsExpanded(!apptsExpanded)} style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '4px 8px', fontSize: '14px', color: '#333' }} aria-label="Toggle appointments">
+                                        <i className={`far fa-chevron-${apptsExpanded ? 'up' : 'down'}`} />
+                                    </button>
+                                    {apptsExpanded && (
+                                        <ul style={{ listStyle: 'none', padding: '0 0 0 20px', margin: '0' }}>
+                                            <li style={{ listStyle: 'none' }}>
+                                                <Link href="/book-appointment" onClick={toggleSidebar} style={{ display: 'block', padding: '8px 12px', fontSize: '14px', color: '#555', textDecoration: 'none' }}>
+                                                    Book Appointment
+                                                </Link>
+                                            </li>
+                                            <li style={{ listStyle: 'none' }}>
+                                                <Link href="/my-bookings" onClick={toggleSidebar} style={{ display: 'block', padding: '8px 12px', fontSize: '14px', color: '#555', textDecoration: 'none' }}>
+                                                    My Bookings
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    )}
                                 </li>
                             </ul>
                         </nav>

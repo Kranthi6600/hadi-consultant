@@ -45,7 +45,7 @@ function Team() {
                             <SwiperSlide>
                                 <div className="team-single-one-start">
                                     <div className="team-image-area">
-                                        <Link href={'#'}>
+                                        <div className="team-image-link">
                                             <img
                                                 src="assets/images/team/tm/01.jpg"
                                                 alt="Business_Team_single"
@@ -60,12 +60,10 @@ function Team() {
                                                     </Link>
                                                 </div>
                                             </div>
-                                        </Link>
+                                        </div>
                                     </div>
                                     <div className="single-details">
-                                        <Link href={'#'}>
-                                            <h5 className="title">Robert Martinez</h5>
-                                        </Link>
+                                        <h5 className="title">Robert Martinez</h5>
                                         <p>Senior Consultant</p>
                                     </div>
                                 </div>
@@ -73,7 +71,7 @@ function Team() {
                             <SwiperSlide>
                                 <div className="team-single-one-start">
                                     <div className="team-image-area">
-                                        <Link href={'#'}>
+                                        <div className="team-image-link">
                                             <img
                                                 src="assets/images/team/tm/02.jpg"
                                                 alt="Business_Team_single"
@@ -88,12 +86,10 @@ function Team() {
                                                     </Link>
                                                 </div>
                                             </div>
-                                        </Link>
+                                        </div>
                                     </div>
                                     <div className="single-details">
-                                        <Link href={'#'}>
-                                            <h5 className="title">Sarah Williams</h5>
-                                        </Link>
+                                        <h5 className="title">Sarah Williams</h5>
                                         <p>Business Strategist</p>
                                     </div>
                                 </div>
@@ -101,7 +97,7 @@ function Team() {
                             <SwiperSlide>
                                 <div className="team-single-one-start">
                                     <div className="team-image-area">
-                                        <Link href={'#'}>
+                                        <div className="team-image-link">
                                             <img
                                                 src="assets/images/team/tm/03.jpg"
                                                 alt="Business_Team_single"
@@ -116,12 +112,10 @@ function Team() {
                                                     </Link>
                                                 </div>
                                             </div>
-                                        </Link>
+                                        </div>
                                     </div>
                                     <div className="single-details">
-                                        <Link href={'#'}>
-                                            <h5 className="title">Michael Brown</h5>
-                                        </Link>
+                                        <h5 className="title">Michael Brown</h5>
                                         <p>Marketing Expert</p>
                                     </div>
                                 </div>
@@ -129,7 +123,7 @@ function Team() {
                             <SwiperSlide>
                                 <div className="team-single-one-start">
                                     <div className="team-image-area">
-                                        <Link href={'#'}>
+                                        <div className="team-image-link">
                                             <img
                                                 src="assets/images/team/tm/04.jpg"
                                                 alt="Business_Team_single"
@@ -144,12 +138,10 @@ function Team() {
                                                     </Link>
                                                 </div>
                                             </div>
-                                        </Link>
+                                        </div>
                                     </div>
                                     <div className="single-details">
-                                        <Link href={'#'}>
-                                            <h5 className="title">Emily Johnson</h5>
-                                        </Link>
+                                        <h5 className="title">Emily Johnson</h5>
                                         <p>Operations Manager</p>
                                     </div>
                                 </div>
@@ -157,7 +149,7 @@ function Team() {
                             <SwiperSlide>
                                 <div className="team-single-one-start">
                                     <div className="team-image-area">
-                                        <Link href={'#'}>
+                                        <div className="team-image-link">
                                             <img
                                                 src="assets/images/team/tm/18.webp"
                                                 alt="Business_Team_single"
@@ -172,12 +164,10 @@ function Team() {
                                                     </Link>
                                                 </div>
                                             </div>
-                                        </Link>
+                                        </div>
                                     </div>
                                     <div className="single-details">
-                                        <Link href={'#'}>
-                                            <h5 className="title">Michelle Anderson</h5>
-                                        </Link>
+                                        <h5 className="title">Michelle Anderson</h5>
                                         <p>HR Director</p>
                                     </div>
                                 </div>

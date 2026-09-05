@@ -22,6 +22,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="stylesheet" href="/assets/css/style.css" />
+        <link rel="stylesheet" href="/assets/css/header-enhance.css" />
+        <link rel="stylesheet" href="/assets/css/booking.css" />
+        <link rel="stylesheet" href="/assets/css/manage-booking.css" />
+        <link rel="stylesheet" href="/assets/css/my-bookings.css" />
       </head>
       <body className='index-one'>
         {children}
